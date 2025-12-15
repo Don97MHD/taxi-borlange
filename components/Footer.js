@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="row align-items-end">
               <div className="col-lg-8">
                 <div className="brand">
-                  <Link className="footer-logo" href="/">
-                    <Image src="/assets/img/logo-light.webp" alt="Dala Taxi Borlänge" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
+                  <Link href="/">
+                    <Image src="/assets/img/logo-light.webp" alt="Dala Taxi Borlänge" width={389} height={100} sizes="(max-width: 768px) 200px, 389px" />
                   </Link>
                   <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Vi finns här för dig dygnet runt.</p>
                 </div>
@@ -83,17 +83,17 @@ export default function Footer() {
                 {/* Social Icons Style */}
                 <ul className="header-social-share" style={{display: 'flex', gap: '10px', padding: 0}}>
                   <li style={{listStyle: 'none'}}>
-                    <a href="https://www.facebook.com/dalataxiborlange/" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#3b5998', color: '#fff', borderRadius: '50%'}}>
+                    <a href="https://www.facebook.com/dalataxiborlange/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Facebook" style={{width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#3b5998', color: '#fff', borderRadius: '50%'}}>
                         <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li style={{listStyle: 'none'}}>
-                    <a href="https://x.com/tborlange/" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000', color: '#fff', borderRadius: '50%'}}>
+                    <a href="https://x.com/tborlange/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Twitter/X" style={{width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000', color: '#fff', borderRadius: '50%'}}>
                         <i className="fab fa-twitter"></i> {/* Or fa-x-twitter if available in your fontawesome */}
                     </a>
                   </li>
                   <li style={{listStyle: 'none'}}>
-                    <a href="https://www.instagram.com/taxi17070.se/" target="_blank" rel="noopener noreferrer" style={{width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#E1306C', color: '#fff', borderRadius: '50%'}}>
+                    <a href="https://www.instagram.com/taxi17070.se/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Instagram" style={{width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#E1306C', color: '#fff', borderRadius: '50%'}}>
                         <i className="fab fa-instagram"></i>
                     </a>
                   </li>

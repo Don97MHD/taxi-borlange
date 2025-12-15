@@ -69,16 +69,16 @@
 }
 
 .about-img .about-img2 {
-    max-width: 200px;
+    max-width: 300px;
     position: absolute;
     right: 80px;
-    bottom: 0;
+    bottom: 10;
 }
 
 .round-text {
     position: absolute;
-    right: 100px;
-    top: 60px;
+    right: 160px;
+    top: 160px;
 }
 
 .round-text img {
@@ -135,7 +135,7 @@
 }
 
 .about-info li h2 a {
-    color: #ff9900;
+    color: #754300;
     font-weight: 700;
     margin: 0;
 }
@@ -415,7 +415,7 @@
 }
 
 .service-content .read-more {
-    background-color: #ff9900;
+    background-color: #7A4B00;
     clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
     border-radius: 2px;
     font-size: 15px;
@@ -520,12 +520,13 @@
 }
 
 .swiper-pagination span {
-    background-color: #222;
-    border-radius: 2px;
-    width: 10px;
-    height: 10px;
-    border-radius: 0;
+    background-color: #cccaca;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5;
     opacity: 1;
+    
 }
 
 .swiper-pagination span.swiper-pagination-bullet-active {
@@ -968,13 +969,13 @@
 .pricing-tab-menu li .nav-link {
     font-size: 17px;
     font-weight: 500;
-    color: #999;
+    color: #575757;
     padding: 0;
 }
 
 .pricing-tab-menu li .nav-link:hover,
 .pricing-tab-menu li .nav-link.active {
-    color: #222;
+    color: #000000;
 }
 
 .pricing-tab-menu li:not(:last-of-type) {
@@ -1781,7 +1782,7 @@
 
 .accordion-button:not(.collapsed) {
     color: #fff;
-    background-color: #ff9900;
+    background-color: #7A4B00;
 }
 
 .accordion-button:not(.collapsed):after {

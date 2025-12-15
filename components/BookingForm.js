@@ -2,7 +2,7 @@ export default function BookingForm() {
   return (
     <div className="booking-wrap">
       <div className="section-heading mb-30">
-       <span className="section-subtitle"><span></span>Boka Online</span>
+       <span className="section-subtitle white"><span></span>Boka Online</span>
         <h2 className="white">Boka din taxi i Borlänge</h2>
       </div>
       <form action="#" id="book-taxi-ride">

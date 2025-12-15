@@ -28,9 +28,9 @@ export default function AboutUs() {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="about-img">
-                <Image className="about-img1 wow fade-in-left" src="/assets/img/about-1.webp" alt="Dala Taxi Borlänge" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
-                <Image className="about-img2 wow fade-in-bottom" src="/assets/img/about-2.webp" alt="Taxi Service" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
-                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="Experience" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
+                <Image className="about-img1 wow fade-in-left" src="/assets/img/about-1.webp" alt="Dala Taxi Borlänge" width={450} height={580} sizes="(max-width: 768px) 100vw, 240px" />
+                <Image className="about-img2 wow fade-in-bottom" src="/assets/img/about-2.webp" alt="Taxi Service" width={400} height={450} sizes="(max-width: 768px) 100vw, 240px" />
+                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="Experience" width={300} height={300} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
             </div>
             <div className="col-md-6">

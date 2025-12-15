@@ -50,9 +50,9 @@ export default function Header() {
                   <li><Link href="/faqs">FAQ</Link></li>
                 </ul>
                 <ul className="header-social-share">
-                  <li><a href="https://www.facebook.com/dalataxiborlange/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="https://x.com/tborlange/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                  <li><a href="https://www.instagram.com/taxi17070.se/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/dalataxiborlange/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Facebook"><i className="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://x.com/tborlange/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Twitter/X"><i className="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/taxi17070.se/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Instagram"><i className="fab fa-instagram"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Header() {
             <div className="mid-header-wrap">
               <div className="site-logo">
                 <Link href="/">
-                  <Image src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
+                  <Image src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width={389} height={100} sizes="(max-width: 768px) 200px, 389px" />
                 </Link>
               </div>
               <ul className="header-info">
@@ -118,7 +118,7 @@ export default function Header() {
             <div className="nav-menu-inner">
               <div className="site-logo">
                 <Link href="/">
-                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={194} height={70} sizes="(max-width: 768px) 150px, 194px" />
+                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={180} height={60} sizes="(max-width: 768px) 150px, 194px" />
                 </Link>
               </div>
               
@@ -207,7 +207,7 @@ export default function Header() {
         <div className="sidebox-content">
           <div className="site-logo">
             <Link href="/">
-              <Image src="/assets/img/logo-light.webp" alt="logo" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
+              <Image src="/assets/img/logo-light.webp" alt="logo" width={389} height={100} sizes="(max-width: 768px) 200px, 389px" />
             </Link>
           </div>
           <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Öppet dygnet runt alla dagar i veckan.</p>
@@ -220,9 +220,9 @@ export default function Header() {
           </ul>
           <div className="sidebox-social">
             <ul className="header-social-share" style={{justifyContent: 'flex-start', padding: 0, marginTop: '20px'}}>
-                  <li><a href="https://www.facebook.com/dalataxiborlange/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="https://x.com/tborlange/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                  <li><a href="https://www.instagram.com/taxi17070.se/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/dalataxiborlange/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Facebook"><i className="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://x.com/tborlange/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Twitter/X"><i className="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/taxi17070.se/" target="_blank" rel="noopener noreferrer" aria-label="Besök Dala Taxi Borlänge på Instagram"><i className="fab fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>

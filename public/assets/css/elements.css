@@ -26,7 +26,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 17px;
     line-height: 27px;
-    color: #666;
+    color: #000000;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -173,7 +173,7 @@ button {
 }
 
 .bg-grey {
-    background-color: #F4F5F8;
+    background-color: #FCFCFC;
 }
 
 .bg-dark {
@@ -614,7 +614,7 @@ button {
 }
 
 .default-btn {
-    background-color: #ff9900;
+    background-color: #7A4B00;
     border-radius: 2px;
     height: 45px;
     font-size: 16px;
@@ -664,7 +664,7 @@ button {
 .section-heading .section-subtitle {
     font-size: 16px;
     font-weight: 600; /* أضفنا weight لضمان سماكة الخط */
-    color: #ff9900;
+    color: #754300;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-flex;
@@ -673,7 +673,7 @@ button {
 }
 
 .section-heading .section-subtitle span {
-    background-color: #ff9900;
+    background-color: #cc7a00;
     transform: skew(-20deg, 0deg);
     display: inline-flex;
     width: 4px;
@@ -685,7 +685,7 @@ button {
 
 .section-heading .section-subtitle span:after,
 .section-heading .section-subtitle span:before {
-    background-color: #ff9900;
+    background-color: #cc7a00;
     content: "";
     width: 4px;
     height: 100%;

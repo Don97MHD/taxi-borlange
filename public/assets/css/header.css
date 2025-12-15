@@ -90,11 +90,11 @@
     align-items: center; /* هذا يضمن محاذاة اللوجو مع النصوص عمودياً */
     justify-content: space-between;
     column-gap: 15px;
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .mid-header-wrap .site-logo {
-    max-width: 200px;
+    max-width: 100%;
     display: flex; /* إضافة فليكس للوجو لضمان عدم وجود مسافات وهمية */
     align-items: center;
 }
@@ -102,7 +102,7 @@
 .mid-header-wrap .site-logo img {
     display: block;
     width: 100%;
-    height: auto;
+    
 }
 .header-info {
     display: flex;
@@ -115,7 +115,7 @@
     display: inline-flex;
     align-items: center; /* هذا هو السر لمحاذاة الأيقونة مع النص */
     column-gap: 15px;    /* المسافة بين الأيقونة والنص */
-    height: 60px;        /* ارتفاع ثابت لضمان التناسق */
+    height: 50px;        /* ارتفاع ثابت لضمان التناسق */
 }
 /* تنسيق الأيقونة */
 .header-info li .header-info-icon {
@@ -531,7 +531,7 @@
 
     .nav-menu-wrapper .site-logo {
         display: block;
-        max-width: 140px;
+        max-width: 100%;
     }
 
     .mid-header,

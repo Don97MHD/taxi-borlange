@@ -35,8 +35,8 @@ export default function BusinessTaxi() {
             <div className="col-lg-6">
               <div className="about-img">
                 {/* Using a generic image from assets based on previous code */}
-                <Image className="about-img1 wow fade-in-right" src="/assets/img/about-1.webp" alt="Business Taxi" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
-                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
+                <Image className="about-img1 wow fade-in-right" src="/assets/img/about-1.webp" alt="Business Taxi" width={450} height={580} sizes="(max-width: 768px) 100vw, 240px" />
+                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={300} height={300} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
             </div>
           </div>

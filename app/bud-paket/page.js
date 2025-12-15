@@ -36,7 +36,7 @@ export default function PackageDelivery() {
               <div className="about-img">
                 {/* Image representing delivery/packages */}
                 <Image className="about-img1 wow fade-in-right" src="/assets/img/service-4.webp" alt="Bud och Paket" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
-                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
+                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={300} height={300} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
             </div>
           </div>
