@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/vendor/jquery.nice-select.min.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/venobox.min.js" strategy="lazyOnload"/>
         <Script src="/assets/js/vendor/smooth-scroll.js" strategy="lazyOnload"/>
-        <Script src="/assets/js/vendor/wow.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/vendor/wow.min.js"  />
         
         {/* ملف main.js يحتوي على التفاعل الرئيسي */}
         <Script src="/assets/js/main.js" strategy="lazyOnload" />

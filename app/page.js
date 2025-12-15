@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Script from 'next/script';
+import Image from 'next/image';
 
 // استيراد المكونات الجديدة
 import SectionHeading from '@/components/SectionHeading';
@@ -33,19 +34,19 @@ export default function Home() {
               <div className="swiper-slide">
                 {/* ... الصورة ... */}
                 <div className="slider-img">
-                  <img 
+                  <Image 
   src="/assets/img/slider-bg.webp" 
   alt="Dala Taxi Borlänge" 
   className="kenburns" 
-  width="1920" 
-  height="940"
+  width={1920} 
+  height={940}
   fetchPriority="high" // هذا هو السطر السحري للسرعة
   style={{ animationDuration: '12000ms', objectFit: 'cover' }} 
 />
                 </div>
                 <div className="car-holder">
                    {/* ... السيارة ... */}
-                  <img src="/assets/img/car-1.webp" alt="car" data-animation="car-animation" data-duration="1.5s" />
+                  <Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} data-animation="car-animation" data-duration="1.5s" />
                   <div className="shape">
                     {/* ... الأشكال ... */}
                     <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
@@ -79,18 +80,18 @@ export default function Home() {
               {/* Slide 2 */}
               <div className="swiper-slide">
                 <div className="slider-img">
-                  <img 
+                  <Image 
   src="/assets/img/slider-bg.webp" 
   alt="Dala Taxi Borlänge" 
   className="kenburns" 
-  width="1920" 
-  height="1080"
+  width={1920} 
+  height={1080}
   fetchPriority="high" // هذا هو السطر السحري للسرعة
   style={{ animationDuration: '12000ms', objectFit: 'cover' }} 
 />
                 </div>
                 <div className="car-holder">
-                  <img src="/assets/img/car-1.webp" alt="car" data-animation="car-animation" data-duration="1.5s" />
+                  <Image src="/assets/img/car-1.webp" alt="car" width={400} height={200} />
                   <div className="shape">
                     <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
                     <div data-animation="fade-in" data-duration="1.5s" data-delay="0.2s"></div>
@@ -126,9 +127,9 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-img">
-                  <img className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" />
-                  <img className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" />
-                  <figure className="round-text"><img src="/assets/img/experience-text-round.webp" alt="img" /></figure>
+                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={300} height={386} />
+                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={200} height={300} />
+                  <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="img" width={200} height={200} /></figure>
                 </div>
               </div>
               <div className="col-md-6">
@@ -149,8 +150,9 @@ export default function Home() {
         </section>
 
         {/* Service Section */}
-        <section className="service-section bg-grey padding">
-          <div className="bg-half"></div>
+        <section className="service-section bg-grey padding" style={{position: 'relative'}}>
+          <Image src="/assets/img/bg-1.webp" fill alt="Background" className="service-bg" style={{objectFit: 'cover', objectPosition: 'top center', zIndex: -1, width: '100%', position: 'absolute', left: 0, top: 0}} />
+          <div className="service-bg" style={{backgroundColor: 'rgba(2, 2, 2, 0.7)', width: '100%', position: 'absolute', left: 0, top: 0, zIndex: 0}}></div>
           <div className="container">
             <SectionHeading 
               color="white"
@@ -381,10 +383,11 @@ export default function Home() {
               </div>
               <div className="col-lg-6 d-none d-lg-block">
                 <div className="taxi-holder">
-                  <div className="taxi wow fade-in-left" data-wow-delay="300ms"></div>
-                  <div className="mockup wow fade-in-bottom" data-wow-delay="400ms"></div>
-                  <div className="charecter wow fade-in-right" data-wow-delay="500ms"></div>
-                  <img className="location-marker" src="/assets/img/location-marker.webp" alt="location" />
+                  <Image src="/assets/img/taxi-background.webp" fill alt="Taxi Background" style={{objectFit: 'contain', objectPosition: 'center right', zIndex: -1}} />
+                  <div className="taxi wow fade-in-left" data-wow-delay="300ms"><Image src="/assets/img/taxi.webp" fill alt="Taxi" style={{objectFit: 'contain', objectPosition: 'center right'}} /></div>
+                  <div className="mockup wow fade-in-bottom" data-wow-delay="400ms"><Image src="/assets/img/mockup.webp" fill alt="Mockup" style={{objectFit: 'contain', objectPosition: 'center right'}} /></div>
+                  <div className="charecter wow fade-in-right" data-wow-delay="500ms"><Image src="/assets/img/charecter.webp" fill alt="Character" style={{objectFit: 'contain', objectPosition: 'center right'}} /></div>
+                  <Image className="location-marker" src="/assets/img/location-marker.webp" alt="location" width={50} height={50} />
                 </div>
               </div>
             </div>

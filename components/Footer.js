@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
               <div className="col-lg-8">
                 <div className="brand">
                   <Link className="footer-logo" href="/">
-                    <img src="/assets/img/logo-light.webp" alt="Dala Taxi Borlänge" />
+                    <Image src="/assets/img/logo-light.webp" alt="Dala Taxi Borlänge" width={389} height={179}/>
                   </Link>
                   <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Vi finns här för dig dygnet runt.</p>
                 </div>

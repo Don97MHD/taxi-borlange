@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import { servicesData } from '@/data/services';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // 1. دالة لتوليد الميتا داتا (SEO) ديناميكياً بناءً على الـ ID
 export async function generateMetadata({ params }) {
@@ -47,7 +48,7 @@ export default async function ServiceDetails({ params }) {
             <div className="col-lg-8 sm-padding">
               <div className="service-details-info">
                 {/* الصورة التفصيلية */}
-                <img src={service.detailImage} alt={service.title} className="mb-40" />
+                <Image src={service.detailImage} alt={service.title} className="mb-40" width={800} height={500} />
                 
                 {/* العنوان الفرعي */}
                 <h2>{service.title} – Din Garanterade Anslutning!</h2>
@@ -122,7 +123,7 @@ export default async function ServiceDetails({ params }) {
                 <div className="banner-info">
                   <Link href="/">
                     {/* تأكد من مسار اللوجو */}
-                    <img className="logo" src="/assets/img/logo-light.webp" alt="logo" />
+                    <Image className="logo" src="/assets/img/logo-light.webp" alt="logo" width={389} height={179} />
                   </Link>
                   <h3>Res tryggt med <span>Dala Taxi!</span></h3>
                   <p>Alltid fasta priser och bästa service i Borlänge.</p>

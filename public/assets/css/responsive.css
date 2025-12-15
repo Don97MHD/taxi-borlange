@@ -31,7 +31,7 @@
         right: 30px;
         bottom: -100px;
     }
-    .service-section .bg-half{
+    .service-bg {
         height: 496px;
     }
     .swiper-outside .swiper-nav{ display: none; }
@@ -124,7 +124,7 @@
         right: 15px;
         bottom: 30px;
     }
-    .service-section .bg-half{
+    .service-bg {
         height: 547px;
     }
     .booking-form{

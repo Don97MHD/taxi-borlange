@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Header() {
   const pathname = usePathname();
@@ -64,7 +65,7 @@ export default function Header() {
             <div className="mid-header-wrap">
               <div className="site-logo">
                 <Link href="/">
-                  <img src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width="389" height="179"/>
+                  <Image src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width={389} height={179}/>
                 </Link>
               </div>
               <ul className="header-info">
@@ -117,7 +118,7 @@ export default function Header() {
             <div className="nav-menu-inner">
               <div className="site-logo">
                 <Link href="/">
-                  <img src="/assets/img/logo-dark.webp" alt="Logo" />
+                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={194} height={70}/>
                 </Link>
               </div>
               
@@ -206,7 +207,7 @@ export default function Header() {
         <div className="sidebox-content">
           <div className="site-logo">
             <Link href="/">
-              <img src="/assets/img/logo-light.webp" alt="logo" />
+              <Image src="/assets/img/logo-light.webp" alt="logo" width={194} height={90}/>
             </Link>
           </div>
           <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Öppet dygnet runt alla dagar i veckan.</p>
