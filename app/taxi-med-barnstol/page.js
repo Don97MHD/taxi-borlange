@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading';
 import CtaSection from '@/components/CtaSection';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Taxi med Barnstol i Borlänge | Boka Trygg Resa',
@@ -23,7 +24,7 @@ export default function ChildSeat() {
             <div className="col-lg-6">
               <div className="about-img">
                 {/* صورة تعبر عن الأمان أو العائلة */}
-                <img className="about-img1 wow fade-in-left" src="/assets/img/service-4.webp" alt="Taxi med barnstol" />
+                <Image className="about-img1 wow fade-in-left" src="/assets/img/service-4.webp" alt="Taxi med barnstol" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                 <div className="about-text-overlay" style={{position: 'absolute', bottom: '20px', left: '20px', background: 'white', padding: '15px', borderRadius: '5px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}}>
                     <div className="section-subtitle">Säkerhet Först</div>
                 </div>

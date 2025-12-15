@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading';
 import CtaSection from '@/components/CtaSection';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { taxiDalarnaData } from '@/data/taxiDalarnaData'; 
 
@@ -43,7 +44,7 @@ export default async function TaxiLocationPage({ params }) {
           <div className="row align-items-center">
             <div className="col-lg-6">
                <div className="about-img">
-                <img className="about-img1 wow fade-in-left" src={data.headerImage || "/assets/img/service-1.webp"} alt={data.title} />
+                <Image className="about-img1 wow fade-in-left" src={data.headerImage || "/assets/img/service-1.webp"} alt={data.title} width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
               </div>
             </div>
             <div className="col-lg-6">

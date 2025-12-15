@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Våra Taxitjänster i Borlänge | Flygtaxi, Företagstaxi & Mer',
@@ -40,11 +41,11 @@ export default function Services() {
               <div className="service-item">
                 <div className="service-thumb">
                   {/* Changed img to airport/service-2 based on context */}
-                  <img src="/assets/img/service-2.webp" alt="Flygtaxi" />
+                  <Image src="/assets/img/service-2.webp" alt="Flygtaxi" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
-                  <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                  <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
                   <h3><Link href="https://dalataxiborlange.se/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
@@ -59,11 +60,11 @@ export default function Services() {
               <div className="service-item">
                 <div className="service-thumb">
                   {/* Changed img to train/service-1 */}
-                  <img src="/assets/img/service-1.webp" alt="Tågtaxi" />
+                  <Image src="/assets/img/service-1.webp" alt="Tågtaxi" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
-                  <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                  <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
                   <h3><Link href="https://dalataxiborlange.se/vara-tjanster/tagtaxi/">Tågtaxi Borlänge</Link></h3>
@@ -78,11 +79,11 @@ export default function Services() {
               <div className="service-item">
                 <div className="service-thumb">
                   {/* Changed img to van/service-3 */}
-                  <img src="/assets/img/service-3.webp" alt="Storbil" />
+                  <Image src="/assets/img/service-3.webp" alt="Storbil" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
-                  <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                  <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
                   <h3><Link href="https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor/">Storbil & Gruppresor</Link></h3>
@@ -96,11 +97,11 @@ export default function Services() {
             <div className="col-lg-4 col-sm-6 padding-15">
               <div className="service-item">
                 <div className="service-thumb">
-                  <img src="/assets/img/service-5.webp" alt="Företagstaxi" />
+                  <Image src="/assets/img/service-5.webp" alt="Företagstaxi" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
-                  <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                  <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
                   <h3><Link href="https://dalataxiborlange.se/bli-foretagskund/">Företagstaxi</Link></h3>
@@ -114,11 +115,11 @@ export default function Services() {
             <div className="col-lg-4 col-sm-6 padding-15">
               <div className="service-item">
                 <div className="service-thumb">
-                  <img src="/assets/img/service-4.webp" alt="Bud & Paket" />
+                  <Image src="/assets/img/service-4.webp" alt="Bud & Paket" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
-                  <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                  <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
                   <h3><Link href="https://dalataxiborlange.se/bud-paket/">Bud & Paket</Link></h3>
@@ -132,11 +133,11 @@ export default function Services() {
             <div className="col-lg-4 col-sm-6 padding-15">
               <div className="service-item">
                 <div className="service-thumb">
-                  <img src="/assets/img/service-5.webp" alt="Special" />
+                  <Image src="/assets/img/service-5.webp" alt="Special" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
-                  <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                  <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
                   <h3><Link href="https://dalataxiborlange.se/kontakt/">Annan Transport?</Link></h3>

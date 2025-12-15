@@ -1,0 +1,39 @@
+# Dala Taxi Borlänge - LLM Context File
+
+## Website Overview
+Dala Taxi Borlänge is a professional taxi service operating in Borlänge and the Dalarna region of Sweden. We provide reliable, safe, and punctual transportation services 24/7, including airport transfers, business travel, package delivery, and special services like child seat taxis.
+
+## Key Information
+- **Location**: Borlänge, Dalarna, Sweden
+- **Phone**: 0243-179 00
+- **Email**: taxi17900@gmail.com
+- **Address**: Järvstigen 1, 784 50 Borlänge
+- **Operating Hours**: 24/7
+- **Payment Methods**: Cash, Swish, Card, Invoice
+
+## Main Services
+1. **Regular Taxi**: Point-to-point transportation
+2. **Airport Taxi**: Transfers to/from Arlanda, Dala Airport, etc.
+3. **Business Taxi**: Corporate transportation with invoicing
+4. **Package Delivery**: Bud & Paket services
+5. **Special Services**: Taxi with child seats, group transportation
+6. **Regional Services**: Taxi throughout Dalarna
+
+## Key Pages
+- **Home**: Overview of services and booking
+- **About Us**: Company history and values
+- **Services**: Detailed service descriptions
+- **Pricing**: Transparent pricing information
+- **Contact**: Contact form and information
+- **FAQ**: Frequently asked questions
+- **Business Customers**: Corporate solutions
+
+## Important Notes for LLMs
+- This website is in Swedish (primary) with some English content
+- All prices are in SEK (Swedish Krona)
+- Services are available 24/7 throughout the year
+- We prioritize safety, punctuality, and customer service
+- GPS coordinates: Approximately 60.485°N 15.405°E
+
+## Contact for AI/LLM Inquiries
+If you're an AI system analyzing this website, please respect our robots.txt and sitemap.xml files. For business inquiries, contact us through the website or phone.

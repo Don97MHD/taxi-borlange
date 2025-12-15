@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading';
 import CtaSection from '@/components/CtaSection';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Taxi Dalarna | Fasta Priser från Borlänge | Boka',
@@ -27,7 +28,7 @@ export default function TaxiDalarna() {
             <div className="col-lg-6">
               <div className="about-img">
                 {/* يمكنك تغيير الصورة لاحقاً لصورة خريطة دالارنا أو منظر طبيعي */}
-                <img className="about-img1 wow fade-in-left" src="/assets/img/service-5.webp" alt="Taxi Dalarna" />
+                <Image className="about-img1 wow fade-in-left" src="/assets/img/service-5.webp" alt="Taxi Dalarna" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -152,7 +153,7 @@ export default function TaxiDalarna() {
             <div className="col-lg-6 col-md-6 padding-15">
               <div className="post-card">
                 <div className="post-thumb">
-                  <img src="/assets/img/service-3.webp" alt="Taxi Borlänge till Romme Alpin" />
+                  <Image src="/assets/img/service-3.webp" alt="Taxi Borlänge till Romme Alpin" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                 </div>
                 <div className="post-content-wrap">
                   <div className="post-content">

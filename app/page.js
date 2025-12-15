@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
                 <div className="car-holder">
                    {/* ... السيارة ... */}
-                  <Image src="/assets/img/car-1.webp" alt="car" width={230} height={144} sizes="(max-width: 768px) 100vw, 230px" data-animation="car-animation" data-duration="1.5s" />
+                  <Image src="/assets/img/car-1.webp" alt="car" width={700} height={400} sizes="(max-width: 768px) 100vw, 230px" data-animation="car-animation" data-duration="1.5s" />
                   <div className="shape">
                     {/* ... الأشكال ... */}
                     <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
@@ -171,9 +171,9 @@ export default function Home() {
                   <div className="swiper-slide">
                     <div className="service-item wow fade-in-bottom" data-wow-delay="200ms">
                       <div className="service-thumb">
-                        <img src="/assets/img/service-2.webp" alt="Flygtaxi" />
+                        <Image src="/assets/img/service-2.webp" alt="Flygtaxi" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                         <div className="service-shape-wrap"><div className="service-shape"></div></div>
-                        <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                        <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
                         <h3><Link href="https://dalataxiborlange.se/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
@@ -187,9 +187,9 @@ export default function Home() {
                   <div className="swiper-slide">
                     <div className="service-item wow fade-in-bottom" data-wow-delay="400ms">
                       <div className="service-thumb">
-                        <img src="/assets/img/service-1.webp" alt="Tågtaxi" />
+                        <Image src="/assets/img/service-1.webp" alt="Tågtaxi" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                         <div className="service-shape-wrap"><div className="service-shape"></div></div>
-                        <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                        <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
                         <h3><Link href="https://dalataxiborlange.se/vara-tjanster/tagtaxi/">Tågtaxi Borlänge</Link></h3>
@@ -203,9 +203,9 @@ export default function Home() {
                   <div className="swiper-slide">
                     <div className="service-item wow fade-in-bottom" data-wow-delay="600ms">
                       <div className="service-thumb">
-                        <img src="/assets/img/service-3.webp" alt="Storbil" />
+                        <Image src="/assets/img/service-3.webp" alt="Storbil" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                         <div className="service-shape-wrap"><div className="service-shape"></div></div>
-                        <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                        <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
                         <h3><Link href="https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor/">Storbil för Grupper</Link></h3>
@@ -219,9 +219,9 @@ export default function Home() {
                   <div className="swiper-slide">
                     <div className="service-item">
                       <div className="service-thumb">
-                        <img src="/assets/img/service-4.webp" alt="Alla tjänster" />
+                        <Image src="/assets/img/service-4.webp" alt="Alla tjänster" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                         <div className="service-shape-wrap"><div className="service-shape"></div></div>
-                        <div className="service-car"><img src="/assets/img/car-1.webp" alt="car" /></div>
+                        <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
                         <h3><Link href="https://dalataxiborlange.se/vara-tjanster/">Alla våra tjänster</Link></h3>

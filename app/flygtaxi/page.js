@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading'; // الاستفادة من المكونات
 import CtaSection from '@/components/CtaSection';         // الاستفادة من المكونات
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Flygtaxi Borlänge | Fasta Priser till Arlanda & Dala Airport',
@@ -28,7 +29,7 @@ export default function Flygtaxi() {
             <div className="col-lg-6">
               <div className="about-img">
                 {/* استخدام صورة تعبر عن السفر/المطار - تأكد من وجود الصورة أو استبدلها */}
-                <img className="about-img1 wow fade-in-left" src="/assets/img/service-2.webp" alt="Flygtaxi" />
+                <Image className="about-img1 wow fade-in-left" src="/assets/img/service-2.webp" alt="Flygtaxi" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                 <div className="about-text-overlay" style={{position: 'absolute', bottom: '20px', left: '20px', background: 'white', padding: '15px', borderRadius: '5px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}}>
                     <div className="section-subtitle">0243-179 00</div>
                     <p style={{margin: 0, fontSize: '14px'}}>Ring och boka nu!</p>

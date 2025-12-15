@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Bud & Paket med Taxi i Borlänge | Snabb & Säker Leverans',
@@ -34,8 +35,8 @@ export default function PackageDelivery() {
             <div className="col-lg-6">
               <div className="about-img">
                 {/* Image representing delivery/packages */}
-                <img className="about-img1 wow fade-in-right" src="/assets/img/service-4.webp" alt="Bud och Paket" />
-                <figure className="round-text"><img src="/assets/img/experience-text-round.webp" alt="experience" /></figure>
+                <Image className="about-img1 wow fade-in-right" src="/assets/img/service-4.webp" alt="Bud och Paket" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
             </div>
           </div>
