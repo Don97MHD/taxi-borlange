@@ -48,7 +48,7 @@ export default async function ServiceDetails({ params }) {
             <div className="col-lg-8 sm-padding">
               <div className="service-details-info">
                 {/* الصورة التفصيلية */}
-                <Image src={service.detailImage} alt={service.title} className="mb-40" width={800} height={500} />
+                <Image src={service.detailImage} alt={service.title} className="mb-40" width={800} height={500} sizes="(max-width: 768px) 100vw, 800px" />
                 
                 {/* العنوان الفرعي */}
                 <h2>{service.title} – Din Garanterade Anslutning!</h2>
@@ -123,7 +123,7 @@ export default async function ServiceDetails({ params }) {
                 <div className="banner-info">
                   <Link href="/">
                     {/* تأكد من مسار اللوجو */}
-                    <Image className="logo" src="/assets/img/logo-light.webp" alt="logo" width={389} height={179} />
+                    <Image className="logo" src="/assets/img/logo-light.webp" alt="logo" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
                   </Link>
                   <h3>Res tryggt med <span>Dala Taxi!</span></h3>
                   <p>Alltid fasta priser och bästa service i Borlänge.</p>

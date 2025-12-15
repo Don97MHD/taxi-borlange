@@ -9,6 +9,7 @@ import SectionHeading from '@/components/SectionHeading';
 import BookingForm from '@/components/BookingForm';
 import CtaSection from '@/components/CtaSection';
 import HomeFaq from '@/components/HomeFaq';
+import ElfsightWidget from '@/components/ElfsightWidget';
 
 export const metadata = {
   title: 'Dala Taxi Borlänge | 0243 - 179 00',
@@ -40,13 +41,15 @@ export default function Home() {
   className="kenburns" 
   width={1920} 
   height={940}
-  fetchPriority="high" // هذا هو السطر السحري للسرعة
+  priority={true}
+  fetchPriority="high"
+  sizes="(max-width: 768px) 100vw, 1920px"
   style={{ animationDuration: '12000ms', objectFit: 'cover' }} 
 />
                 </div>
                 <div className="car-holder">
                    {/* ... السيارة ... */}
-                  <Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} data-animation="car-animation" data-duration="1.5s" />
+                  <Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 700px" data-animation="car-animation" data-duration="1.5s" />
                   <div className="shape">
                     {/* ... الأشكال ... */}
                     <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
@@ -91,7 +94,7 @@ export default function Home() {
 />
                 </div>
                 <div className="car-holder">
-                  <Image src="/assets/img/car-1.webp" alt="car" width={400} height={200} />
+                  <Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} />
                   <div className="shape">
                     <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
                     <div data-animation="fade-in" data-duration="1.5s" data-delay="0.2s"></div>
@@ -127,9 +130,9 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-img">
-                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={300} height={386} />
-                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={200} height={300} />
-                  <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="img" width={200} height={200} /></figure>
+                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={300} height={386} sizes="(max-width: 768px) 100vw, 300px" />
+                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={300} height={386} sizes="(max-width: 768px) 100vw, 300px" />
+                  <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="img" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
                 </div>
               </div>
               <div className="col-md-6">
@@ -151,7 +154,7 @@ export default function Home() {
 
         {/* Service Section */}
         <section className="service-section bg-grey padding" style={{position: 'relative'}}>
-          <Image src="/assets/img/bg-1.webp" fill alt="Background" className="service-bg" style={{objectFit: 'cover', objectPosition: 'top center', zIndex: -1, width: '100%', position: 'absolute', left: 0, top: 0}} />
+          <Image src="/assets/img/bg-1.webp" fill alt="Background" className="service-bg" style={{objectFit: 'cover', objectPosition: 'top center', zIndex: -1, width: '100%', position: 'absolute', left: 0, top: 0}} sizes="(max-width: 768px) 100vw, 1920px" />
           <div className="service-bg" style={{backgroundColor: 'rgba(2, 2, 2, 0.7)', width: '100%', position: 'absolute', left: 0, top: 0, zIndex: 0}}></div>
           <div className="container">
             <SectionHeading 
@@ -281,7 +284,7 @@ export default function Home() {
                     <div className="pricing-item">
                       <div className="pricing-head-wrap">
                         <div className="pricing-car">
-                          <img src="/assets/img/pricing-car.webp" alt="car" />
+                          <Image src="/assets/img/pricing-car.webp" alt="car" width={200} height={150} sizes="(max-width: 768px) 100vw, 200px" />
                           <div className="price">599 SEK</div>
                         </div>
                       </div>
@@ -306,7 +309,7 @@ export default function Home() {
                         <div className="pricing-item">
                             <div className="pricing-head-wrap">
                                 <div className="pricing-car">
-                                    <img src="/assets/img/pricing-car.webp" alt="car" />
+                                    <Image src="/assets/img/pricing-car.webp" alt="car" width={200} height={150} sizes="(max-width: 768px) 100vw, 200px" />
                                     <div className="price">440 SEK</div>
                                 </div>
                             </div>
@@ -331,7 +334,7 @@ export default function Home() {
                         <div className="pricing-item">
                             <div className="pricing-head-wrap">
                                 <div className="pricing-car">
-                                    <img src="/assets/img/pricing-car.webp" alt="car" />
+                                    <Image src="/assets/img/pricing-car.webp" alt="car" width={200} height={150} sizes="(max-width: 768px) 100vw, 200px" />
                                     <div className="price">Ring Oss</div>
                                 </div>
                             </div>
@@ -383,11 +386,11 @@ export default function Home() {
               </div>
               <div className="col-lg-6 d-none d-lg-block">
                 <div className="taxi-holder">
-                  <Image src="/assets/img/taxi-background.webp" fill alt="Taxi Background" style={{objectFit: 'contain', objectPosition: 'center right', zIndex: -1}} />
-                  <div className="taxi wow fade-in-left" data-wow-delay="300ms"><Image src="/assets/img/taxi.webp" fill alt="Taxi" style={{objectFit: 'contain', objectPosition: 'center right'}} /></div>
-                  <div className="mockup wow fade-in-bottom" data-wow-delay="400ms"><Image src="/assets/img/mockup.webp" fill alt="Mockup" style={{objectFit: 'contain', objectPosition: 'center right'}} /></div>
-                  <div className="charecter wow fade-in-right" data-wow-delay="500ms"><Image src="/assets/img/charecter.webp" fill alt="Character" style={{objectFit: 'contain', objectPosition: 'center right'}} /></div>
-                  <Image className="location-marker" src="/assets/img/location-marker.webp" alt="location" width={50} height={50} />
+                  <Image src="/assets/img/taxi-background.webp" fill alt="Taxi Background" style={{objectFit: 'contain', objectPosition: 'center right', zIndex: -1}} sizes="(max-width: 768px) 100vw, 1000px" />
+                  <div className="taxi wow fade-in-left" data-wow-delay="300ms"><Image src="/assets/img/taxi.webp" fill alt="Taxi" style={{objectFit: 'contain', objectPosition: 'center right'}} sizes="(max-width: 768px) 100vw, 650px" /></div>
+                  <div className="mockup wow fade-in-bottom" data-wow-delay="400ms"><Image src="/assets/img/mockup.webp" fill alt="Mockup" style={{objectFit: 'contain', objectPosition: 'center right'}} sizes="(max-width: 768px) 100vw, 350px" /></div>
+                  <div className="charecter wow fade-in-right" data-wow-delay="500ms"><Image src="/assets/img/charecter.webp" fill alt="Character" style={{objectFit: 'contain', objectPosition: 'center right'}} sizes="(max-width: 768px) 100vw, 180px" /></div>
+                  <Image className="location-marker" src="/assets/img/location-marker.webp" alt="location" width={50} height={50} sizes="(max-width: 768px) 50px, 50px" />
                 </div>
               </div>
             </div>
@@ -405,7 +408,7 @@ export default function Home() {
                   title="Vad Våra Kunder Säger"
                   description="Se vad våra resenärer tycker om oss via Google Reviews."
                 />
-                <div className="elfsight-app-e444ff06-51dc-4d36-8419-14d41f485659" ></div>
+                <ElfsightWidget />
               </div>
 
               <div className="col-lg-6">
@@ -461,7 +464,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Script src="https://apps.elfsight.com/p/platform.js" strategy="lazyOnload" />
       <Footer />
     </>
   );

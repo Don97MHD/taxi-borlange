@@ -16,5 +16,10 @@
   "devDependencies": {
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.0.10"
-  }
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead"
+  ]
 }

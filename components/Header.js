@@ -65,7 +65,7 @@ export default function Header() {
             <div className="mid-header-wrap">
               <div className="site-logo">
                 <Link href="/">
-                  <Image src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width={389} height={179}/>
+                  <Image src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
                 </Link>
               </div>
               <ul className="header-info">
@@ -118,7 +118,7 @@ export default function Header() {
             <div className="nav-menu-inner">
               <div className="site-logo">
                 <Link href="/">
-                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={194} height={70}/>
+                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={194} height={70} sizes="(max-width: 768px) 150px, 194px" />
                 </Link>
               </div>
               
@@ -207,7 +207,7 @@ export default function Header() {
         <div className="sidebox-content">
           <div className="site-logo">
             <Link href="/">
-              <Image src="/assets/img/logo-light.webp" alt="logo" width={194} height={90}/>
+              <Image src="/assets/img/logo-light.webp" alt="logo" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
             </Link>
           </div>
           <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Öppet dygnet runt alla dagar i veckan.</p>

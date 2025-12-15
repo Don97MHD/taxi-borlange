@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="col-lg-8">
                 <div className="brand">
                   <Link className="footer-logo" href="/">
-                    <Image src="/assets/img/logo-light.webp" alt="Dala Taxi Borlänge" width={389} height={179}/>
+                    <Image src="/assets/img/logo-light.webp" alt="Dala Taxi Borlänge" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
                   </Link>
                   <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Vi finns här för dig dygnet runt.</p>
                 </div>
