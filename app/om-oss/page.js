@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading'; // المكون الجديد
 import CtaSection from '@/components/CtaSection';         // المكون الجديد
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Om Dala Taxi Borlänge | Din Lokala Taxi i Borlänge och Dalarna',
@@ -27,9 +28,9 @@ export default function AboutUs() {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="about-img">
-                <img className="about-img1 wow fade-in-left" src="/assets/img/about-1.webp" alt="Dala Taxi Borlänge" />
-                <img className="about-img2 wow fade-in-bottom" src="/assets/img/about-2.webp" alt="Taxi Service" />
-                <figure className="round-text"><img src="/assets/img/experience-text-round.webp" alt="Experience" /></figure>
+                <Image className="about-img1 wow fade-in-left" src="/assets/img/about-1.webp" alt="Dala Taxi Borlänge" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
+                <Image className="about-img2 wow fade-in-bottom" src="/assets/img/about-2.webp" alt="Taxi Service" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
+                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="Experience" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
             </div>
             <div className="col-md-6">

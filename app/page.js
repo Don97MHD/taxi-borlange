@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
                 <div className="car-holder">
                    {/* ... السيارة ... */}
-                  <Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 700px" data-animation="car-animation" data-duration="1.5s" />
+                  <Image src="/assets/img/car-1.webp" alt="car" width={230} height={144} sizes="(max-width: 768px) 100vw, 230px" data-animation="car-animation" data-duration="1.5s" />
                   <div className="shape">
                     {/* ... الأشكال ... */}
                     <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
@@ -130,8 +130,8 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-img">
-                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={300} height={386} sizes="(max-width: 768px) 100vw, 300px" />
-                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={300} height={386} sizes="(max-width: 768px) 100vw, 300px" />
+                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
+                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
                   <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="img" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import './globals.css' // يمكنك تركه أو حذفه
 import Script from 'next/script'
+import { spaceGrotesk } from '../lib/fonts'
 
 // استيراد ملفات CSS الخاصة بالقالب
 import '../public/assets/css/bootstrap.min.css';
@@ -26,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sv" suppressHydrationWarning={true}>
-      <body>
+      <body className={spaceGrotesk.className}>
         {children}
         
         {/* تحميل ملفات الجافاسكريبت */}

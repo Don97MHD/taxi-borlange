@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Företagstaxi Borlänge | Res på Faktura | Dala Taxi Borlänge',
@@ -34,8 +35,8 @@ export default function BusinessTaxi() {
             <div className="col-lg-6">
               <div className="about-img">
                 {/* Using a generic image from assets based on previous code */}
-                <img className="about-img1 wow fade-in-right" src="/assets/img/about-1.webp" alt="Business Taxi" />
-                <figure className="round-text"><img src="/assets/img/experience-text-round.webp" alt="experience" /></figure>
+                <Image className="about-img1 wow fade-in-right" src="/assets/img/about-1.webp" alt="Business Taxi" width={240} height={386} sizes="(max-width: 768px) 100vw, 240px" />
+                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={200} height={200} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
             </div>
           </div>

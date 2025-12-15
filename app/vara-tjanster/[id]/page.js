@@ -48,7 +48,7 @@ export default async function ServiceDetails({ params }) {
             <div className="col-lg-8 sm-padding">
               <div className="service-details-info">
                 {/* الصورة التفصيلية */}
-                <Image src={service.detailImage} alt={service.title} className="mb-40" width={800} height={500} sizes="(max-width: 768px) 100vw, 800px" />
+                <Image src={service.detailImage} alt={service.title} className="mb-40" width={388} height={259} sizes="(max-width: 768px) 100vw, 388px" />
                 
                 {/* العنوان الفرعي */}
                 <h2>{service.title} – Din Garanterade Anslutning!</h2>
