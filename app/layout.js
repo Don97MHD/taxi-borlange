@@ -34,14 +34,14 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/vendor/jquary-3.6.0.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" strategy="beforeInteractive" />
          <Script src="/assets/js/vendor/jquery.ajaxchimp.min.js" strategy="afterInteractive" />
-        <Script src="/assets/js/vendor/bootstrap.min.js" />
-        <Script src="/assets/js/vendor/popper.min.js" />
-        <Script src="/assets/js/vendor/swiper.min.js" />
-        <Script src="/assets/js/vendor/jquery.datetimepicker.full.js" />
-        <Script src="/assets/js/vendor/jquery.nice-select.min.js" />
-        <Script src="/assets/js/vendor/venobox.min.js" />
-        <Script src="/assets/js/vendor/smooth-scroll.js" />
-        <Script src="/assets/js/vendor/wow.min.js" />
+        <Script src="/assets/js/vendor/bootstrap.min.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/popper.min.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/swiper.min.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/jquery.datetimepicker.full.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/jquery.nice-select.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/vendor/venobox.min.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/smooth-scroll.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/wow.min.js" strategy="lazyOnload" />
         
         {/* ملف main.js يحتوي على التفاعل الرئيسي */}
         <Script src="/assets/js/main.js" strategy="lazyOnload" />

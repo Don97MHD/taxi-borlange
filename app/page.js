@@ -33,7 +33,15 @@ export default function Home() {
               <div className="swiper-slide">
                 {/* ... الصورة ... */}
                 <div className="slider-img">
-                  <img src="/assets/img/slider-bg.webp" alt="Dala Taxi Borlänge" className="kenburns" style={{ animationDuration: '12000ms' }} />
+                  <img 
+  src="/assets/img/slider-bg.webp" 
+  alt="Dala Taxi Borlänge" 
+  className="kenburns" 
+  width="1920" 
+  height="940"
+  fetchPriority="high" // هذا هو السطر السحري للسرعة
+  style={{ animationDuration: '12000ms', objectFit: 'cover' }} 
+/>
                 </div>
                 <div className="car-holder">
                    {/* ... السيارة ... */}
@@ -71,7 +79,15 @@ export default function Home() {
               {/* Slide 2 */}
               <div className="swiper-slide">
                 <div className="slider-img">
-                  <img src="/assets/img/slider-bg.webp" alt="img" className="kenburns" style={{ animationDuration: '12000ms' }} />
+                  <img 
+  src="/assets/img/slider-bg.webp" 
+  alt="Dala Taxi Borlänge" 
+  className="kenburns" 
+  width="1920" 
+  height="1080"
+  fetchPriority="high" // هذا هو السطر السحري للسرعة
+  style={{ animationDuration: '12000ms', objectFit: 'cover' }} 
+/>
                 </div>
                 <div className="car-holder">
                   <img src="/assets/img/car-1.webp" alt="car" data-animation="car-animation" data-duration="1.5s" />
@@ -345,15 +361,15 @@ export default function Home() {
                   <p>Vi erbjuder trygghet, komfort och fasta priser direkt i mobilen.</p>
                   <ul className="app-feature">
                     <li>
-                      <i><img className="feature-icon" src="/assets/img/icon-navigator.svg" alt="icon" /></i>
+                      <i><img className="feature-icon" src="/assets/img/icon-navigator.svg" alt="icon" width="50" height="50" /></i>
                       <h3>Enkelt att söka <br /> Taxi!</h3>
                     </li>
                     <li>
-                      <i><img className="feature-icon" src="/assets/img/icon-clock.svg" alt="icon" /></i>
+                      <i><img className="feature-icon" src="/assets/img/icon-clock.svg" alt="icon" width="50" height="50"/></i>
                       <h3>Snabb upphämtning <br /> Spara tid!</h3>
                     </li>
                     <li>
-                      <i><img className="feature-icon" src="/assets/img/icon-docs.svg" alt="icon" /></i>
+                      <i><img className="feature-icon" src="/assets/img/icon-docs.svg" alt="icon" width="50" height="50" /></i>
                       <h3>Inkluderade priser <br /> Njut av resan!</h3>
                     </li>
                   </ul>

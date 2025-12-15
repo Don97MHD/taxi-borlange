@@ -64,7 +64,7 @@ export default function Header() {
             <div className="mid-header-wrap">
               <div className="site-logo">
                 <Link href="/">
-                  <img src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge" />
+                  <img src="/assets/img/logo-dark.webp" alt="Dala Taxi Borlänge Logo" width="389" height="179"/>
                 </Link>
               </div>
               <ul className="header-info">
