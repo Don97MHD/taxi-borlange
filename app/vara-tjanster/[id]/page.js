@@ -87,7 +87,7 @@ export default async function ServiceDetails({ params }) {
 
                     {/* مربع الحجز (CTA) */}
                     <div className="cta-box mt-30 p-4" style={{backgroundColor: '#fff', borderLeft: '5px solid var(--main-color)', boxShadow: '0 5px 15px rgba(0,0,0,0.05)'}}>
-                      <h4 style={{fontSize: '22px'}}>{service.extraContent.ctaHeading}</div>
+                     <div className="section-subtitle">{service.extraContent.ctaHeading}</div>
                       <p>{service.extraContent.ctaText}</p>
                       <a href={`tel:${service.extraContent.phone.replace(/\s/g, '')}`} className="default-btn mt-2">
                          <i className="las la-phone"></i> Ring och Boka Tågtaxi: {service.extraContent.phone}

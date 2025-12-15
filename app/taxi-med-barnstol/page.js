@@ -25,7 +25,7 @@ export default function ChildSeat() {
                 {/* صورة تعبر عن الأمان أو العائلة */}
                 <img className="about-img1 wow fade-in-left" src="/assets/img/service-4.webp" alt="Taxi med barnstol" />
                 <div className="about-text-overlay" style={{position: 'absolute', bottom: '20px', left: '20px', background: 'white', padding: '15px', borderRadius: '5px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}}>
-                    <h4 style={{margin: 0, fontSize: '18px', fontWeight: 'bold'}}>Säkerhet Först</div>
+                    <div className="section-subtitle">Säkerhet Först</div>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function ChildSeat() {
                              <i className="las la-baby-carriage" style={{fontSize: '30px', color: '#ffc107', background: '#f9f9f9', padding: '10px', borderRadius: '50%'}}></i>
                         </div>
                         <div>
-                            <h4 style={{fontSize: '18px', fontWeight: 'bold'}}>Babyskydd</div>
+                           <div className="section-subtitle">Babyskydd</div>
                             <p>För de allra minsta (0-15 månader), monteras alltid bakåtvänt.</p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ export default function ChildSeat() {
                              <i className="las la-chair" style={{fontSize: '30px', color: '#ffc107', background: '#f9f9f9', padding: '10px', borderRadius: '50%'}}></i>
                         </div>
                         <div>
-                            <h4 style={{fontSize: '18px', fontWeight: 'bold'}}>Bakåtvänd Bilbarnstol</div>
+                           <div className="section-subtitle">Bakåtvänd Bilbarnstol</div>
                             <p>För barn upp till cirka 4-5 år, vilket är det säkraste sättet att resa.</p>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ export default function ChildSeat() {
                              <i className="las la-couch" style={{fontSize: '30px', color: '#ffc107', background: '#f9f9f9', padding: '10px', borderRadius: '50%'}}></i>
                         </div>
                         <div>
-                            <h4 style={{fontSize: '18px', fontWeight: 'bold'}}>Bälteskudde/Bältesstol</div>
+                            <div className="section-subtitle">Bälteskudde/Bältesstol</div>
                             <p>För äldre barn (från ca 4 år upp till 135 cm) som hjälper bilens bälte att sitta korrekt.</p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ export default function ChildSeat() {
                 
                 <hr className="my-4" />
                 
-                <h4 className="mb-3">Planerar du en resa?</div>
+                <h4 className="mb-3">Planerar du en resa?</h4>
                 <ul className="check-list">
                     <li className="mb-2"><i className="las la-arrow-right"></i> Ska ni till <Link href="/taxi-dalarna/borlange-leksand" style={{color: '#ffc107', fontWeight: 'bold'}}>Leksand Sommarland?</Link></li>
                     <li className="mb-2"><i className="las la-arrow-right"></i> Behöver ni en <Link href="/vara-tjanster/storbil-gruppresor" style={{color: '#ffc107', fontWeight: 'bold'}}>storbil</Link> för mycket packning?</li>

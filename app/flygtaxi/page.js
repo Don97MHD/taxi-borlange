@@ -30,7 +30,7 @@ export default function Flygtaxi() {
                 {/* استخدام صورة تعبر عن السفر/المطار - تأكد من وجود الصورة أو استبدلها */}
                 <img className="about-img1 wow fade-in-left" src="/assets/img/service-2.webp" alt="Flygtaxi" />
                 <div className="about-text-overlay" style={{position: 'absolute', bottom: '20px', left: '20px', background: 'white', padding: '15px', borderRadius: '5px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}}>
-                    <h4 style={{margin: 0, fontSize: '18px', fontWeight: 'bold'}}>0243-179 00</div>
+                    <div className="section-subtitle">0243-179 00</div>
                     <p style={{margin: 0, fontSize: '14px'}}>Ring och boka nu!</p>
                 </div>
               </div>

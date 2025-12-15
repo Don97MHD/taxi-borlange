@@ -35,7 +35,7 @@ export default function Contact() {
 
                 {/* زر الاتصال الكبير */}
                 <div className="cta-box mb-4 mt-4">
-                    <h4 style={{marginBottom: '15px'}}>För Snabbast Service:</div>
+                    <div className="section-subtitle">För Snabbast Service:</div>
                     <a href="tel:024317900" className="default-btn" style={{padding: '15px 30px', fontSize: '18px'}}>
                         <i className="las la-phone-volume"></i> Ring och Boka: 0243-179 00
                     </a>
