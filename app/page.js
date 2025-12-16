@@ -129,8 +129,8 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-img">
-                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={450} height={580} sizes="(max-width: 768px) 100vw, 240px" />
-                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={400} height={450} sizes="(max-width: 768px) 100vw, 240px" />
+                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={450} height={580} sizes="(max-width: 768px) 100vw, 225px" />
+                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={400} height={450} sizes="(max-width: 768px) 100vw, 200px" />
                   <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="img" width={187} height={187} sizes="(max-width: 768px) 100vw, 200px" /></figure>
                 </div>
               </div>

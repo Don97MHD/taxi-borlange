@@ -26,10 +26,14 @@
     }
     .about-img .about-img1 {
         transform: translate(-35px, -40px);
+         max-width: 225px;
+        max-height: 290px;
     }
     .about-img .about-img2 {
         right: 30px;
         bottom: -100px;
+        max-width: 200px;
+        max-height: 225px;
     }
     .service-bg {
         height: 496px;

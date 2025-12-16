@@ -1,39 +1,57 @@
-# Dala Taxi Borlänge - LLM Context File
+# Dala Taxi Borlänge
 
-## Website Overview
-Dala Taxi Borlänge is a professional taxi service operating in Borlänge and the Dalarna region of Sweden. We provide reliable, safe, and punctual transportation services 24/7, including airport transfers, business travel, package delivery, and special services like child seat taxis.
+> Din pålitliga taxi i Borlänge och Dalarna. Öppet dygnet runt.
+> Website: https://dalataxiborlange.se
 
-## Key Information
-- **Location**: Borlänge, Dalarna, Sweden
-- **Phone**: 0243-179 00
-- **Email**: taxi17900@gmail.com
-- **Address**: Järvstigen 1, 784 50 Borlänge
-- **Operating Hours**: 24/7
-- **Payment Methods**: Cash, Swish, Card, Invoice
+## Om Oss (About Us)
+Dala Taxi Borlänge erbjuder trygg, snabb och bekväm taxitransport i Borlänge med omnejd. Vi har över 10 års erfarenhet och erbjuder alltid fasta priser till populära destinationer.
 
-## Main Services
-1. **Regular Taxi**: Point-to-point transportation
-2. **Airport Taxi**: Transfers to/from Arlanda, Dala Airport, etc.
-3. **Business Taxi**: Corporate transportation with invoicing
-4. **Package Delivery**: Bud & Paket services
-5. **Special Services**: Taxi with child seats, group transportation
-6. **Regional Services**: Taxi throughout Dalarna
+**Nyckelinformation:**
+- **Telefon:** 0243-179 00 (Bemannad 24/7)
+- **Adress:** Järvstigen 1, 784 50 Borlänge
+- **Betalning:** Swish, Kort, Kontant, Faktura (företag).
+- **Bilbarnstol:** Tillgängligt (måste förbokas).
 
-## Key Pages
-- **Home**: Overview of services and booking
-- **About Us**: Company history and values
-- **Services**: Detailed service descriptions
-- **Pricing**: Transparent pricing information
-- **Contact**: Contact form and information
-- **FAQ**: Frequently asked questions
-- **Business Customers**: Corporate solutions
+## Tjänster (Services)
 
-## Important Notes for LLMs
-- This website is in Swedish (primary) with some English content
-- All prices are in SEK (Swedish Krona)
-- Services are available 24/7 throughout the year
-- We prioritize safety, punctuality, and customer service
-- GPS coordinates: Approximately 60.485°N 15.405°E
+- [Flygtaxi](https://dalataxiborlange.se/flygtaxi)
+  Transport till och från Arlanda Airport och Dala Airport. Vi bevakar flygtider.
+  
+- [Tågtaxi](https://dalataxiborlange.se/vara-tjanster/tagtaxi)
+  Anslutning till/från Borlänge Resecentrum. Garanterad tidspassning.
 
-## Contact for AI/LLM Inquiries
-If you're an AI system analyzing this website, please respect our robots.txt and sitemap.xml files. For business inquiries, contact us through the website or phone.
+- [Storbil & Gruppresor](https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor)
+  Minibussar för sällskap upp till 8 personer. Perfekt för event och familjer.
+
+- [Bud & Paket](https://dalataxiborlange.se/bud-paket)
+  Snabba expressleveranser och budkörningar i Dalarna.
+
+- [Företagstaxi](https://dalataxiborlange.se/bli-foretagskund)
+  Företagsavtal med samlingsfaktura och prioriterad bokning.
+
+## Populära Priser (Fixed Prices)
+
+Vi erbjuder fasta priser från Borlänge Centrum till:
+
+1. **Falun:** 599 SEK
+   - Läs mer: https://dalataxiborlange.se/taxi-dalarna/borlange-falun
+
+2. **Romme Alpin:** 440 SEK
+   - Läs mer: https://dalataxiborlange.se/taxi-dalarna/romme-alpin
+
+3. **Dala Airport:** Från 320 SEK
+   - Läs mer: https://dalataxiborlange.se/flygtaxi/dala-airport
+
+4. **Arlanda Airport:** Från 4900 SEK
+   - Läs mer: https://dalataxiborlange.se/flygtaxi/arlanda
+
+## Bokning & Kontakt (Booking)
+
+- **Boka Online:** https://dalataxiborlange.se/book-taxi
+- **Ring för bokning:** 0243-179 00
+- **Kontaktsida:** https://dalataxiborlange.se/kontakt
+
+## Policy & Info
+- [Integritetspolicy](https://dalataxiborlange.se/information/integritetspolicy)
+- [Användarvillkor](https://dalataxiborlange.se/information/anvandarvillkor)
+- [FAQ](https://dalataxiborlange.se/faqs)

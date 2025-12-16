@@ -118,7 +118,7 @@ export default function Header() {
             <div className="nav-menu-inner">
               <div className="site-logo">
                 <Link href="/">
-                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={180} height={60} sizes="(max-width: 768px) 150px, 194px" />
+                  <Image src="/assets/img/logo-dark.webp" alt="Logo" width={96} height={44} sizes="(max-width: 768px) 150px, 194px" />
                 </Link>
               </div>
               
