@@ -16,7 +16,7 @@
 
 .main-header {
     position: relative;
-    z-index: 2;
+    z-index: 10000;
 }
 
 .sticky-header {
@@ -467,7 +467,7 @@
         top: 0;
         display: block;
         transform: translateY(-100%);
-        z-index: 99;
+         z-index: 10000; 
     }
 
     .sticky-header .nav-menu-wrapper .site-logo {
@@ -585,7 +585,8 @@
         position: absolute;
         left: 0;
         top: 100%;
-        z-index: 999;
+        z-index: 9999;
+         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
     .nav-menu-inner {

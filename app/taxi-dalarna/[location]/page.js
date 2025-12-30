@@ -21,6 +21,27 @@ export async function generateMetadata({ params }) {
   };
 }
 
+// دالة مساعدة لتحويل النص (link: ...) إلى رابط حقيقي
+const renderAnswer = (text) => {
+  if (!text.includes('(link:')) {
+    return text;
+  }
+
+  // نقسم النص بناءً على كلمة (link:
+  const parts = text.split('(link:');
+  const mainText = parts[0];
+  const url = parts[1].replace(')', '').trim(); // تنظيف الرابط من القوس الأخير والمسافات
+
+  return (
+    <>
+      {mainText} 
+      <a href={url} style={{ color: '#ff9900', textDecoration: 'underline', fontWeight: 'bold' }}>
+        Klicka här för att läsa mer
+      </a>
+    </>
+  );
+};
+
 // 2. Main Page Component
 export default async function TaxiLocationPage({ params }) {
   const { location } = await params;
@@ -59,7 +80,7 @@ export default async function TaxiLocationPage({ params }) {
         </div>
       </section>
 
-      {/* Special Section (e.g., Dalhalla) - يظهر فقط إذا كانت البيانات موجودة */}
+      {/* Special Section */}
       {data.specialSection && (
         <section className="service-section bg-grey padding">
           <div className="container">
@@ -87,7 +108,6 @@ export default async function TaxiLocationPage({ params }) {
               ))}
             </div>
 
-            {/* زر الاتصال الخاص بهذا القسم */}
             {data.specialSection.ctaText && (
                <div className="text-center mt-4">
                   <a href={`tel:${data.specialSection.ctaPhone}`} className="default-btn">
@@ -99,7 +119,7 @@ export default async function TaxiLocationPage({ params }) {
         </section>
       )}
 
-      {/* Features / Why Choose Us Section */}
+      {/* Features Section */}
       <section className="feature-section padding">
          <div className="container">
             <SectionHeading 
@@ -153,7 +173,8 @@ export default async function TaxiLocationPage({ params }) {
                         data-bs-parent="#faq-accordion"
                     >
                       <div className="accordion-body">
-                        <p>{faq.answer}</p>
+                        {/* هنا نستخدم الدالة الجديدة لمعالجة النص والرابط */}
+                        <p>{renderAnswer(faq.answer)}</p>
                       </div>
                     </div>
                   </div>

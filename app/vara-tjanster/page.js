@@ -48,9 +48,9 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="https://dalataxiborlange.se/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
+                  <h3><Link href="/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
                   <p>Starta och avsluta din resa på bästa möjliga sätt. Vi erbjuder punktliga och bekväma transporter till regionens flygplatser med fasta priser.</p>
-                  <Link href="https://dalataxiborlange.se/flygtaxi/" className="read-more">Läs mer</Link>
+                  <Link href="/flygtaxi/" className="read-more">Läs mer</Link>
                 </div>
               </div>
             </div>
@@ -67,9 +67,9 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="https://dalataxiborlange.se/vara-tjanster/tagtaxi/">Tågtaxi Borlänge</Link></h3>
+                  <h3><Link href="/vara-tjanster/tagtaxi/">Tågtaxi Borlänge</Link></h3>
                   <p>Missa aldrig ett tåg igen. Med vår tågtaxiservice kan du vara säker på att du anländer till Borlänge resecentrum i god tid.</p>
-                  <Link href="https://dalataxiborlange.se/vara-tjanster/tagtaxi/" className="read-more">Läs mer</Link>
+                  <Link href="/vara-tjanster/tagtaxi/" className="read-more">Läs mer</Link>
                 </div>
               </div>
             </div>
@@ -86,9 +86,9 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor/">Storbil & Gruppresor</Link></h3>
+                  <h3><Link href="/vara-tjanster/storbil-gruppresor/">Storbil & Gruppresor</Link></h3>
                   <p>Reser ni som en familj, med vänner eller kollegor? Våra rymliga bilar har plats för upp till 8 passagerare. Perfekt för utflykter.</p>
-                  <Link href="https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor/" className="read-more">Läs mer</Link>
+                  <Link href="/vara-tjanster/storbil-gruppresor/" className="read-more">Läs mer</Link>
                 </div>
               </div>
             </div>
@@ -104,9 +104,9 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="https://dalataxiborlange.se/bli-foretagskund/">Företagstaxi</Link></h3>
+                  <h3><Link href="/bli-foretagskund/">Företagstaxi</Link></h3>
                   <p>Vi är en pålitlig transportpartner för ditt företag. Representativa bilar, prioriterad service och smidig månadsfakturering.</p>
-                  <Link href="https://dalataxiborlange.se/bli-foretagskund/" className="read-more">Läs mer</Link>
+                  <Link href="/bli-foretagskund/" className="read-more">Läs mer</Link>
                 </div>
               </div>
             </div>
@@ -122,27 +122,28 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="https://dalataxiborlange.se/bud-paket/">Bud & Paket</Link></h3>
+                  <h3><Link href="/bud-paket/">Bud & Paket</Link></h3>
                   <p>När det är bråttom. Vår budservice är det snabbaste och säkraste sättet att transportera dokument och paket i Dalarna.</p>
-                  <Link href="https://dalataxiborlange.se/bud-paket/" className="read-more">Läs mer</Link>
+                  <Link href="/bud-paket/" className="read-more">Läs mer</Link>
                 </div>
               </div>
             </div>
 
             {/* Service Item 6: Special / Contact */}
+         {/* Service Item: Seniortaxa */}
             <div className="col-lg-4 col-sm-6 padding-15">
               <div className="service-item">
                 <div className="service-thumb">
-                  <Image src="/assets/img/service-5.webp" alt="Special" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+                  <Image src="/assets/img/service-1.webp" alt="Seniortaxa" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                   <div className="service-shape-wrap">
                     <div className="service-shape"></div>
                   </div>
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="https://dalataxiborlange.se/kontakt/">Annan Transport?</Link></h3>
-                  <p>Har du särskilda önskemål eller behov av en skräddarsydd transportlösning? Vi gör alltid vårt yttersta för att hjälpa dig.</p>
-                  <Link href="https://dalataxiborlange.se/kontakt/" className="read-more">Kontakta oss</Link>
+                  <h3><Link href="/vara-tjanster/seniortaxa">Seniortaxa (65+)</Link></h3>
+                  <p>Är du 65 år eller äldre? Åk billigare med oss. Vi erbjuder 20% rabatt på alla resor inom Borlänge.</p>
+                  <Link href="/vara-tjanster/seniortaxa" className="read-more">Läs mer</Link>
                 </div>
               </div>
             </div>
@@ -158,7 +159,7 @@ export default function Services() {
               <div className="cta-content">
                 <div className="section-subtitle">Hittar du inte vad du söker?</div>
                 <h2>Skräddarsydda Lösningar</h2>
-                <Link href="https://dalataxiborlange.se/kontakt/" className="default-btn">Kontakta Oss</Link>
+                <Link href="/kontakt/" className="default-btn">Kontakta Oss</Link>
               </div>
             </div>
             <div className="col-lg-5">

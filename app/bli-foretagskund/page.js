@@ -126,10 +126,10 @@ export default function BusinessTaxi() {
                         <h2>Våra Företagstjänster Passar Perfekt För:</h2>
                     </div>
                     <ul className="check-list">
-                        <li><i className="las la-check-circle"></i><Link href="https://dalataxiborlange.se/flygtaxi/">Resor till och från Arlanda och Dala Airport</Link></li>
+                        <li><i className="las la-check-circle"></i><Link href="/flygtaxi/">Resor till och från Arlanda och Dala Airport</Link></li>
                         <li><i className="las la-check-circle"></i>Transport av kunder, gäster och konsulter</li>
                         <li><i className="las la-check-circle"></i>Resor mellan kontor, möten och konferenser</li>
-                        <li><i className="las la-check-circle"></i><Link href="https://dalataxiborlange.se/bud-paket/">Snabba och säkra bud- och paketleveranser</Link></li>
+                        <li><i className="las la-check-circle"></i><Link href="/bud-paket/">Snabba och säkra bud- och paketleveranser</Link></li>
                         <li><i className="las la-check-circle"></i>Personaltransport vid evenemang eller sena arbetspass</li>
                     </ul>
                 </div>

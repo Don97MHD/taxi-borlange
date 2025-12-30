@@ -33,7 +33,7 @@
         }
 
         if ($(window).width() > 992) {
-            stickyHeader();
+          //  stickyHeader();
         }
 
         // Mobile Menu

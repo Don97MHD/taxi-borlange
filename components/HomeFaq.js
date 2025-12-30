@@ -24,7 +24,7 @@ export default function HomeFaq() {
         </h3>
         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq-accordion">
           <div className="accordion-body">
-            <p>Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. <a href="https://dalataxiborlange.se/taxi-med-barnstol/">Läs mer om resor med barn</a></p>
+            <p>Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. <a href="/taxi-med-barnstol/">Läs mer om resor med barn</a></p>
           </div>
         </div>
       </div>

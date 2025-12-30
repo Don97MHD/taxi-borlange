@@ -123,7 +123,7 @@ export default async function ServiceDetails({ params }) {
                 <div className="banner-info">
                   <Link href="/">
                     {/* تأكد من مسار اللوجو */}
-                    <Image className="logo" src="/assets/img/logo-light.webp" alt="logo" width={389} height={179} sizes="(max-width: 768px) 200px, 389px" />
+                    <Image className="logo" src="/assets/img/logo-dark.webp" alt="logo" width={389} height={150} sizes="(max-width: 768px) 200px, 389px" />
                   </Link>
                   <h3>Res tryggt med <span>Dala Taxi!</span></h3>
                   <p>Alltid fasta priser och bästa service i Borlänge.</p>

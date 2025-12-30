@@ -1,321 +1,554 @@
 export const taxiDalarnaData = [
-  // ... (أي بيانات سابقة)
-
+  // 1. Romme Alpin
   {
-    id: "borlange-rattvik", // الرابط
-    title: "Taxi Borlänge till Rättvik",
-    subtitle: "Fast Pris",
+    id: "romme-alpin", // الرابط سيكون: /taxi-dalarna/romme-alpin
+    title: "Taxi Borlänge - Romme Alpin 440 kr", // التايتل يحتوي السعر والكلمة المفتاحية
+    subtitle: "Fast Pris 440 kr",
     
     // SEO
-    seoTitle: "Taxi Borlänge till Rättvik & Dalhalla | Fast Pris",
-    seoDescription: "Boka taxi från Borlänge till Rättvik och Dalhalla med Dala Taxi. Vi erbjuder fasta priser och trygg transport till och från konserter. Boka din resa idag!",
+    seoTitle: "Taxi Borlänge - Romme Alpin 440 kr | Fast Pris & Boka",
+    seoDescription: "Boka Taxi från Borlänge till Romme Alpin för 440 kr fast pris. Vi erbjuder säker transport, barnstolar och plats för skidutrustning. Ring 0243-179 00.",
 
     // Header Image
-    headerImage: "/assets/img/post-2.webp", // صورة مناسبة من الملفات الموجودة
+    headerImage: "/assets/img/service-3.webp", // صورة معبرة (الثلج/التزلج إذا توفرت)
 
     // Intro Section
-    introTitle: "Taxi från Borlänge till Rättvik & Dalhalla",
-    introText: "Planerar du en resa till vackra Rättvik eller en magisk konsertkväll på Dalhalla? Dala Taxi Borlänge erbjuder en bekväm och pålitlig transportlösning direkt från din dörr i Borlänge. Slipp oron för parkering, tidtabeller och transport hem sent på natten. Med oss kan du fokusera helt på att njuta av din upplevelse, medan vi tar hand om resan på ett säkert och professionellt sätt.",
+    introTitle: "Taxi till Romme Alpin – Fast Pris 440 kr",
+    introText: "Ska du till Romme Alpin för en dag i skidbacken? Dala Taxi Borlänge erbjuder det smidigaste sättet att ta sig dit. Vi kör dig från Borlänge direkt till anläggningen för ett fast pris på 440 kr. Slipp krånglet med parkering och kalla bilar – vi har plats för både dig och din skidutrustning.",
 
-    // Special Section (Dalhalla - خاص بهذه الصفحة)
-    // وضعنا هذا القسم كـ "specialSection" لكي يظهر فقط في الصفحات som تحتاج تصميم خاص
-    specialSection: {
-      title: "Trygg Taxi till och från Dalhalla",
-      description: "En konsert på Dalhalla är en oförglömlig upplevelse. Låt inte logistiken bli ett bekymmer. Vi är experter på att köra till och från evenemang på Dalhalla.",
-      items: [
-        {
-          title: "Planerad Resa",
-          text: "Vi ser till att ni är framme i god tid innan konserten börjar."
-        },
-        {
-          title: "Förbokad Hemresa",
-          text: "Det viktigaste av allt – vi finns på plats och väntar på er när konserten är slut. Ni behöver inte leta efter transport i mörkret bland tusentals andra besökare."
-        },
-        {
-          title: "Res Tillsammans",
-          text: "Ska ni gå med vänner? Boka en storbil och res som ett sällskap.",
-          linkText: "Läs mer om storbilar",
-          linkUrl: "/vara-tjanster/storbil-gruppresor"
-        }
-      ],
-      ctaText: "Boka Taxi till Dalhalla: 0243-179 00",
-      ctaPhone: "024317900"
-    },
-
-    // Why Choose Us Section (Features)
-    featuresTitle: "Varför Boka Din Rättviks Taxi Med Oss?",
-    features: [
-      {
-        icon: "las la-tag",
-        title: "Fast Pris till Rättvik",
-        text: "Kontakta oss för att få ett fast och konkurrenskraftigt pris för din resa mellan Borlänge och Rättvik. Du vet alltid kostnaden i förväg."
-      },
-      {
-        icon: "las la-door-open",
-        title: "Bekvämlighet från Dörr till Dörr",
-        text: "Vi hämtar dig vid din adress och kör dig direkt till din destination i Rättvik, oavsett om det är en sommarstuga, ett hotell eller Långbryggan."
-      },
-      {
-        icon: "las la-clock",
-        title: "Flexibilitet för Dina Planer",
-        text: "Oavsett om du behöver en tidig morgontransport eller en sen kvällsresa, anpassar vi oss efter dina behov. Vår service är tillgänglig dygnet runt."
-      }
-    ],
-
-    // FAQ Section
-    faqs: [
-      {
-        question: "Vad kostar en taxi från Borlänge till Rättvik?",
-        answer: "Priset varierar något beroende på exakt adress och tidpunkt. Ring oss för att få ett exakt fast pris för just din resa."
-      },
-      {
-        question: "Hur lång tid tar resan?",
-        answer: "En resa mellan centrala Borlänge och Rättvik tar normalt cirka en timme, beroende på trafik."
-      },
-      {
-        question: "Kan vi boka en returresa senare på natten?",
-        answer: "Absolut. Det är vår specialitet, särskilt för Dalhalla-besökare. Förboka din returresa för att garantera att en bil väntar på dig."
-      }
-    ]
-  },
-  {
-    id: "borlange-leksand",
-    title: "Taxi Borlänge till Leksand & Tällberg",
-    subtitle: "Fast Pris",
-
-    // SEO
-    seoTitle: "Taxi Borlänge till Leksand & Tällberg | Fast Pris",
-    seoDescription: "Boka taxi från Borlänge till Leksand eller Tällberg med Dala Taxi. Vi erbjuder fasta priser för en bekväm och säker resa till Sommarland eller ditt hotell.",
-
-    // Header Image (استخدمنا صورة post-3 الموجودة في القائمة الرئيسية لهذه الوجهة)
-    headerImage: "/assets/img/post-3.webp",
-
-    // Intro Section
-    introTitle: "Taxi från Borlänge till Leksand & Tällberg",
-    introText: "Planerar du en resa till hjärtat av Siljansbygden? Dala Taxi Borlänge erbjuder en förstklassig och bekväm transportservice direkt från Borlänge till Leksand och det natursköna Tällberg. Oavsett om målet är Leksand Sommarland med familjen, ett traditionellt midsommarfirande eller en avkopplande weekend på ett av Tällbergs anrika hotell, ser vi till att din resa blir en angenäm del av upplevelsen.",
-
-    // Special Section (استخدامات التاكسي في ليكساند)
-    specialSection: {
-      title: "Perfekt Transport för Alla Besök i Leksand",
-      description: "", // لا يوجد وصف فرعي لهذا القسم في النص الأصلي، يمكن تركه فارغاً
-      items: [
-        {
-          title: "Taxi till Leksand Sommarland",
-          text: "Gör resan till Sommarland enkel för hela familjen. Lämna bilen hemma och låt oss sköta körningen. Vi har gott om plats för både familj och packning.",
-          linkText: "Boka gärna en storbil",
-          linkUrl: "/vara-tjanster/storbil-gruppresor"
-        },
-        {
-          title: "Besök i Tällberg",
-          text: "Upplev den unika atmosfären i Tällberg utan att oroa dig för transporten. Vi kör dig direkt till ditt hotell, spa eller restaurang, så att du kan koppla av från första stund."
-        },
-        {
-          title: "Evenemang och Hockey",
-          text: "Ska du på en hockeymatch i Tegera Arena eller något annat evenemang i Leksand? Boka din transport med oss för att vara säker på att komma fram i tid och ha en trygg resa hem."
-        }
-      ],
-      ctaText: "Begär Fast Pris till Leksand: 0243-179 00",
-      ctaPhone: "024317900"
-    },
-
-    // Features Section (المميزات)
-    featuresTitle: "Res Bekvämt till Fast Pris",
-    features: [
-      {
-        icon: "las la-wallet",
-        title: "Inga Dolda Avgifter",
-        text: "Priset vi kommer överens om är det som gäller. Inga överraskningar."
-      },
-      {
-        icon: "las la-door-open",
-        title: "Dörr-till-Dörr Service",
-        text: "Vi hämtar dig vid din dörr och kör dig direkt till din destination i Leksand eller Tällberg."
-      },
-      {
-        icon: "las la-clock",
-        title: "Flexibla Tider",
-        text: "Vi anpassar oss efter ditt schema, dygnet runt. Kontakta oss för ett prisförslag."
-      }
-    ],
-
-    // FAQ Section
-    faqs: [
-      {
-        question: "Vad kostar en taxi från Borlänge till Leksand?",
-        answer: "Priset kan variera beroende på exakt destination (Leksand centrum, Tällberg etc.). Vi rekommenderar att du ringer oss för att få ett korrekt fast pris."
-      },
-      {
-        question: "Hur lång är restiden?",
-        answer: "Resan från Borlänge till Leksand tar vanligtvis mellan 45 och 60 minuter, beroende på trafik och väglag."
-      },
-      {
-        question: "Kan vi boka för ett större sällskap?",
-        answer: "Absolut. Våra storbilar passar perfekt för grupper och familjer. Vänligen boka i god tid för att garantera tillgänglighet."
-      }
-    ]
-  },
-  // 1. Taxi Borlänge till Falun (تحديث البيانات الفارغة السابقة)
-  {
-    id: "borlange-falun",
-    title: "Taxi Borlänge till Falun",
-    subtitle: "Fast Pris 599 kr",
-
-    // SEO
-    seoTitle: "Taxi Borlänge Falun | Fast Pris 599 kr | Boka nu",
-    seoDescription: "Boka taxi mellan Borlänge och Falun till fast pris 599 kr. Dala Taxi erbjuder en snabb, säker och bekväm resa dygnet runt. Ring och boka din resa!",
-
-    // Header Image
-    headerImage: "/assets/img/service-5.webp", // صورة مناسبة
-
-    // Intro Section
-    introTitle: "Taxi Borlänge – Falun till Fast Pris: 599 kr",
-    introText: "Res smidigt, snabbt och ekonomiskt mellan Borlänge och Falun. Dala Taxi Borlänge är stolta över att kunna erbjuda ett oslagbart fast pris på endast 599 kr för resor mellan städernas centrum. Glöm osäkerheten med rullande taxameter och dyra alternativ. Med oss får du en bekväm dörr-till-dörr-service till en kostnad du kan lita på, dygnet runt.",
-
-    // Special Section (Ditt Fasta Pris)
-    specialSection: {
-      title: "Ditt Fasta Pris: 599 kr",
-      description: "Vi har gjort det enkelt. För en vanlig taxi (1-4 passagerare) mellan centrala Borlänge och centrala Falun är priset alltid 599 kr.",
-      items: [
-        {
-          title: "Inga Dolda Avgifter",
-          text: "Priset är fast och transparent."
-        },
-        {
-          title: "Gäller Alla Dagar",
-          text: "Samma låga pris oavsett veckodag."
-        },
-        {
-          title: "Förutsägbar Kostnad",
-          text: "Perfekt för både privata resor och företagsresor.",
-          linkText: "Läs mer om företagskund",
-          linkUrl: "/bli-foretagskund"
-        }
-      ],
-      ctaText: "Boka Resa för 599 kr: 0243-179 00",
-      ctaPhone: "024317900"
-    },
-
-    // Features Section
-    featuresTitle: "Varför Välja Taxi Mellan Borlänge och Falun?",
-    features: [
-      {
-        icon: "las la-stopwatch",
-        title: "Snabbare än Offentlig Transport",
-        text: "Medan buss och tåg följer tidtabeller och kräver byten, kör vi dig direkt från din startadress till din slutdestination. Du sparar värdefull tid."
-      },
-      {
-        icon: "las la-smile",
-        title: "Bekvämt och Stressfritt",
-        text: "Luta dig tillbaka i våra rena och moderna bilar. Oavsett om du ska till ett viktigt möte eller på en shoppingrunda, ser våra förare till att din resa blir lugn."
-      },
-      {
-        icon: "las la-hospital",
-        title: "Perfekt för Resor till Falu Lasarett",
-        text: "Har du en tid att passa på Falu lasarett? Vi erbjuder en trygg och pålitlig transport som ser till att du kommer fram i tid utan att oroa dig för parkering."
-      }
-    ],
-
-    // FAQ Section
-    faqs: [
-      {
-        question: "Vad ingår i det fasta priset?",
-        answer: "Det fasta priset på 599 kr gäller för en resa med standardbil (max 4 passagerare) mellan adresser inom Borlänge och Falu tätorter."
-      },
-      {
-        question: "Hur lång tid tar resan?",
-        answer: "Restiden är vanligtvis mellan 25-35 minuter, beroende på trafik och exakta adresser."
-      },
-      {
-        question: "Kan vi åka fler än 4 personer?",
-        answer: "Absolut! Om ni är ett större sällskap kan ni boka en av våra storbilar. Kontakta oss för ett fast pris för den."
-      }
-    ]
-  },
-
-  // 2. Romme Alpin (تحديث البيانات الفارغة السابقة)
-  {
-    id: "romme-alpin",
-    title: "Taxi Borlänge till Romme Alpin",
-    subtitle: "Fast Pris 440 kr",
-
-    // SEO
-    seoTitle: "Taxi Borlänge-Romme Alpin | 440 kr fast pris | Boka nu",
-    seoDescription: "Planerar du en skiddag? Boka taxi från Borlänge till Romme Alpin med Dala Taxi. Resan tar 15 minuter. Vi har plats för dig och din skidutrustning. Fasta priser för grupper!",
-
-    // Header Image
-    headerImage: "/assets/img/service-3.webp", // استخدمنا صورة service-3 (التي كانت لـ Romme Alpin)
-
-    // Intro Section
-    introTitle: "Smidigaste Vägen till Backen",
-    introText: "Få ut det mesta av din skiddag på Romme Alpin! Lämna bilen hemma och slipp krångel med kalla starter, halkiga vägar och fulla parkeringsplatser. Dala Taxi Borlänge erbjuder en bekväm och pålitlig transportservice direkt från din dörr i Borlänge till liftarna på Romme Alpin. Vi ser till att du och din utrustning kommer fram tryggt och utvilad, redo för en heldag i backen.",
-
-    // Special Section (Planera resan)
-    specialSection: {
-      title: "Planera Din Resa till Romme Alpin",
-      description: "För att säkerställa den bästa upplevelsen rekommenderar vi att du förbokar din resa, särskilt under helger och skollov då efterfrågan är hög.",
-      items: [
-        {
-          title: "Informera oss om utrustning",
-          text: "Meddela vid bokning om ni har med er skidor eller snowboards."
-        },
-        {
-          title: "Antal passagerare",
-          text: "Uppge hur många ni är så att vi kan tillhandahålla rätt storlek på fordonet."
-        },
-        {
-          title: "Fråga om fast pris",
-          text: "Kontakta oss för att få ett fast pris för din grupp."
-        }
-      ],
-      ctaText: "Boka Taxi till Romme Alpin: 0243-179 00",
-      ctaPhone: "024317900"
-    },
-
-    // Features Section
-    featuresTitle: "Varför Ta Taxi till Romme Alpin?",
+    // Features Section (Why Choose Us)
+    featuresTitle: "Varför välja oss till Romme Alpin?",
     features: [
       {
         icon: "las la-snowflake",
-        title: "Fokusera på Skidåkningen",
-        text: "Börja och avsluta dagen på ett avslappnat sätt. Du behöver inte oroa dig för väglaget eller att vara trött efter en lång dag i backen."
+        title: "Plats för Skidutrustning",
+        text: "Vi har bilar anpassade för vinterresor med utrymme för skidor och snowboards."
       },
       {
-        icon: "las la-skiing",
-        title: "Gott om Plats för Utrustning",
-        text: "Reser du med egna skidor, snowboards och pjäxor? Inga problem. Våra bilar har gott om utrymme.",
-        linkText: "Läs mer om storbilar",
-        linkUrl: "/vara-tjanster/storbil-gruppresor"
+        icon: "las la-tag",
+        title: "Fast Pris 440 kr",
+        text: "Inga överraskningar. Du vet exakt vad resan kostar innan du sätter dig i bilen."
       },
       {
-        icon: "las la-users",
-        title: "Perfekt för Grupper och Familjer",
-        text: "Res tillsammans med vänner eller familj i samma fordon. Det är både socialt och ekonomiskt."
-      },
-      {
-        icon: "las la-sync",
-        title: "Boka Tur och Retur",
-        text: "Planera hela dagens logistik i förväg. Boka din hemresa på en bestämd tid, så står vi redo att hämta er när liftarna stänger."
+        icon: "las la-clock",
+        title: "Passa Liftarna",
+        text: "Vi ser till att du kommer fram i tid så du får maximal tid i backen."
       }
     ],
 
-    // FAQ Section
+    // الأسئلة الشائعة (تم توحيدها وتخصيص سؤال الحجز)
     faqs: [
       {
-        question: "Vad kostar en taxi från Borlänge till Romme Alpin?",
-        answer: "Det kostar 440 kr."
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn på vår sida om taxi med barnstol." // لاحظ: الرابط سيتم معالجته في النص إذا أردت، أو يمكن تركه كنص عادي
       },
       {
-        question: "Vad är det för fast pris för taxi från Borlänge till Romme Alpin?",
-        answer: "Fast pris är 440 kr för en taxi från Borlänge till Romme Alpin."
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
       },
       {
-        question: "Hur lång tid för en taxi från Borlänge till Romme Alpin?",
-        answer: "Det tar cirka 15 minuter."
+        question: "Hur bokar jag en taxi till Romme Alpin?", // تم تخصيص اسم المدينة/الوجهة هنا
+        answer: "Man kan boka en taxi till Romme Alpin genom att ringa 0243-179 00 eller boka online via vår hemsida."
       },
       {
-        question: "Har ni större taxi bilar för att vi är mer än 4 passagerare?",
-        answer: "Ja absolut, har Dala Taxi Borlänge större bilar."
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare."
       }
-    ]
-  }
+    ],
+    
+    // زر الاتصال في أسفل الصفحة
+    specialSection: {
+        title: "Boka din skidresa idag",
+        description: "Säkra din transport till och från backen.",
+        items: [], // لا نحتاج عناصر إضافية هنا، فقط النص والزر
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+  {
+    id: "taxi-avesta", // الرابط: /taxi-dalarna/borlange-avesta
+    title: "Taxi Borlänge - Avesta 1599 kr",
+    subtitle: "Fast Pris 1599 kr",
+    
+    // SEO
+    seoTitle: "Taxi Borlänge - Avesta 1599 kr | Fast Pris",
+    seoDescription: "Boka Taxi från Borlänge till Avesta för 1599 kr fast pris. Bekväm och trygg resa med Dala Taxi Borlänge. Vi kör dygnet runt. Ring 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/service-5.webp", 
+
+    // Intro Section
+    introTitle: "Taxi Borlänge till Avesta – Fast Pris 1599 kr",
+    introText: "Behöver du en pålitlig taxi mellan Borlänge och Avesta? Vi erbjuder en smidig transporttjänst till ett fast pris på 1599 kr. Oavsett om du reser i arbetet, ska besöka Verket/Avesta Art eller hälsa på bekanta, ser vi till att du reser bekvämt och säkert hela vägen.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss för resan till Avesta?",
+    features: [
+      {
+        icon: "las la-tag",
+        title: "Fast Pris 1599 kr",
+        text: "Res utan stress över taxameter. Priset är fastställt till 1599 kr enkel väg mellan Borlänge och Avesta."
+      },
+      {
+        icon: "las la-business-time",
+        title: "Passar Företagsresor",
+        text: "Vi erbjuder fakturering och prioriterad service för våra företagskunder som pendlar mellan orterna."
+      },
+      {
+        icon: "las la-couch",
+        title: "Hög Komfort",
+        text: "Resan tar ca 45-50 minuter. Sitt bekvämt i våra moderna bilar och anländ utvilad."
+      }
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi från Borlänge till Avesta?",
+        answer: "Man kan boka en taxi från Borlänge till Avesta genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka din resa till Avesta",
+        description: "Vi finns tillgängliga dygnet runt för din beställning.",
+        items: [],
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+  {
+    id: "taxi-borlange-falun",
+    title: "Taxi Borlänge Falun 599 kr",
+    subtitle: "Fast Pris 599 kr",
+    seoTitle: "Taxi Borlänge Falun | Fast Pris 599 kr | Boka",
+    seoDescription: "Boka Taxi Borlänge Falun för 599 kr. Snabb pendling mellan städerna. Vi kör till Lasarettet och tåget. Ring 0243-179 00.",
+    headerImage: "/assets/img/service-2.webp",
+    introTitle: "Taxi mellan Borlänge och Falun",
+    introText: "Vi erbjuder ett oslagbart fast pris på 599 kr för resor mellan Borlänge och Falun. Perfekt för dig som vill resa smidigt och prisvärt.",
+    featuresTitle: "Din resa Borlänge - Falun",
+    features: [
+      { icon: "las la-tag", title: "Endast 599 kr", text: "Marknadens bästa fasta pris." },
+      { icon: "las la-hospital", title: "Falu Lasarett", text: "Vi kör dig tryggt till vården." },
+      { icon: "las la-exchange-alt", title: "Pendling", text: "Snabb transport mellan städerna." }
+    ],
+    faqs: [
+      { question: "Finns barnstol i taxin?", answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )" },
+      { question: "Hur kan man betala?", answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura." },
+      { question: "Hur bokar jag en taxi Borlänge Falun?", answer: "Man kan boka en taxi Borlänge Falun genom att ringa 0243-179 00 eller boka online." },
+      { question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?", answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare" }
+    ],
+    specialSection: { title: "Boka Taxi Borlänge Falun", description: "", items: [], ctaText: "Ring: 0243-179 00", ctaPhone: "024317900" }
+  },
+  // 4. Taxi Falun
+  {
+    id: "taxi-falun", // الرابط: /taxi-dalarna/taxi-falun
+    title: "Taxi Falun - Boka Tryggt & Enkelt", // عنوان يركز على كلمة Taxi Falun
+    subtitle: "Din Taxi i Falun & Dalarna",
+    
+    // SEO
+    seoTitle: "Taxi Falun | Boka Taxi i Falun | Fast Pris Borlänge 599 kr",
+    seoDescription: "Behöver du Taxi i Falun? Vi kör dig tryggt inom Falun och till Borlänge. Fast pris till Borlänge 599 kr. Boka enkelt på 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/service-2.webp", 
+
+    // Intro Section
+    introTitle: "Taxi i Falun – Vi kör dig dit du vill",
+    introText: "Befinner du dig i Falun och behöver en taxi? Dala Taxi Borlänge trafikerar hela regionen. Vi erbjuder snabba framkörningar i Falun och fasta priser för resor till Borlänge, tågstationen eller flygplatsen. Vi är det prisvärda och trygga valet för din resa.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss i Falun?",
+    features: [
+      {
+        icon: "las la-exchange-alt",
+        title: "Pendla Falun - Borlänge",
+        text: "Vi är experter på sträckan Falun-Borlänge. Res bekvämt för ett fast pris på 599 kr."
+      },
+      {
+        icon: "las la-train",
+        title: "Anslutning till Tåg",
+        text: "Ska du med tåget från Falun Resecentrum eller Borlänge C? Vi ser till att du hinner i tid."
+      },
+      {
+        icon: "las la-star",
+        title: "Hög Service",
+        text: "Våra förare hittar utmärkt i Falun och ger dig en service i toppklass."
+      }
+    ],
+
+    // FAQs (تم توحيد الأسئلة + تخصيص سؤال الحجز لفالون)
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi i Falun?", // تم التخصيص
+        answer: "Man kan boka en taxi i Falun genom att ringa 0243-179 00 eller boka online via vår hemsida."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka Taxi i Falun Nu",
+        description: "Ring oss för snabb service och fasta priser.",
+        items: [],
+        ctaText: "Ring Taxi: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+  // 5. Taxi Hedemora
+  {
+    id: "taxi-hedemora", // الرابط: /taxi-dalarna/borlange-hedemora
+    title: "Taxi Borlänge - Hedemora 1299 kr",
+    subtitle: "Fast Pris 1299 kr",
+    
+    // SEO
+    seoTitle: "Taxi Borlänge - Hedemora 1299 kr | Fast Pris | Boka",
+    seoDescription: "Boka Taxi från Borlänge till Hedemora för 1299 kr fast pris. Vi erbjuder trygg resa dygnet runt. Barnstol finns. Ring 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/service-5.webp", 
+
+    // Intro Section
+    introTitle: "Taxi Borlänge till Hedemora – Fast Pris 1299 kr",
+    introText: "Res bekvämt mellan Borlänge och Dalarnas äldsta stad, Hedemora. Dala Taxi Borlänge erbjuder en pålitlig och prisvärd taxitjänst för denna sträcka. Med vårt fasta pris på 1299 kr slipper du oroa dig för kostnaden och kan istället koppla av under resan.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss till Hedemora?",
+    features: [
+      {
+        icon: "las la-tag",
+        title: "Fast Pris 1299 kr",
+        text: "Inga dolda avgifter. Priset gäller för enkel resa med vanlig taxi (1-4 personer)."
+      },
+      {
+        icon: "las la-history",
+        title: "Dalarnas Äldsta Stad",
+        text: "Ska du besöka Hedemora för dess historia eller evenemang? Vi kör dig dit säkert."
+      },
+      {
+        icon: "las la-clock",
+        title: "Passa Tiden",
+        text: "Vi är kända för vår punktlighet. Boka i förväg så är bilen på plats när du behöver den."
+      }
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi till Hedemora?", // تم التخصيص
+        answer: "Man kan boka en taxi till Hedemora genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka Taxi till Hedemora",
+        description: "Ring oss dygnet runt för bokning.",
+        items: [],
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+  // 6. Taxi Leksand
+  {
+    id: "taxi-leksand", // الرابط: /taxi-dalarna/borlange-leksand
+    title: "Taxi Borlänge - Leksand 1299 kr",
+    subtitle: "Fast Pris 1299 kr",
+    
+    // SEO
+    seoTitle: "Taxi Borlänge - Leksand 1299 kr | Fast Pris | Boka",
+    seoDescription: "Boka Taxi från Borlänge till Leksand & Sommarland för 1299 kr fast pris. Bekväm och säker resa för hela familjen. Ring 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/post-3.webp", // صورة ليكساند إذا كانت متوفرة
+
+    // Intro Section
+    introTitle: "Taxi till Leksand – Fast Pris 1299 kr",
+    introText: "Planerar du ett besök till vackra Leksand vid Siljan? Vi erbjuder en direkt och bekväm taxiresa från Borlänge för ett fast pris på 1299 kr. Oavsett om du ska till Leksand Sommarland, en hockeymatch eller bara njuta av miljön, kör vi dig dit säkert.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss till Leksand?",
+    features: [
+      {
+        icon: "las la-tag",
+        title: "Fast Pris 1299 kr",
+        text: "Ett tydligt och fast pris för resan Borlänge-Leksand. Inga överraskningar."
+      },
+      {
+        icon: "las la-water", // رمز يعبر عن Sommarland/Water
+        title: "Till Sommarland",
+        text: "Perfekt för familjen. Vi kör er dörr till dörr så ni slipper krångel med parkering vid Sommarland."
+      },
+      {
+        icon: "las la-hockey-puck",
+        title: "Hockey & Event",
+        text: "Ska du på match i Tegera Arena? Boka din transport med oss för en smidig upplevelse."
+      }
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi till Leksand?", // تخصيص السؤال
+        answer: "Man kan boka en taxi till Leksand genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka Taxi till Leksand",
+        description: "Vi kör dig tryggt till Siljan.",
+        items: [],
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+
+  // 7. Taxi Ludvika
+  {
+    id: "taxi-ludvika", // الرابط: /taxi-dalarna/taxi-ludvika
+    title: "Taxi Borlänge - Ludvika 1299 kr",
+    subtitle: "Fast Pris 1299 kr",
+    
+    // SEO
+    seoTitle: "Taxi Borlänge - Ludvika 1299 kr | Fast Pris | Boka",
+    seoDescription: "Boka Taxi från Borlänge till Ludvika för 1299 kr fast pris. Pålitlig transport för privat- och företagskunder. Boka dygnet runt på 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/service-5.webp",
+
+    // Intro Section
+    introTitle: "Taxi Borlänge till Ludvika – Fast Pris 1299 kr",
+    introText: "Behöver du resa mellan Borlänge och Ludvika? Dala Taxi Borlänge erbjuder en professionell och punktlig taxitjänst för sträckan. Med vårt fasta pris på 1299 kr vet du alltid vad resan kostar i förväg. Vi är det självklara valet för både affärsresenärer och privatpersoner.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss till Ludvika?",
+    features: [
+      {
+        icon: "las la-tag",
+        title: "Fast Pris 1299 kr",
+        text: "Res tryggt och ekonomiskt med vårt fasta pris mellan Borlänge och Ludvika."
+      },
+      {
+        icon: "las la-industry",
+        title: "Affärsresor",
+        text: "Ludvika är ett viktigt industricentrum (Hitachi Energy m.fl.). Vi erbjuder smidiga lösningar och faktura för företag."
+      },
+      {
+        icon: "las la-clock",
+        title: "Punktlighet",
+        text: "Vi värdesätter din tid och ser till att du är på plats när du ska."
+      }
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi till Ludvika?", // تخصيص السؤال
+        answer: "Man kan boka en taxi till Ludvika genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka Taxi till Ludvika",
+        description: "Boka din resa enkelt och smidigt.",
+        items: [],
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+  // 8. Taxi Rättvik
+  {
+    id: "taxi-rattvik", // الرابط: /taxi-dalarna/taxi-rattvik
+    title: "Taxi Borlänge - Rättvik 1699 kr",
+    subtitle: "Fast Pris 1699 kr",
+    
+    // SEO
+    seoTitle: "Taxi Borlänge - Rättvik 1699 kr | Fast Pris | Boka",
+    seoDescription: "Boka Taxi från Borlänge till Rättvik för 1699 kr fast pris. Vi kör dig tryggt till Classic Car Week, Dalhalla och centrum. Ring 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/post-2.webp", // صورة مناسبة لريتفيك
+
+    // Intro Section
+    introTitle: "Taxi Borlänge till Rättvik – Fast Pris 1699 kr",
+    introText: "Ska du till vackra Rättvik vid Siljan? Dala Taxi Borlänge erbjuder en bekväm resa direkt till din destination för ett fast pris på 1699 kr. Vi är ditt bästa val för resor till evenemang som Classic Car Week, konserter i Dalhalla eller bara en avkopplande vistelse.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss till Rättvik?",
+    features: [
+      {
+        icon: "las la-tag",
+        title: "Fast Pris 1699 kr",
+        text: "Ett klart och tydligt pris för hela resan. Inga dolda avgifter tillkommer."
+      },
+      {
+        icon: "las la-music",
+        title: "Dalhalla & Event",
+        text: "Ska du på konsert? Vi ser till att du kommer fram i tid och hämtar dig när kvällen är slut (boka gärna tur och retur)."
+      },
+      {
+        icon: "las la-car",
+        title: "Komfort hela vägen",
+        text: "Resan tar ca 50-60 minuter. Njut av färden i våra moderna och säkra bilar."
+      }
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi till Rättvik?",
+        answer: "Man kan boka en taxi till Rättvik genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka Taxi till Rättvik",
+        description: "Säkra din transport till Siljan idag.",
+        items: [],
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
+
+  // 9. Taxi Säter
+  {
+    id: "taxi-sater", // الرابط: /taxi-dalarna/taxi-sater
+    title: "Taxi Borlänge - Säter 699 kr",
+    subtitle: "Fast Pris 699 kr",
+    
+    // SEO
+    seoTitle: "Taxi Borlänge - Säter 699 kr | Fast Pris | Boka",
+    seoDescription: "Boka Taxi från Borlänge till Säter för 699 kr fast pris. Snabb och smidig resa till Säterdalen eller Skönvik. Boka dygnet runt på 0243-179 00.",
+
+    // Header Image
+    headerImage: "/assets/img/service-1.webp",
+
+    // Intro Section
+    introTitle: "Taxi Borlänge till Säter – Fast Pris 699 kr",
+    introText: "Behöver du ta dig snabbt till grannkommunen Säter? Vi kör dig från Borlänge till Säter för endast 699 kr. Det är ett bekvämt och prisvärt alternativ till buss och tåg, med full flexibilitet dygnet runt.",
+
+    // Features Section
+    featuresTitle: "Varför välja oss till Säter?",
+    features: [
+      {
+        icon: "las la-tag",
+        title: "Lågt Fast Pris 699 kr",
+        text: "En mycket prisvärd taxiresa. För 699 kr tar vi dig direkt från dörr till dörr."
+      },
+      {
+        icon: "las la-tree",
+        title: "Till Säterdalen",
+        text: "Ska du besöka det vackra naturreservatet Säterdalen med familjen? Vi kör er ända fram till entrén."
+      },
+      {
+        icon: "las la-bolt",
+        title: "Snabb Framkörning",
+        text: "Eftersom Säter ligger nära Borlänge kan vi ofta erbjuda mycket snabb service på denna sträcka."
+      }
+    ],
+
+    // FAQs
+    faqs: [
+      {
+        question: "Finns barnstol i taxin?",
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+      },
+      {
+        question: "Hur kan man betala?",
+        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+      },
+      {
+        question: "Hur bokar jag en taxi till Säter?",
+        answer: "Man kan boka en taxi till Säter genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
+        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+      }
+    ],
+    
+    // CTA Section
+    specialSection: {
+        title: "Boka Taxi till Säter",
+        description: "En kort och smidig resa för ett lågt pris.",
+        items: [],
+        ctaText: "Ring och boka: 0243-179 00",
+        ctaPhone: "024317900"
+    }
+  },
 ];

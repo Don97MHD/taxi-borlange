@@ -104,4 +104,57 @@ export const servicesData = [
       phone: "0243-179 00"
     }
   },
+  {
+    id: "seniortaxa",
+    slug: "seniortaxa",
+    title: "Seniortaxa (65+)",
+    
+    // SEO
+    seoTitle: "Seniortaxa Borlänge | 20% Rabatt för Pensionärer | Taxi 65+",
+    seoDescription: "Res billigare med Dala Taxi Borlänge. Vi erbjuder 20% rabatt för dig som är 65 år eller äldre. Gäller alla resor inom Borlänge, dygnet runt.",
+
+    // Images (يمكنك تغيير الصورة لاحقاً)
+    image: "/assets/img/service-1.webp", 
+    detailImage: "/assets/img/service-1.webp",
+
+    // Main Description
+    description: "Vi på Dala Taxi Borlänge värnar om våra äldre. Därför erbjuder vi en förmånlig seniortaxa för dig som har fyllt 65 år. Det ska vara enkelt, tryggt och prisvärt att ta sig fram i vardagen, oavsett om det gäller ett läkarbesök, en tur till affären eller att hälsa på vänner. Med vår seniortaxa får du 20% rabatt på ordinarie pris.",
+
+    // Features Section
+    featuresTitle: "Fördelar med Seniortaxa",
+    features: [
+      { 
+        icon: "las la-percent", 
+        title: "20% Rabatt", 
+        text: "Du får hela 20% rabatt på ordinarie taxa (inklusive startavgift). Detta gäller dygnet runt, alla dagar i veckan." 
+      },
+      { 
+        icon: "las la-map-marker", 
+        title: "Inom Borlänge", 
+        text: "Erbjudandet gäller för alla taxiresor som utförs inom Borlänge kommun." 
+      },
+      { 
+        icon: "las la-user-shield", 
+        title: "Trygghet & Service", 
+        text: "Våra förare är hjälpsamma och ser till att du kommer tryggt från dörr till dörr. Vi hjälper gärna till med rollator eller kassar." 
+      },
+      { 
+        icon: "las la-phone-volume", 
+        title: "Ingen Förbokning", 
+        text: "Du behöver inte boka dagar i förväg. Ring oss när du vill åka och uppge 'Seniortaxa' vid bokningen." 
+      },
+    ],
+
+    // Extra Content
+    extraContent: {
+      heading: "Så här bokar du Seniortaxa",
+      text1: "Det är enkelt att nyttja rabatten. När du ringer till oss för att beställa din taxi, nämn bara att du vill åka med 'Seniortaxa' eller att du är pensionär.",
+      text2: "Chauffören kan komma att be om legitimation för att styrka åldern (65+).",
+      linkText: "Se våra övriga priser",
+      linkUrl: "/priser",
+      ctaHeading: "Boka din resa nu",
+      ctaText: "Ring oss på 0243-179 00 för att beställa din bil med seniorrabatt.",
+      phone: "0243-179 00"
+    }
+  },
 ];

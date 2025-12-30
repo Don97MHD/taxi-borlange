@@ -2,13 +2,15 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import HomeInteractive from '@/components/HomeInteractive';
 // استيراد المكونات الجديدة
 import SectionHeading from '@/components/SectionHeading';
 import BookingForm from '@/components/BookingForm';
 import CtaSection from '@/components/CtaSection';
 import HomeFaq from '@/components/HomeFaq';
 import ElfsightWidget from '@/components/ElfsightWidget';
+import LocationsSection from '@/components/LocationsSection';
+import LocalAreasSection from '@/components/LocalAreasSection';
 
 export const metadata = {
   title: 'Dala Taxi Borlänge | 0243 - 179 00',
@@ -123,34 +125,63 @@ export default function Home() {
           </div>
         </div>
 
-        {/* About Section */}
+{/* About Section + Booking Form + Images */}
         <section className="about-section padding">
           <div className="container">
-            <div className="row align-items-center">
-              <div className="col-md-6">
-                <div className="about-img">
-                  <Image className="about-img1 wow fade-in-left" data-wow-delay="200ms" src="/assets/img/about-1.webp" alt="img" width={450} height={580} sizes="(max-width: 768px) 100vw, 225px" />
-                  <Image className="about-img2 wow fade-in-bottom" data-wow-delay="400ms" src="/assets/img/about-2.webp" alt="img" width={400} height={450} sizes="(max-width: 768px) 100vw, 200px" />
-                  <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="img" width={187} height={187} sizes="(max-width: 768px) 100vw, 200px" /></figure>
-                </div>
+            <div className="row">
+              
+              {/* العمود الأول (يسار): فورم الحجز */}
+              <div className="col-lg-5 mb-5 mb-lg-0">
+                 {/* الفورم يأخذ كامل عرض العمود */}
+                 <BookingForm />
               </div>
-              <div className="col-md-6">
+
+              {/* العمود الثاني (يمين): الصور والنصوص */}
+              <div className="col-lg-7 ps-lg-5"> {/* ps-lg-5 تعطي مسافة فاصلة جميلة */}
+                
+                {/* 1. الصور (جعلناها فوق النص وبجانب بعضها) */}
+                <div className="row mb-4">
+                   <div className="col-6">
+                      <Image 
+                        className="wow fade-in-left"
+                        src="/assets/img/about-1.webp" 
+                        alt="Dala Taxi" 
+                        width={400} 
+                        height={500} 
+                        style={{width: '100%', height: 'auto', borderRadius: '8px', objectFit: 'cover'}} 
+                      />
+                   </div>
+                   <div className="col-6">
+                      <Image 
+                        className="wow fade-in-right"
+                        src="/assets/img/about-2.webp" 
+                        alt="Taxi Service" 
+                        width={400} 
+                        height={500} 
+                        style={{width: '100%', height: 'auto', borderRadius: '8px', objectFit: 'cover'}} 
+                      />
+                   </div>
+                </div>
+
+                {/* 2. النص (تحت الصور) */}
                 <SectionHeading 
                   align="left"
                   subtitle="Om Dala Taxi Borlänge"
                   title="Trygg & Pålitlig Transport i Hela Dalarna"
                   description="Vi är mer än bara en taxi i Borlänge; vi är din helhetslösning för persontransporter. Vårt engagemang för punktlighet, komfort säkerhet och exceptionell service har gjort oss till ett förstahandsval för både privatpersoner och företag. Med Dala Taxi Borlänge reser du alltid bekvämt och till ett konkurrenskraftigt pris."
                 />
-                <ul className="about-info wow fade-in-right" data-wow-delay="400ms">
+                
+                <ul className="about-info wow fade-in-up" data-wow-delay="200ms">
                   <li>
                     <h2><span>Beställ Taxi</span><a href="tel:024317900">0243-179 00</a></h2>
                   </li>
                 </ul>
+
               </div>
             </div>
           </div>
         </section>
-
+ <LocationsSection />
         {/* Service Section */}
         <section className="service-section bg-grey padding" style={{position: 'relative'}}>
           <Image src="/assets/img/bg-1.webp" fill alt="Background" className="service-bg" style={{objectFit: 'cover', objectPosition: 'top center', zIndex: -1, width: '100%', position: 'absolute', left: 0, top: 0}} sizes="(max-width: 768px) 100vw, 1920px" />
@@ -175,9 +206,9 @@ export default function Home() {
                         <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
-                        <h3><Link href="https://dalataxiborlange.se/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
+                        <h3><Link href="/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
                         <p>Starta taxiresan i Borlänge bekymmersfritt. Vi erbjuder punktliga transporter till och från regionens flygplatser till fasta priser.</p>
-                        <Link className="read-more" href="https://dalataxiborlange.se/flygtaxi/">Läs mer om Flygtaxi</Link>
+                        <Link className="read-more" href="/flygtaxi/">Läs mer om Flygtaxi</Link>
                       </div>
                     </div>
                   </div>
@@ -191,9 +222,9 @@ export default function Home() {
                         <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
-                        <h3><Link href="https://dalataxiborlange.se/vara-tjanster/tagtaxi/">Tågtaxi Borlänge</Link></h3>
+                        <h3><Link href="/vara-tjanster/tagtaxi/">Tågtaxi Borlänge</Link></h3>
                         <p>Säkerställ dig att du hinner med ditt tåg. Vi kör dig med taxi direkt till Borlänge resecentrum eller tåget med god marginal.</p>
-                        <Link className="read-more" href="https://dalataxiborlange.se/vara-tjanster/tagtaxi/">Läs mer om Tågtaxi</Link>
+                        <Link className="read-more" href="/vara-tjanster/tagtaxi/">Läs mer om Tågtaxi</Link>
                       </div>
                     </div>
                   </div>
@@ -207,25 +238,25 @@ export default function Home() {
                         <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
-                        <h3><Link href="https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor/">Storbil för Grupper</Link></h3>
+                        <h3><Link href="/vara-tjanster/storbil-gruppresor/">Storbil för Grupper</Link></h3>
                         <p>Reser ni i ett större sällskap? Boka en av våra rymliga bilar med plats för upp till 8 passagerare och bagage.</p>
-                        <Link className="read-more" href="https://dalataxiborlange.se/vara-tjanster/storbil-gruppresor/">Boka Storbil här</Link>
+                        <Link className="read-more" href="/vara-tjanster/storbil-gruppresor/">Boka Storbil här</Link>
                       </div>
                     </div>
                   </div>
 
-                  {/* Extra slide */}
+                {/* Service: Seniortaxa */}
                   <div className="swiper-slide">
-                    <div className="service-item">
+                    <div className="service-item wow fade-in-bottom" data-wow-delay="500ms">
                       <div className="service-thumb">
-                        <Image src="/assets/img/service-4.webp" alt="Alla tjänster" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+                        <Image src="/assets/img/service-1.webp" alt="Seniortaxa" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                         <div className="service-shape-wrap"><div className="service-shape"></div></div>
                         <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                       </div>
                       <div className="service-content">
-                        <h3><Link href="https://dalataxiborlange.se/vara-tjanster/">Alla våra tjänster</Link></h3>
-                        <p>Oavsett dina behov har vi en skräddarsydd lösning för dig i hela Dalarna.</p>
-                        <Link className="read-more" href="https://dalataxiborlange.se/vara-tjanster/">Se alla tjänster</Link>
+                        <h3><Link href="/vara-tjanster/seniortaxa">Seniortaxa (65+)</Link></h3>
+                        <p>Är du 65 år eller äldre? Vi erbjuder 20% rabatt på alla resor inom Borlänge.</p>
+                        <Link className="read-more" href="/vara-tjanster/seniortaxa">Läs mer</Link>
                       </div>
                     </div>
                   </div>
@@ -239,20 +270,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Booking Section */}
-        <section className="booking-section">
-          <div className="container">
-            <div className="row pos-relative padding">
-              <div className="col-lg-4">
-                <div className="booking-car wow fade-in-left" data-wow-delay="200ms"></div>
-              </div>
-              <div className="col-lg-8">
-                {/* تم استبدال الفورم الطويل بالمكون */}
-                <BookingForm />
-              </div>
-            </div>
-          </div>
-        </section>
+ 
 
         {/* Pricing Section */}
         <section className="pricing-section bg-grey bd-bottom padding">
@@ -288,13 +306,13 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="pricing-head">
-                        <h3><Link href="https://dalataxiborlange.se/taxi-dalarna/borlange-falun/">Borlänge till Falun</Link></h3>
+                        <h3><Link href="/taxi-dalarna/borlange-falun/">Borlänge till Falun</Link></h3>
                         <span className="location">Fast Pris</span>
                       </div>
                       <ul className="pricing-list">
                         <li>Vi erbjuder ett oslagbart fast pris för resor mellan Borlänge och Falun centrum.</li>
                         <li>Snabbt, smidigt och prisvärt.</li>
-                        <li><Link href="https://dalataxiborlange.se/taxi-dalarna/borlange-falun/" className="default-btn">Boka resa till Falun</Link></li>
+                        <li><Link href="/taxi-dalarna/borlange-falun/" className="default-btn">Boka resa till Falun</Link></li>
                       </ul>
                     </div>
                   </div>
@@ -313,13 +331,13 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="pricing-head">
-                                <h3><Link href="https://dalataxiborlange.se/taxi-dalarna/romme-alpin/">Borlänge till Romme Alpin</Link></h3>
+                                <h3><Link href="/taxi-dalarna/romme-alpin/">Borlänge till Romme Alpin</Link></h3>
                                 <span className="location">Fast Pris</span>
                             </div>
                             <ul className="pricing-list">
                                 <li>Låt oss ta hand om transporten till och från Romme Alpin.</li>
                                 <li>Vi har plats för både dig och din utrustning.</li>
-                                <li><Link href="https://dalataxiborlange.se/taxi-dalarna/romme-alpin/" className="default-btn">Boka till Romme Alpin</Link></li>
+                                <li><Link href="/taxi-dalarna/romme-alpin/" className="default-btn">Boka till Romme Alpin</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -338,13 +356,13 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="pricing-head">
-                                <h3><Link href="https://dalataxiborlange.se/taxi-dalarna/">Fler Destinationer</Link></h3>
+                                <h3><Link href="/taxi-dalarna/">Fler Destinationer</Link></h3>
                                 <span className="location">Dalarna</span>
                             </div>
                             <ul className="pricing-list">
                                 <li>Utforska fler destinationer i Dalarna med oss.</li>
                                 <li>Alltid fasta och konkurrenskraftiga priser.</li>
-                                <li><Link href="https://dalataxiborlange.se/taxi-dalarna/" className="default-btn">Se alla destinationer</Link></li>
+                                <li><Link href="/taxi-dalarna/" className="default-btn">Se alla destinationer</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -443,7 +461,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+<LocalAreasSection />
         {/* CTA Section - تم استبدالها بالمكون */}
         <CtaSection />
 
@@ -463,6 +481,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+         <HomeInteractive /> 
       </main>
       <Footer />
     </>

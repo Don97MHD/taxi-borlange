@@ -153,7 +153,7 @@ export default function PackageDelivery() {
                 </div>
                 
                 <div className="cta-business-link">
-                    <p>För <Link href="https://dalataxiborlange.se/bli-foretagskund/" style={{color: '#ffc107', textDecoration: 'underline'}}>företagskunder</Link> erbjuder vi även möjligheten att lägga budkörningar på er månadsfaktura.</p>
+                    <p>För <Link href="/bli-foretagskund/" style={{color: '#ffc107', textDecoration: 'underline'}}>företagskunder</Link> erbjuder vi även möjligheten att lägga budkörningar på er månadsfaktura.</p>
                 </div>
             </div>
         </div>
