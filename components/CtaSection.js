@@ -4,7 +4,8 @@ export default function CtaSection() {
       <div className="cta-men wow fade-in-bottom" data-wow-delay="200ms"></div>
       <div className="container">
         <div className="cta-content">
-          <h2>Ring Oss Nu <span>Boka Din Taxi</span> <br /> För Din Nästa Resa!</h2>
+                    <h2>Ring oss för <span>boka din taxi</span> <br /> i Borlänge</h2>
+
           <p>Vi erbjuder trygghet, komfort och fasta priser.</p>
           <div className="cta-call">
             <i className="las la-phone-volume"></i>

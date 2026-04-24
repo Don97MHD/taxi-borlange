@@ -48,7 +48,8 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="/flygtaxi/">Flygtaxi (Arlanda & Dala)</Link></h3>
+                  <h3><Link href="/flygtaxi/">Flygtaxi Borlänge (Arlanda & Dala Airport)</Link></h3>
+
                   <p>Starta och avsluta din resa på bästa möjliga sätt. Vi erbjuder punktliga och bekväma transporter till regionens flygplatser med fasta priser.</p>
                   <Link href="/flygtaxi/" className="read-more">Läs mer</Link>
                 </div>
@@ -122,7 +123,8 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="/bud-paket/">Bud & Paket</Link></h3>
+                  <h3><Link href="/bud-paket/">Bud Paket Taxi i Borlänge</Link></h3>
+
                   <p>När det är bråttom. Vår budservice är det snabbaste och säkraste sättet att transportera dokument och paket i Dalarna.</p>
                   <Link href="/bud-paket/" className="read-more">Läs mer</Link>
                 </div>
@@ -141,7 +143,8 @@ export default function Services() {
                   <div className="service-car"><Image src="/assets/img/car-1.webp" alt="car" width={700} height={439} sizes="(max-width: 768px) 100vw, 230px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} /></div>
                 </div>
                 <div className="service-content">
-                  <h3><Link href="/vara-tjanster/seniortaxa">Seniortaxa (65+)</Link></h3>
+                  <h3><Link href="/vara-tjanster/seniortaxa">Seniortaxi Borlänge (65+)</Link></h3>
+
                   <p>Är du 65 år eller äldre? Åk billigare med oss. Vi erbjuder 20% rabatt på alla resor inom Borlänge.</p>
                   <Link href="/vara-tjanster/seniortaxa" className="read-more">Läs mer</Link>
                 </div>

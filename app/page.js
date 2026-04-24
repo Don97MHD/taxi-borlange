@@ -58,7 +58,7 @@ export default function Home() {
                     <div data-animation="slide-in-top" data-duration="1.5s" data-delay="0.5s"></div>
                   </div>
                 </div>
-                <div className="slider-content-wrap d-flex align-items-center text-left">
+                <div className="slider-content-wrap d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-left">
                   <div className="container">
                     <div className="slider-content">
                       <div className="slider-caption medium"><div className="inner-layer"><div data-animation="fade-in-bottom" data-delay="0.3s">Din pålitliga taxi i Borlänge dygnet runt</div></div></div>
@@ -102,7 +102,7 @@ export default function Home() {
                     <div data-animation="slide-in-top" data-duration="1.5s" data-delay="0.5s"></div>
                   </div>
                 </div>
-                <div className="slider-content-wrap d-flex align-items-center text-left">
+                <div className="slider-content-wrap d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-left">
                   <div className="container">
                     <div className="slider-content">
                       <div className="slider-caption medium"><div className="inner-layer"><div data-animation="fade-in-bottom" data-delay="0.3s">Trygg & Pålitlig Transport</div></div></div>
@@ -117,11 +117,15 @@ export default function Home() {
               </div>
             </div>
             {/* Slider navigation buttons */}
-            <div className="slider-controls">
-              <div className="slider-control slider-button-prev"><span><i className="las la-long-arrow-alt-left"></i></span>Föreg</div>
-              <div className="slider-pagination"></div>
-              <div className="slider-control slider-button-next">Nästa<span><i className="las la-long-arrow-alt-right"></i></span></div>
-            </div>
+           <div className="slider-controls d-none d-lg-flex">
+  <div className="slider-control slider-button-prev">
+    <span><i className="las la-long-arrow-alt-left"></i></span>Föreg
+  </div>
+  <div className="slider-pagination"></div>
+  <div className="slider-control slider-button-next">
+    Nästa<span><i className="las la-long-arrow-alt-right"></i></span>
+  </div>
+</div>
           </div>
         </div>
 
@@ -164,12 +168,12 @@ export default function Home() {
                 </div>
 
                 {/* 2. النص (تحت الصور) */}
-                <SectionHeading 
-                  align="left"
-                  subtitle="Om Dala Taxi Borlänge"
-                  title="Trygg & Pålitlig Transport i Hela Dalarna"
-                  description="Vi är mer än bara en taxi i Borlänge; vi är din helhetslösning för persontransporter. Vårt engagemang för punktlighet, komfort säkerhet och exceptionell service har gjort oss till ett förstahandsval för både privatpersoner och företag. Med Dala Taxi Borlänge reser du alltid bekvämt och till ett konkurrenskraftigt pris."
-                />
+               <SectionHeading 
+  align="left"
+  subtitle="Om Dala Taxi Borlänge"
+  title="Trygg & Billig Taxi i Borlänge och hela Dalarna"
+  description="Vi är mer än bara en taxi i Borlänge. Vi har alltid billiga fasta priser. För boka taxi i Borlänge, går det alltid att ringa."
+/>
                 
                 <ul className="about-info wow fade-in-up" data-wow-delay="200ms">
                   <li>

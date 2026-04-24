@@ -40,7 +40,7 @@ export default function Flygtaxi() {
               <SectionHeading 
                 align="left"
                 subtitle="Flygtaxi Borlänge"
-                title="Pålitlig Taxi till Arlanda & Dala Airport"
+                title="Pålitlig Taxi från Borlänge till Arlanda Dala Airport"
                 description="En lyckad resa börjar med en stressfri start. Med Dala Taxis specialiserade flygtaxi service kan du vara säker på att din transport till och från flygplatsen är punktlig, bekväm och till ett konkurrenskraftigt fast pris."
               />
               <p className="mt-3">
@@ -167,7 +167,120 @@ export default function Flygtaxi() {
             </div>
         </div>
       </section>
+    {/* FAQ Section */}
+      <section className="blog-section bg-grey padding">
+        <div className="container">
+          <SectionHeading 
+            subtitle="FAQ"
+            title="Vanliga frågor"
+          />
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="accordion faq-accordion" id="faq-accordion-flygtaxi">
+                
+                {/* سؤال 1 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading1">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      1- Kör Dala Taxi Borlänge från Borlänge till olika flygplatser i landet?
+                    </button>
+                  </h3>
+                  <div id="collapse1" className="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Ja, Dala Taxi Borlänge kör till olika flygplatser till exempel Dala airport, Arlanda, Bromma flygplats</p>
+                    </div>
+                  </div>
+                </div>
 
+                {/* سؤال 2 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading2">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      2- Hur lång tid tar det att köra taxi från Borlänge till Stockholm?
+                    </button>
+                  </h3>
+                  <div id="collapse2" className="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Det tar 3 timmar resan med taxi från Borlänge till Stockholm</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* سؤال 3 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading3">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      3- Vad är det fasta priset att köra taxi från Borlänge till Stockholm?
+                    </button>
+                  </h3>
+                  <div id="collapse3" className="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Fasta priset är 4 900 kr att köra taxi från Borlänge till Stockholm</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* سؤال 4 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading4">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      4- Vad kostar att köra taxi från Ludvika till Arlanda eller Stockholm?
+                    </button>
+                  </h3>
+                  <div id="collapse4" className="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Det kostar 4 000 kr från Ludvika till Arlanda eller Stockholm</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* سؤال 5 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading5">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      5- Vad kostar en taxi från Falun till Arland eller Stockholm?
+                    </button>
+                  </h3>
+                  <div id="collapse5" className="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Det kostar 4 800 kr för en taxi från Falun till Arlanda eller Stockholm</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* سؤال 6 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading6">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                      6- Vad kostar taxi från Säter eller Hedemora till Arlanda eller Stockholm?
+                    </button>
+                  </h3>
+                  <div id="collapse6" className="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Taxi kostar 4 000 kr mellan Säter eller Hedemora till Arlanda eller Stockholm</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* سؤال 7 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading7">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                      7- Vad kostar taxi mellan Leksand eller Rättvik till Arlanda eller Stockholm?
+                    </button>
+                  </h3>
+                  <div id="collapse7" className="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#faq-accordion-flygtaxi">
+                    <div className="accordion-body">
+                      <p>Taxi kostar 4 900 kr från Leksand eller Rättvik till Arlanda eller Stockholm</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* CTA Section - المكون الجاهز */}
       <CtaSection />
 

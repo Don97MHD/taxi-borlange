@@ -61,10 +61,7 @@ export default function Header() {
         <Link href="/">Hem</Link>
       </li>
 
-      {/* 2. Om Oss */}
-      <li className={pathname === '/om-oss' ? 'active' : ''}>
-        <Link href="/om-oss">Om Oss</Link>
-      </li>
+    
       
       {/* 3. Tjänster (مع زر الموبايل) */}
       <li className={`dropdown_menu ${pathname.startsWith('/vara-tjanster') ? 'active' : ''}`}>
@@ -107,6 +104,15 @@ export default function Header() {
         <Link href="/priser">Priser</Link>
       </li>
 
+        {/* 2. Om Oss */}
+      <li className={pathname === '/om-oss' ? 'active' : ''}>
+        <Link href="/om-oss">Om Oss</Link>
+      </li>
+      {/* 7. Kontakt */}
+      <li className={pathname === '/kontakt' ? 'active' : ''}>
+        <Link href="/kontakt">Kontakt</Link>
+      </li>
+      
       {/* 6. Info (مع زر الموبايل) */}
        <li className={`dropdown_menu ${pathname.startsWith('/information') || pathname === '/bli-foretagskund' ? 'active' : ''}`}>
         <Link href="#">Info</Link>
@@ -118,11 +124,6 @@ export default function Header() {
             <li><Link href="/bli-foretagskund">Företagskund</Link></li>
             <li><Link href="/faqs">Vanliga Frågor</Link></li>
         </ul>
-      </li>
-      
-      {/* 7. Kontakt */}
-      <li className={pathname === '/kontakt' ? 'active' : ''}>
-        <Link href="/kontakt">Kontakt</Link>
       </li>
     </ul>
   );
