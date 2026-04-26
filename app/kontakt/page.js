@@ -1,12 +1,12 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
-import BookingForm from '@/components/BookingForm'; // استيراد نموذج الحجز
+import BookingForm from '@/components/BookingForm'; // استيراد نموذج الحجز (Elfsight)
 import Link from 'next/link';
 
 export const metadata = {
   title: 'Kontakta & Boka Dala Taxi Borlänge | Ring Oss 24/7',
-  description: 'Här hittar du kontaktuppgifter till Dala Taxi Borlänge. Ring oss dygnet runt för att boka din taxi eller om du har frågor. Vi finns på Järvstigen 1 i Borlänge.',
+  description: 'Här hittar du kontaktuppgifter till Dala Taxi Borlänge. Ring oss dygnet runt för att boka din taxi eller om du har frågor. Vi finns på Ovanbrogatan 2 i Borlänge.',
 }
 
 export default function Contact() {
@@ -14,8 +14,6 @@ export default function Contact() {
     <>
       <Header />
       <PageHeader title="Kontakta Oss" subtitle="Vi Finns Här för Dig!" />
-
-     
 
       <section className="contact-section bd-bottom padding">
         <div className="container">
@@ -41,11 +39,11 @@ export default function Contact() {
                     </a>
                 </div>
 
-                {/* تفاصيل الاتصال والعنوان */}
+                {/* تفاصيل الاتصال والعنوان المحدث */}
                 <ul className="contact-details">
                   <li>
                     <i className="fas fa-map-marker-alt"></i>
-                    Dala Taxi Borlänge <br /> Järvstigen 1, 784 50 Borlänge
+                    Dala Taxi Borlänge <br /> Ovanbrogatan 2, 784 33 Borlänge
                   </li>
                   <li>
                     <i className="fas fa-envelope"></i>
@@ -83,19 +81,19 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* اليمين: نموذج الحجز */}
+            {/* اليمين: نموذج الحجز (الخاص بـ Elfsight كما طلبته) */}
             <div className="col-md-6 mt-4 mt-md-0">
-               {/* استخدام مكون BookingForm الجاهز */}
                <BookingForm />
             </div>
 
           </div>
         </div>
       </section>
- {/* Map Section - خريطة مدمجة */}
+      
+      {/* Map Section - خريطة مدمجة محدثة بالعنوان الصحيح */}
       <div className="google-map" style={{ width: '100%', height: '450px', borderBottom: '1px solid #ddd' }}>
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.5!2d15.416!3d60.485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46677cb1ae005721%3A0x705296068696772!2sJ%C3%A4rvstigen%201%2C%20784%2050%20Borl%C3%A4nge%2C%20Sweden!5e0!3m2!1sen!2sse!4v1700000000000!5m2!1sen!2sse" 
+          src="https://www.google.com/maps?q=Dala+Taxi+Borlänge,Ovanbrogatan+2,Borlänge&output=embed" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 

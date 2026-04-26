@@ -1,7 +1,7 @@
 export const flygtaxiData = [
   {
     id: "dala-airport", // هذا هو الرابط (Slug)
-    title: "Taxi till Dala Airport",
+    title: "Taxi Borlänge till Dala Airport",
     subtitle: "Fast Pris Borlänge",
     
     // SEO
@@ -58,22 +58,22 @@ export const flygtaxiData = [
     // FAQ Section
     faqs: [
       {
-        question: "Hur långt i förväg bör jag boka min taxi till flygplatsen?",
-        answer: "För att garantera en bil rekommenderar vi att du bokar minst 24 timmar i förväg, särskilt om du behöver en storbil eller en resa under tidig morgon."
+        question: "Vad kostar taxi från Borlänge centrum till Dala Airport?",
+        answer: "Taxi kostar 320 kr från Borlänge till Dala Airport"
       },
       {
-        question: "Erbjuder ni upphämtning direkt vid terminalen?",
-        answer: "Absolut. Vid ankomst möter din förare upp dig på en avtalad plats precis utanför terminalen för en snabb och smidig avfärd."
+        question: "Har Dala Taxi Borlänge ett fast pris till Dala Airport från Borlänge?",
+        answer: "Ja absolut har Dala Taxi Borlänge fast pris och det är 320 kr"
       },
       {
-        question: "Vad händer om mitt flyg blir inställt?",
-        answer: "Kontakta oss så snart som möjligt så avbokar vi din resa utan kostnad."
+        question: "Hur lång tid tar det att resa med taxi från Borlänge centrum till Dala Airport?",
+        answer: "Resan med taxi tar det 15 minuter"
       }
     ]
   },
   {
     id: "arlanda", // الرابط (Slug)
-    title: "Taxi till Arlanda Airport",
+    title: "Taxi Borlänge till Arlanda Fast pris 4 900 kr",
     subtitle: "Fast Pris Borlänge",
     
     // SEO
@@ -129,16 +129,16 @@ export const flygtaxiData = [
     // قمت بصياغة "معلومات السفر" على شكل أسئلة وأجوبة لتتناسب مع القالب
     faqs: [
       {
-        question: "Hur lång tid tar resan till Arlanda?",
-        answer: "Beräknad restid är cirka 2,5 timmar, beroende på trafik och väderförhållanden."
+        question: "Hur lång tid tar resan från Borlänge till Arlanda i Stockholm?",
+        answer: "Resan från Borlänge till Arlanda tar nästan 3 timmar"
       },
       {
-        question: "Vad behöver jag uppge vid bokning?",
-        answer: "Vänligen uppge ditt flightnummer vid bokning. Detta är viktigt för att vi ska kunna bevaka din resa och eventuella ändringar i flygtiderna."
+        question: "Hur mycket kostar taxi från Borlänge till Arlanda?",
+        answer: "Med Dala Taxi Borlänge kostar resan 4 900 kr"
       },
       {
-        question: "När bör jag boka min resa?",
-        answer: "Vi rekommenderar starkt att du bokar din Arlanda-resa minst 24-48 timmar i förväg för att garantera tillgänglighet."
+        question: "Har Dala Taxi Borlänge fasta priser till Arlanda?",
+        answer: "Ja fasta priset är 4 900 kr"
       }
     ]
   }

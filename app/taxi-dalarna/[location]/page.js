@@ -35,9 +35,10 @@ const renderAnswer = (text) => {
   return (
     <>
       {mainText} 
-      <a href={url} style={{ color: '#ff9900', textDecoration: 'underline', fontWeight: 'bold' }}>
+      {/* استخدمنا مكون Link من Next.js ليعمل بشكل داخلي وسريع على أي دومين */}
+      <Link href={url} style={{ color: '#ff9900', textDecoration: 'underline', fontWeight: 'bold' }}>
         Klicka här för att läsa mer
-      </a>
+      </Link>
     </>
   );
 };
@@ -154,7 +155,7 @@ export default async function TaxiLocationPage({ params }) {
               <div className="accordion faq-accordion" id="faq-accordion">
                 {data.faqs && data.faqs.map((faq, index) => (
                   <div className="accordion-item" key={index}>
-                    <h2 className="accordion-header" id={`heading${index}`}>
+                    <h3 className="accordion-header" id={`heading${index}`}>
                       <button 
                         className={`accordion-button ${index !== 0 ? 'collapsed' : ''}`} 
                         type="button" 
@@ -165,7 +166,7 @@ export default async function TaxiLocationPage({ params }) {
                       >
                         {faq.question}
                       </button>
-                    </h2>
+                    </h3>
                     <div 
                         id={`collapse${index}`} 
                         className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`} 

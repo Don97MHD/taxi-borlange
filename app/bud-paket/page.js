@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script'; // استيراد Script من أجل Elfsight
 
 export const metadata = {
   title: 'Bud & Paket med Taxi i Borlänge | Snabb & Säker Leverans',
@@ -34,7 +35,6 @@ export default function PackageDelivery() {
             </div>
             <div className="col-lg-6">
               <div className="about-img">
-                {/* Image representing delivery/packages */}
                 <Image className="about-img1 wow fade-in-right" src="/assets/img/service-4.webp" alt="Bud och Paket" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
                 <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={300} height={300} sizes="(max-width: 768px) 100vw, 200px" /></figure>
               </div>
@@ -53,7 +53,6 @@ export default function PackageDelivery() {
           </div>
 
           <div className="row justify-content-center">
-            {/* Feature 1: Speed */}
             <div className="col-lg-4 col-md-6 padding-15">
               <div className="service-item">
                 <div className="service-content">
@@ -63,8 +62,6 @@ export default function PackageDelivery() {
                 </div>
               </div>
             </div>
-
-            {/* Feature 2: Safety */}
             <div className="col-lg-4 col-md-6 padding-15">
               <div className="service-item">
                 <div className="service-content">
@@ -74,8 +71,6 @@ export default function PackageDelivery() {
                 </div>
               </div>
             </div>
-
-            {/* Feature 3: Flexibility 24/7 */}
             <div className="col-lg-4 col-md-6 padding-15">
               <div className="service-item">
                 <div className="service-content">
@@ -85,8 +80,6 @@ export default function PackageDelivery() {
                 </div>
               </div>
             </div>
-
-             {/* Feature 4: Door to Door */}
              <div className="col-lg-6 col-md-6 padding-15">
               <div className="service-item">
                 <div className="service-content">
@@ -96,8 +89,6 @@ export default function PackageDelivery() {
                 </div>
               </div>
             </div>
-
-            {/* Feature 5: Pricing */}
             <div className="col-lg-6 col-md-6 padding-15">
               <div className="service-item">
                 <div className="service-content">
@@ -107,36 +98,75 @@ export default function PackageDelivery() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* Use Cases Section */}
-      <section className="feature-section padding">
+      {/* --- قسم الفورم باستخدام Elfsight --- */}
+      <section className="elfsight-booking-form-section" style={{ backgroundColor: '#222327', padding: '80px 0' }}>
         <div className="container">
-            <div className="row align-items-center">
-                <div className="col-lg-6">
-                    <div className="feature-img">
-                         {/* Generic delivery or business image */}
-                        <img src="/assets/img/post-1.webp" alt="Budservice" className="img-fluid" />
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="section-heading mb-30">
-                        <div className="section-subtitle"><span></span>Användningsområden</div>
-                        <h2>Vår Budservice Passar Utmärkt För:</h2>
-                    </div>
-                    <ul className="check-list">
-                        <li><i className="las la-check-circle"></i>Brådskande juridiska eller ekonomiska dokument</li>
-                        <li><i className="las la-check-circle"></i>Viktiga reservdelar till verkstäder och industrier (t.ex. Scania, Volvo, Postnord)</li>
-                        <li><i className="las la-check-circle"></i>Glömda nycklar, pass eller andra personliga tillhörigheter</li>
-                        <li><i className="las la-check-circle"></i>Apoteksvaror eller medicinska prover</li>
-                        <li><i className="las la-check-circle"></i>Matkassar eller varor från lokala butiker</li>
-                        <li><i className="las la-check-circle"></i>Gåvor och blommor som måste komma fram i perfekt skick</li>
-                    </ul>
-                </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              
+              <div className="form-header text-center mb-4">
+                <h4 style={{ color: '#ffcc00', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px' }}>BUD & PAKET</h4>
+                <h2 style={{ color: '#fff', fontSize: '36px', fontWeight: 'bold' }}>Bud Paket med Dala Taxi Borlänge</h2>
+              </div>
+
+              {/* 
+                 هام: استبدل YOUR_ELFSIGHT_WIDGET_ID 
+                 بالـ ID الخاص بفورم Bud & Paket من حسابك في Elfsight
+              */}
+              <div className="elfsight-app-8aa221ee-a21b-473d-ba02-254af40aa326"></div>
+              <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
+
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- قسم الأسئلة الشائعة FAQ --- */}
+      <section className="faq-section bg-grey padding">
+        <div className="container">
+          <div className="section-heading text-center mb-40">
+            <div className="section-subtitle"><span></span>FAQ</div>
+            <h2>Vanliga frågor Bud Paket</h2>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="accordion faq-accordion" id="faq-accordion-budpaket">
+                
+                {/* سؤال 1 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading1">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      1- Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?
+                    </button>
+                  </h3>
+                  <div id="collapse1" className="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faq-accordion-budpaket">
+                    <div className="accordion-body">
+                      <p>Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* سؤال 2 */}
+                <div className="accordion-item">
+                  <h3 className="accordion-header" id="heading2">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      2- Hur snabb leverans är det med Dala Taxi Borlänge?
+                    </button>
+                  </h3>
+                  <div id="collapse2" className="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faq-accordion-budpaket">
+                    <div className="accordion-body">
+                      <p>När det gäller budtransport, har vi express budkörningar till mottagare.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -147,13 +177,13 @@ export default function PackageDelivery() {
                 <h2>Boka Din Leverans Nu med <br /> Dala Taxi Borlänge</h2>
                 <p>Är ditt paket redo att skickas? Kontakta oss direkt via telefon för snabbast möjliga service. <br />Vår personal ger dig ett fast pris och skickar en bil för omedelbar upphämtning.</p>
                 
-                <div className="cta-call mb-30">
+                <div className="cta-call mb-30" style={{justifyContent: 'center'}}>
                     <i className="las la-phone-volume"></i>
-                    <p><span>Ring och Boka Bud</span><a href="tel:024317900">0243-179 00</a></p>
+                    <p><span style={{textAlign: 'center'}}>Ring och Boka Bud</span><a href="tel:024317900">0243-179 00</a></p>
                 </div>
                 
                 <div className="cta-business-link">
-                    <p>För <Link href="/bli-foretagskund/" style={{color: '#ffc107', textDecoration: 'underline'}}>företagskunder</Link> erbjuder vi även möjligheten att lägga budkörningar på er månadsfaktura.</p>
+                    <p style={{color: '#fff'}}>För <Link href="/bli-foretagskund/" style={{color: '#ffc107', textDecoration: 'underline'}}>företagskunder</Link> erbjuder vi även möjligheten att lägga budkörningar på er månadsfaktura.</p>
                 </div>
             </div>
         </div>

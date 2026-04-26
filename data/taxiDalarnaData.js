@@ -13,8 +13,8 @@ export const taxiDalarnaData = [
     headerImage: "/assets/img/service-3.webp", // صورة معبرة (الثلج/التزلج إذا توفرت)
 
     // Intro Section
-    introTitle: "Taxi till Romme Alpin – Fast Pris 440 kr",
-    introText: "Ska du till Romme Alpin för en dag i skidbacken? Dala Taxi Borlänge erbjuder det smidigaste sättet att ta sig dit. Vi kör dig från Borlänge direkt till anläggningen för ett fast pris på 440 kr. Slipp krånglet med parkering och kalla bilar – vi har plats för både dig och din skidutrustning.",
+    introTitle: "Taxi Borlänge till Romme Alpin -Fast Pris 440 kr",
+    introText: "Ska du till Romme Alpin för en dag i skidbacken? Dala Taxi Borlänge erbjuder det smidigaste sättet att ta sig dit. Vi kör dig från Borlänge direkt till anläggningen för ett fast pris på 440 kr. Slipp krånglet med parkering och kalla bilar – vi har plats för både dig och din skidutrustning. Resan Från Borlänge till Romme Alpin tar det 20 minuter.",
 
     // Features Section (Why Choose Us)
     featuresTitle: "Varför välja oss till Romme Alpin?",
@@ -39,20 +39,20 @@ export const taxiDalarnaData = [
     // الأسئلة الشائعة (تم توحيدها وتخصيص سؤال الحجز)
     faqs: [
       {
-        question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn på vår sida om taxi med barnstol." // لاحظ: الرابط سيتم معالجته في النص إذا أردت، أو يمكن تركه كنص عادي
+        question: "Vad kostar en taxi från Borlänge till Romme Alpin?",
+        answer: "Det kostar 440 kr med Dala Taxi Borlänge att åka från Borlänge till Romme Alpin."
       },
       {
-        question: "Hur kan man betala?",
-        answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
+        question: "Hur lång tid tar det att åka taxi från Borlänge till Romme Alpin?",
+        answer: "Det tar 20 minuter att åka taxi från Borlänge till Romme Alpin."
       },
       {
-        question: "Hur bokar jag en taxi till Romme Alpin?", // تم تخصيص اسم المدينة/الوجهة هنا
-        answer: "Man kan boka en taxi till Romme Alpin genom att ringa 0243-179 00 eller boka online via vår hemsida."
+        question: "kan man boka taxi i och från Borlänge till Romme Alpin?",
+        answer: "Ja, absolut kan ni boka taxi från Borlänge till Romme Alpin genom att ringa 0243-179 00 eller boka online."
       },
       {
-        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
-        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare."
+        question: "Har Dala Taxi Borlänge större bilar för skidutrustning?",
+        answer: "Ja Dala Taxi Borlänge har alla slags av taxibilar liksom mini bussar eller vanliga taxibilar."
       }
     ],
     
@@ -105,7 +105,7 @@ export const taxiDalarnaData = [
     faqs: [
       {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",
@@ -137,8 +137,8 @@ export const taxiDalarnaData = [
     seoTitle: "Taxi Borlänge Falun | Fast Pris 599 kr | Boka",
     seoDescription: "Boka Taxi Borlänge Falun för 599 kr. Snabb pendling mellan städerna. Vi kör till Lasarettet och tåget. Ring 0243-179 00.",
     headerImage: "/assets/img/service-2.webp",
-    introTitle: "Taxi mellan Borlänge och Falun",
-    introText: "Vi erbjuder ett oslagbart fast pris på 599 kr för resor mellan Borlänge och Falun. Perfekt för dig som vill resa smidigt och prisvärt.",
+    introTitle: "Taxi mellan Borlänge och Falun 599 kr (fast pris)",
+    introText: "Vi erbjuder ett oslagbart fast pris på 599 kr för resor mellan Borlänge och Falun. Perfekt för dig som vill resa smidigt och prisvärt. Resan från Borlänge till Falun tar 20 minuter.",
     featuresTitle: "Din resa Borlänge - Falun",
     features: [
       { icon: "las la-tag", title: "Endast 599 kr", text: "Marknadens bästa fasta pris." },
@@ -146,10 +146,22 @@ export const taxiDalarnaData = [
       { icon: "las la-exchange-alt", title: "Pendling", text: "Snabb transport mellan städerna." }
     ],
     faqs: [
-      { question: "Finns barnstol i taxin?", answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )" },
-      { question: "Hur kan man betala?", answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura." },
-      { question: "Hur bokar jag en taxi Borlänge Falun?", answer: "Man kan boka en taxi Borlänge Falun genom att ringa 0243-179 00 eller boka online." },
-      { question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?", answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare" }
+      {
+        question: "Vad kostar en taxi från Borlänge till Falun?",
+        answer: "Det kostar 599 kr med Dala Taxi Borlänge att åka från Borlänge till Falun."
+      },
+      {
+        question: "Hur lång tid tar det att åka taxi från Borlänge till Falun?",
+        answer: "Det tar 20 minuter att åka taxi från Borlänge till Falun."
+      },
+      {
+        question: "kan man boka taxi i och från Borlänge till Falun?",
+        answer: "Ja, absolut kan ni boka taxi från Borlänge till Falun genom att ringa 0243-179 00 eller boka online."
+      },
+      {
+        question: "Har Dala Taxi Borlänge större bilar om vi är i grupp?",
+        answer: "Ja Dala Taxi Borlänge har alla slags av taxibilar liksom minibussar eller vanliga taxibilar."
+      }
     ],
     specialSection: { title: "Boka Taxi Borlänge Falun", description: "", items: [], ctaText: "Ring: 0243-179 00", ctaPhone: "024317900" }
   },
@@ -193,20 +205,24 @@ export const taxiDalarnaData = [
     // FAQs (تم توحيد الأسئلة + تخصيص سؤال الحجز لفالون)
     faqs: [
       {
+        question: "Kan man förboka taxi i Falun?",
+        answer: "Självklart! Vi rekommenderar att du förbokar din resa, antingen via vårt online formulär eller genom att ringa oss, för att garantera en bil vid önskad tidpunkt."
+      },
+      {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",
         answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
       },
       {
-        question: "Hur bokar jag en taxi i Falun?", // تم التخصيص
-        answer: "Man kan boka en taxi i Falun genom att ringa 0243-179 00 eller boka online via vår hemsida."
+        question: "Hur bokar jag en taxi i Falun?",
+        answer: "Man kan boka en taxi i Falun genom att ringa 0243-179 00 eller boka online."
       },
       {
-        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
-        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+        question: "Har Dala Taxi falun fasta priser?",
+        answer: "Ja självklart har vi taxi med fasta priser i Falun"
       }
     ],
     
@@ -257,22 +273,30 @@ export const taxiDalarnaData = [
     ],
 
     // FAQs
-    faqs: [
+     faqs: [
+      {
+        question: "Kan man förboka taxi från Borlänge till Hedemora?",
+        answer: "Självklart! Vi rekommenderar att du förbokar din resa, antingen via vårt online formulär eller genom att ringa oss, för att garantera en bil vid önskad tidpunkt."
+      },
       {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",
         answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
       },
       {
-        question: "Hur bokar jag en taxi till Hedemora?", // تم التخصيص
-        answer: "Man kan boka en taxi till Hedemora genom att ringa 0243-179 00 eller boka online."
+        question: "Hur bokar jag en taxi i Hedemora?",
+        answer: "Man kan boka en taxi i Hedemora genom att ringa 0243-179 00 eller boka online."
       },
       {
-        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
-        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+        question: "Har Dala Taxi Borlänge fasta priser?",
+        answer: "Ja självklart har vi taxi med fasta priser till Hedemora"
+      },
+      {
+        question: "Vad kostar en taxi från Borlänge till Hedemora?",
+        answer: "Det kostar 1299 kr med Dala Taxi Borlänge att åka från Borlänge till Hedemora"
       }
     ],
     
@@ -325,20 +349,28 @@ export const taxiDalarnaData = [
     // FAQs
     faqs: [
       {
+        question: "Kan man förboka taxi från Borlänge till Leksand och sommarland samt Tagera Arena?",
+        answer: "Självklart! Vi rekommenderar att du förbokar din resa, antingen via vårt online formulär eller genom att ringa oss, för att garantera en bil vid önskad tidpunkt."
+      },
+      {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",
         answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
       },
       {
-        question: "Hur bokar jag en taxi till Leksand?", // تخصيص السؤال
-        answer: "Man kan boka en taxi till Leksand genom att ringa 0243-179 00 eller boka online."
+        question: "Hur bokar jag en taxi i Leksand?",
+        answer: "Man kan boka en taxi i Leksand genom att ringa 0243-179 00 eller boka online."
       },
       {
-        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
-        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+        question: "Har Dala Taxi Borlänge fasta priser?",
+        answer: "Ja självklart har vi taxi med fasta priser till Leksand"
+      },
+      {
+        question: "Vad kostar en taxi från Borlänge till Leksand?",
+        answer: "Det kostar 1299 kr med Dala Taxi Borlänge att åka från Borlänge till Leksand"
       }
     ],
     
@@ -392,20 +424,28 @@ export const taxiDalarnaData = [
     // FAQs
     faqs: [
       {
+        question: "Kan man förboka taxi från Borlänge till Ludvika?",
+        answer: "Självklart! Vi rekommenderar att du förbokar din resa, antingen via vårt online formulär eller genom att ringa oss, för att garantera en bil vid önskad tidpunkt."
+      },
+      {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",
         answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
       },
       {
-        question: "Hur bokar jag en taxi till Ludvika?", // تخصيص السؤال
-        answer: "Man kan boka en taxi till Ludvika genom att ringa 0243-179 00 eller boka online."
+        question: "Hur bokar jag en taxi i Ludvika?",
+        answer: "Man kan boka en taxi i Ludvika genom att ringa 0243-179 00 eller boka online."
       },
       {
-        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
-        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+        question: "Har Dala Taxi Borlänge fasta priser?",
+        answer: "Ja självklart har vi taxi med fasta priser till Ludvika"
+      },
+      {
+        question: "Vad kostar en taxi från Borlänge till Ludvika?",
+        answer: "Det kostar 1 299 kr med Dala Taxi Borlänge att åka från Borlänge till Ludvika"
       }
     ],
     
@@ -458,20 +498,28 @@ export const taxiDalarnaData = [
     // FAQs
     faqs: [
       {
+        question: "Kan man förboka taxi från Borlänge till Rättvik eller Dalhalla?",
+        answer: "Självklart! Vi rekommenderar att du förbokar din resa, antingen via vårt online formulär eller genom att ringa oss, för att garantera en bil vid önskad tidpunkt."
+      },
+      {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",
         answer: "Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura."
       },
       {
-        question: "Hur bokar jag en taxi till Rättvik?",
-        answer: "Man kan boka en taxi till Rättvik genom att ringa 0243-179 00 eller boka online."
+        question: "Hur bokar jag en taxi i Rättvik?",
+        answer: "Man kan boka en taxi i Rättvik genom att ringa 0243-179 00 eller boka online."
       },
       {
-        question: "Kör Dala Taxi Borlänge paket, Post, Bud samt frakt?",
-        answer: "Absolut kör Dala Taxi Borlänge alla slags av paket och bud med snabb frakt till mottagare"
+        question: "Har Dala Taxi Borlänge fasta priser?",
+        answer: "Ja självklart har vi taxi med fasta priser till Rättvik"
+      },
+      {
+        question: "Vad kostar en taxi från Borlänge till Rättvik eller Dalhalla?",
+        answer: "Det kostar 1 699 kr med Dala Taxi Borlänge att åka från Borlänge till Rättvik"
       }
     ],
     
@@ -526,7 +574,7 @@ export const taxiDalarnaData = [
     faqs: [
       {
         question: "Finns barnstol i taxin?",
-        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: https://dalataxiborlange.se/taxi-med-barnstol/ )"
+        answer: "Ja, vi erbjuder barnstolar och bälteskuddar för våra yngsta resenärer. Meddela oss vid bokning så ser vi till att bilen är rätt utrustad för ditt barns säkerhet. Läs mer om resor med barn (link: /taxi-med-barnstol/ )"
       },
       {
         question: "Hur kan man betala?",

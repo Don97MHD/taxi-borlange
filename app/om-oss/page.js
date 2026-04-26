@@ -1,8 +1,8 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
-import SectionHeading from '@/components/SectionHeading'; // المكون الجديد
-import CtaSection from '@/components/CtaSection';         // المكون الجديد
+import SectionHeading from '@/components/SectionHeading';
+import CtaSection from '@/components/CtaSection';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -34,7 +34,6 @@ export default function AboutUs() {
               </div>
             </div>
             <div className="col-md-6">
-              {/* المقدمة */}
               <SectionHeading 
                 align="left"
                 subtitle="Om Dala Taxi Borlänge"
@@ -42,7 +41,6 @@ export default function AboutUs() {
                 description="Välkommen till Dala Taxi Borlänge. Vi är mer än bara ett taxibolag; vi är en lokal och engagerad transportpartner som har betjänat Borlängebor och besökare med stolthet sedan 2013. Med över ett decennium i branschen har vi byggt upp vår verksamhet på en grund av förtroende, punktlighet och en djup förståelse för våra kunders behov."
               />
               
-              {/* فقرة "جزء من بورلانج" مدمجة هنا لتناسب التصميم */}
               <div className="about-text-block mt-4 wow fade-in-right" data-wow-delay="300ms">
                 <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '10px'}}>En Del av Borlänge</h3>
                 <p>
@@ -63,7 +61,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* History & Promise Section (Replaces old Service Section) */}
+      {/* History & Promise Section */}
       <section className="service-section bg-grey padding">
         <div className="container">
           <SectionHeading 
@@ -73,7 +71,6 @@ export default function AboutUs() {
           />
 
           <div className="row">
-            {/* Feature 1: Trygghet */}
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="service-item text-center">
                 <div className="service-content">
@@ -84,7 +81,6 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Feature 2: Punktlighet */}
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="service-item text-center">
                 <div className="service-content">
@@ -95,7 +91,6 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Feature 3: Service */}
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="service-item text-center">
                 <div className="service-content">
@@ -106,7 +101,6 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Feature 4: Komfort */}
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="service-item text-center">
                 <div className="service-content">
@@ -120,10 +114,60 @@ export default function AboutUs() {
         </div>
       </section>
 
+      {/* --- قسم السيو (SEO) النصي نظيف وبدون فورم --- */}
+      <section className="seo-section padding bg-white">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10 text-center">
+              
+              <h2 className="mb-3" style={{fontSize: '32px', fontWeight: '700'}}>Dala Taxi Borlänge tillgänglig alla dagar dygnet runt</h2>
+              <p style={{fontSize: '18px', color: '#666'}}>Du kan boka Dala taxi Borlänge när som helst.</p>
+              
+              <div className="call-box my-5" style={{backgroundColor: '#f9f9f9', padding: '30px', borderRadius: '8px', border: '1px solid #eee', display: 'inline-block', minWidth: '300px'}}>
+                <h3 style={{fontSize: '16px', color: '#666', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '1px'}}>Dala Borlänge Taxi Nummer:</h3>
+                <a href="tel:024317900" style={{fontSize: '36px', fontWeight: 'bold', color: '#ff9900', display: 'block'}}>0243 – 179 00</a>
+              </div>
 
-      {/* CTA Section - المكون الجديد */}
+              <p style={{fontSize: '18px'}}>Dala Taxi Borlänge är till för alla tillfällen. För dig som vill åka billig taxi Borlänge:</p>
+              
+              {/* قائمة الخدمات للسيو */}
+              <ul className="check-list d-flex justify-content-center flex-wrap mt-4 mb-5" style={{gap: '20px', listStyle: 'none', padding: 0}}>
+                <li style={{fontSize: '16px', fontWeight: '500', color: '#222'}}><i className="las la-check-circle" style={{color: '#ff9900', fontSize: '20px', marginRight: '5px'}}></i> Dala Taxi Borlänge Falun</li>
+                <li style={{fontSize: '16px', fontWeight: '500', color: '#222'}}><i className="las la-check-circle" style={{color: '#ff9900', fontSize: '20px', marginRight: '5px'}}></i> Dala Taxi Borlänge Romme</li>
+                <li style={{fontSize: '16px', fontWeight: '500', color: '#222'}}><i className="las la-check-circle" style={{color: '#ff9900', fontSize: '20px', marginRight: '5px'}}></i> Dala Taxi Borlänge Flygplats</li>
+                <li style={{fontSize: '16px', fontWeight: '500', color: '#222'}}><i className="las la-check-circle" style={{color: '#ff9900', fontSize: '20px', marginRight: '5px'}}></i> Taxi Dalarna Borlänge</li>
+              </ul>
+
+              <hr style={{borderColor: '#eee', margin: '40px 0'}} />
+
+              {/* فقرة ختامية */}
+              <div className="text-left" style={{textAlign: 'left', backgroundColor: '#fafafa', padding: '30px', borderRadius: '8px'}}>
+                 <h3 style={{textTransform: 'uppercase', letterSpacing: '1px', fontWeight: '700', fontSize: '20px', color: '#222', marginBottom: '15px'}}>Taxi för alla tillfällen</h3>
+                 <h4 style={{textTransform: 'uppercase', letterSpacing: '1px', fontWeight: '700', fontSize: '16px', color: '#ff9900', marginBottom: '10px'}}>Om Dala Taxi Borlänge</h4>
+                 <p style={{marginBottom: '10px'}}>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna.</p>
+                 <p style={{margin: 0}}><strong>ÖPPETTIDER:</strong> Öppet dygnet runt alla dagar i veckan.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- خريطة جوجل محدثة بالعنوان الصحيح --- */}
+      <div className="google-map" style={{ width: '100%', height: '450px', borderTop: '1px solid #ddd' }}>
+        <iframe 
+          src="https://www.google.com/maps?q=Dala+Taxi+Borlänge,Ovanbrogatan+2,Borlänge&output=embed" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Dala Taxi Borlänge Map"
+        ></iframe>
+      </div>
+
       <CtaSection />
-
       <Footer />
     </>
   );
