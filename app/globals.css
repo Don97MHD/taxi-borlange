@@ -40,3 +40,24 @@ a {
     color-scheme: dark;
   }
 }
+
+/* ===================================================
+   Modern UI Variables & Animations (Glassmorphism & Glossy)
+===================================================== */
+:root {
+  /* التدرج اللوني الذهبي/البرتقالي الفاخر */
+  --primary-gradient: linear-gradient(135deg, #ffb347 0%, #ff7b00 100%);
+  --glass-bg-dark: rgba(20, 20, 20, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --soft-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --hover-shadow: 0 15px 40px rgba(255, 123, 0, 0.25);
+  --radius-cards: 16px;
+  --radius-buttons: 50px;
+}
+
+/* تأثير اللمعان الذي يتحرك على الأزرار */
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
+}

@@ -121,7 +121,8 @@ export default function Header() {
             onClick={(e) => { e.preventDefault(); toggleSubMenu('info'); }}
         ></span>
         <ul style={{ display: openSubMenu === 'info' ? 'block' : undefined }}>
-            <li><Link href="/bli-foretagskund">Företagskund</Link></li>
+            {/* تم تغيير النص هنا ليتطابق مع عنوان الصفحة */}
+            <li><Link href="/bli-foretagskund">Bli Företagskund</Link></li>
             <li><Link href="/faqs">Vanliga Frågor</Link></li>
         </ul>
       </li>
@@ -185,7 +186,7 @@ export default function Header() {
                   <div className="header-info-text">
                     <div className="contact-title">
                       <span>Hitta Till Oss</span>
-                      <div className="address-text">Järvstigen 1, Borlänge</div>
+                      <div className="address-text">Ovanbrogatan 2, Borlänge</div>
                     </div>
                   </div>
                 </li>
@@ -280,7 +281,7 @@ export default function Header() {
           <p>Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Öppet dygnet runt alla dagar i veckan.</p>
           <ul className="sidebox-list">
             <li className="call"><span>Ring oss:</span>0243-179 00</li>
-            <li><span>Adress:</span>Järvstigen 1, 784 50 Borlänge</li>
+            <li><span>Adress:</span>Ovanbrogatan 2, 784 33 Borlänge</li>
             <li><span>E-post:</span>taxi17900@gmail.com</li>
           </ul>
           <div className="sidebox-social">

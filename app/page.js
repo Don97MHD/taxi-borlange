@@ -387,21 +387,21 @@ export default function Home() {
                   <p>Vi erbjuder trygghet, komfort och fasta priser direkt i mobilen.</p>
                   <ul className="app-feature">
                     <li>
-                      <i><img className="feature-icon" src="/assets/img/icon-navigator.svg" alt="icon" width="50" height="50" /></i>
+                      <i><Image className="feature-icon" src="/assets/img/icon-navigator.svg" alt="icon" width={50} height={50}/></i>
                       <h3>Enkelt att söka <br /> Taxi!</h3>
                     </li>
                     <li>
-                      <i><img className="feature-icon" src="/assets/img/icon-clock.svg" alt="icon" width="50" height="50"/></i>
+                      <i><Image className="feature-icon" src="/assets/img/icon-navigator.svg" alt="Sök Taxi" width={50} height={50} /></i>
                       <h3>Snabb upphämtning <br /> Spara tid!</h3>
                     </li>
                     <li>
-                      <i><img className="feature-icon" src="/assets/img/icon-docs.svg" alt="icon" width="50" height="50" /></i>
+                      <i><Image className="feature-icon" src="/assets/img/icon-docs.svg" alt="icon" width={50} height={50} /></i>
                       <h3>Inkluderade priser <br /> Njut av resan!</h3>
                     </li>
                   </ul>
                   <div className="download-btn">
-                    <a href="https://play.google.com/store/apps/details?id=org.dala.taxi.borlange&pcampaignid=web_share"><img src="/assets/img/google-play.svg" alt="PlayStore" /></a>
-                    <a href="https://apps.apple.com/us/app/dala-taxi-borlange/id6504778881"><img src="/assets/img/app-store.svg" alt="AppStore" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=org.dala.taxi.borlange&pcampaignid=web_share"><Image src="/assets/img/google-play.svg" alt="Ladda ner på Google Play" width={135} height={40} /></a>
+                    <a href="https://apps.apple.com/us/app/dala-taxi-borlange/id6504778881"><Image src="/assets/img/app-store.svg" alt="AppStore" width={135} height={40} /></a>
                   </div>
                 </div>
               </div>

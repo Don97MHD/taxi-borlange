@@ -27,16 +27,14 @@ const renderAnswer = (text) => {
     return text;
   }
 
-  // نقسم النص بناءً على كلمة (link:
   const parts = text.split('(link:');
   const mainText = parts[0];
-  const url = parts[1].replace(')', '').trim(); // تنظيف الرابط من القوس الأخير والمسافات
+  const url = parts[1].replace(')', '').trim();
 
   return (
     <>
       {mainText} 
-      {/* استخدمنا مكون Link من Next.js ليعمل بشكل داخلي وسريع على أي دومين */}
-      <Link href={url} style={{ color: '#ff9900', textDecoration: 'underline', fontWeight: 'bold' }}>
+      <Link href={url} style={{ color: '#ff7b00', textDecoration: 'underline', fontWeight: 'bold' }}>
         Klicka här för att läsa mer
       </Link>
     </>
@@ -60,16 +58,16 @@ export default async function TaxiLocationPage({ params }) {
         subtitle={data.subtitle || "Taxi Dalarna"} 
       />
 
-      {/* Intro Section */}
+      {/* Intro Section - عدنا للهيكل الأصلي المريح */}
       <section className="about-section padding">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-4 mb-lg-0">
                <div className="about-img">
-                <Image className="about-img1 wow fade-in-left" src={data.headerImage || "/assets/img/service-1.webp"} alt={data.title} width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+                <Image className="about-img1 wow fade-in-left rounded-4" src={data.headerImage || "/assets/img/service-1.webp"} alt={data.title} width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 ps-lg-4">
                <SectionHeading 
                   align="left"
                   subtitle="Taxi Dalarna"
@@ -81,7 +79,7 @@ export default async function TaxiLocationPage({ params }) {
         </div>
       </section>
 
-      {/* Special Section */}
+      {/* Special Section - حافظنا على التخطيط ولكن مع زر واضح */}
       {data.specialSection && (
         <section className="service-section bg-grey padding">
           <div className="container">
@@ -92,14 +90,14 @@ export default async function TaxiLocationPage({ params }) {
             />
             
             <div className="row justify-content-center">
-              {data.specialSection.items.map((item, index) => (
+              {data.specialSection.items && data.specialSection.items.map((item, index) => (
                 <div key={index} className="col-lg-4 col-md-6 padding-15">
                   <div className="service-item text-center">
-                    <div className="service-content">
+                    <div className="service-content p-4">
                       <h3 className="mb-3">{item.title}</h3>
                       <p>{item.text}</p>
                       {item.linkUrl && (
-                         <Link href={item.linkUrl} style={{color: '#ffc107', textDecoration: 'underline'}}>
+                         <Link href={item.linkUrl} style={{color: '#ff7b00', textDecoration: 'underline'}}>
                            {item.linkText}
                          </Link>
                       )}
@@ -109,10 +107,11 @@ export default async function TaxiLocationPage({ params }) {
               ))}
             </div>
 
+            {/* الزر هنا أصبح معتمد على كلاس default-btn الطبيعي */}
             {data.specialSection.ctaText && (
                <div className="text-center mt-4">
                   <a href={`tel:${data.specialSection.ctaPhone}`} className="default-btn">
-                    <i className="las la-phone"></i> {data.specialSection.ctaText}
+                    <i className="las la-phone me-2"></i> {data.specialSection.ctaText}
                   </a>
                </div>
             )}
@@ -130,13 +129,13 @@ export default async function TaxiLocationPage({ params }) {
             <div className="row">
                {data.features && data.features.map((feature, index) => (
                   <div key={index} className="col-lg-4 col-md-6 padding-15">
-                     <div className="service-item">
-                        <div className="service-content">
-                           <div className="feature-icon mb-3">
-                              <i className={feature.icon} style={{fontSize: '35px', color: '#ffc107'}}></i>
+                     <div className="service-item h-100">
+                        <div className="service-content p-4 text-center">
+                           <div className="feature-icon mb-3 d-inline-block">
+                              <i className={feature.icon} style={{fontSize: '35px', color: '#ff7b00'}}></i>
                            </div>
                            <h3>{feature.title}</h3>
-                           <p>{feature.text}</p>
+                           <p className="mb-0">{feature.text}</p>
                         </div>
                      </div>
                   </div>
@@ -174,7 +173,6 @@ export default async function TaxiLocationPage({ params }) {
                         data-bs-parent="#faq-accordion"
                     >
                       <div className="accordion-body">
-                        {/* هنا نستخدم الدالة الجديدة لمعالجة النص والرابط */}
                         <p>{renderAnswer(faq.answer)}</p>
                       </div>
                     </div>
@@ -183,8 +181,12 @@ export default async function TaxiLocationPage({ params }) {
               </div>
 
               <div className="text-center mt-5">
-                  <Link href="/taxi-dalarna" className="read-more">
-                    <i className="las la-arrow-left"></i> Tillbaka till Taxi Dalarna
+                  <Link 
+                    href="/taxi-dalarna" 
+                    className="secondary-back-btn"
+                  >
+                    <i className="las la-arrow-left" style={{marginRight: '8px', fontSize: '20px'}}></i> 
+                    Tillbaka till Taxi Dalarna
                   </Link>
               </div>
             </div>

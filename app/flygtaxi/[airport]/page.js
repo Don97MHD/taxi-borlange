@@ -6,7 +6,7 @@ import CtaSection from '@/components/CtaSection';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { flygtaxiData } from '@/data/flygtaxiData'; // استدعاء ملف البيانات
+import { flygtaxiData } from '@/data/flygtaxiData'; 
 
 // دالة SEO الديناميكية
 export async function generateMetadata({ params }) {
@@ -42,16 +42,17 @@ export default async function AirportPage({ params }) {
         subtitle={data.subtitle} 
       />
 
-      {/* Intro Section */}
+      {/* Intro Section - صورة مضيئة وعصرية */}
       <section className="about-section padding">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="about-img">
-                <Image className="about-img1 wow fade-in-left" src={data.headerImage || "/assets/img/service-2.webp"} alt={data.title} width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+            <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="modern-image-wrapper">
+                <div className="image-glow"></div>
+                <Image className="img-fluid rounded-custom" src={data.headerImage || "/assets/img/service-2.webp"} alt={data.title} width={600} height={400} sizes="(max-width: 768px) 100vw, 600px" style={{objectFit: 'cover', width: '100%', height: 'auto', position: 'relative', zIndex: 2}} />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 ps-lg-4">
               <SectionHeading 
                 align="left"
                 subtitle="Flygtaxi"
@@ -63,7 +64,7 @@ export default async function AirportPage({ params }) {
         </div>
       </section>
 
-      {/* Pricing Section (تصميم خاص للأسعار) */}
+      {/* Pricing Section - تحويل الأسعار لبطاقات فخمة */}
       <section className="pricing-section bg-grey padding">
         <div className="container">
           <SectionHeading 
@@ -75,12 +76,11 @@ export default async function AirportPage({ params }) {
           <div className="row justify-content-center">
             {data.prices && data.prices.map((priceItem, index) => (
               <div key={index} className="col-lg-4 col-md-6 padding-15">
-                <div className="pricing-item text-center" style={{padding: '30px', border: '1px solid #eee', background: '#fff'}}>
-                  <div className="pricing-icon mb-3">
-                     <i className="las la-tag" style={{fontSize: '40px', color: '#ffc107'}}></i>
-                  </div>
-                  <h3 style={{fontSize: '20px', marginBottom: '10px'}}>{priceItem.type}</h3>
-                  <div className="price" style={{fontSize: '28px', fontWeight: 'bold', color: '#111'}}>
+                <div className="special-highlight-card text-center d-flex flex-column h-100">
+                  {/* تغيير الأيقونة بناءً على نوع السيارة وتكبيرها */}
+                  <i className={priceItem.type.includes('Storbil') ? "las la-shuttle-van" : "las la-car"} style={{fontSize: '40px', color: '#ff7b00', marginBottom: '15px'}}></i>
+                  <h3 style={{fontSize: '20px', marginBottom: '15px'}}>{priceItem.type}</h3>
+                  <div className="price mt-auto" style={{fontSize: '28px', fontWeight: '800', color: '#222'}}>
                     {priceItem.price}
                   </div>
                 </div>
@@ -88,17 +88,17 @@ export default async function AirportPage({ params }) {
             ))}
           </div>
           
-          <div className="text-center mt-40">
-             <p className="mb-20">{data.pricingNote}</p>
-             <a href={`tel:${data.pricingCtaPhone.replace(/\s/g, '')}`} className="default-btn">
-               Boka till Fast Pris: {data.pricingCtaPhone}
+          <div className="text-center mt-5">
+             <p className="mb-4" style={{color: '#666'}}>{data.pricingNote}</p>
+             <a href={`tel:${data.pricingCtaPhone.replace(/\s/g, '')}`} className="default-btn" style={{fontSize: '18px', padding: '0 40px', height: '55px'}}>
+               <i className="las la-phone-volume me-2" style={{fontSize: '24px'}}></i> Boka till Fast Pris: {data.pricingCtaPhone}
              </a>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="service-section padding">
+      {/* Features Section - بطاقات بيضاء ناصعة للأسباب */}
+      <section className="feature-section padding">
         <div className="container">
           <SectionHeading 
             subtitle="Varför Välja Oss?"
@@ -106,22 +106,20 @@ export default async function AirportPage({ params }) {
             description={data.featuresDesc}
           />
           
-          <div className="row">
+          <div className="row justify-content-center">
             {data.features && data.features.map((feature, index) => (
               <div key={index} className="col-lg-6 col-md-6 padding-15">
-                <div className="service-item">
-                  <div className="service-content">
-                    <div className="feature-icon mb-3">
-                        <i className={feature.icon} style={{fontSize: '32px', color: '#ffc107'}}></i>
-                    </div>
-                    <h3>{feature.title}</h3>
-                    <p>{feature.text}</p>
-                    {feature.linkUrl && (
-                        <Link href={feature.linkUrl} style={{color: '#ffc107', textDecoration: 'underline', fontSize: '14px'}}>
-                            {feature.linkText} <i className="las la-arrow-right"></i>
-                        </Link>
-                    )}
-                  </div>
+                <div className="modern-feature-card h-100 text-center align-items-center">
+                   <div className="icon-wrapper mb-3">
+                      <i className={feature.icon}></i>
+                   </div>
+                   <h3>{feature.title}</h3>
+                   <p className="mb-0">{feature.text}</p>
+                   {feature.linkUrl && (
+                      <Link href={feature.linkUrl} className="boka-link mt-3">
+                         {feature.linkText} <i className="las la-arrow-right"></i>
+                      </Link>
+                   )}
                 </div>
               </div>
             ))}
@@ -167,11 +165,14 @@ export default async function AirportPage({ params }) {
                 ))}
               </div>
               
-              <div className="text-center mt-4">
-                  <Link href="/flygtaxi" className="read-more">
-                    <i className="las la-arrow-left"></i> Tillbaka till huvudsidan för Flygtaxi
+              {/* زر الرجوع للوراء المحدث والأنيق */}
+              <div className="text-center mt-5">
+                  <Link href="/flygtaxi" className="secondary-back-btn">
+                    <i className="las la-arrow-left" style={{marginRight: '8px', fontSize: '20px'}}></i> 
+                    Tillbaka till huvudsidan för Flygtaxi
                   </Link>
               </div>
+
             </div>
           </div>
         </div>

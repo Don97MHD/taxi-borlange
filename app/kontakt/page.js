@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
-import BookingForm from '@/components/BookingForm'; // استيراد نموذج الحجز (Elfsight)
+import BookingForm from '@/components/BookingForm'; 
 import Link from 'next/link';
 
 export const metadata = {
@@ -15,83 +15,80 @@ export default function Contact() {
       <Header />
       <PageHeader title="Kontakta Oss" subtitle="Vi Finns Här för Dig!" />
 
-      <section className="contact-section bd-bottom padding">
+      <section className="contact-section padding bg-grey">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             
             {/* اليسار: معلومات الاتصال والنصوص */}
-            <div className="col-md-6">
-              <div className="contact-details-wrap">
-                <div className="contact-title">
-                  <h2>Vi Finns Här för Dig <span>Dygnet Runt</span></h2>
+            <div className="col-lg-6 mb-5 mb-lg-0">
+              <div className="contact-details-wrap pe-lg-4">
+                
+                <div className="section-heading text-left mb-40">
+                  <div className="section-subtitle"><span></span>Dygnet Runt</div>
+                  <h2>Vi Finns Här för Dig</h2>
                   <p>
                     Vi på Dala Taxi Borlänge gör det enkelt för dig att boka din resa eller få svar på dina frågor. 
-                    Oavsett om du föredrar att ringa, boka online eller har en specifik förfrågan, hittar du all information du behöver här. 
-                    Vår växel är bemannad 24 timmar om dygnet.
+                    Oavsett om du föredrar att ringa, boka online eller har en specifik förfrågan, hittar du all information du behöver här.
                   </p>
                 </div>
 
-                {/* زر الاتصال الكبير */}
-                <div className="cta-box mb-4 mt-4">
-                    <div className="section-subtitle">För Snabbast Service:</div>
-                    <a href="tel:024317900" className="default-btn" style={{padding: '15px 30px', fontSize: '18px'}}>
-                        <i className="las la-phone-volume"></i> Ring och Boka: 0243-179 00
+                {/* زر الاتصال الضخم */}
+                <div className="mb-5">
+                    <a href="tel:024317900" className="default-btn" style={{height: '60px', padding: '0 40px', fontSize: '20px'}}>
+                        <i className="las la-phone-volume me-3" style={{fontSize: '26px'}}></i> Ring och Boka: 0243-179 00
                     </a>
                 </div>
 
-                {/* تفاصيل الاتصال والعنوان المحدث */}
-                <ul className="contact-details">
-                  <li>
-                    <i className="fas fa-map-marker-alt"></i>
-                    Dala Taxi Borlänge <br /> Ovanbrogatan 2, 784 33 Borlänge
-                  </li>
-                  <li>
-                    <i className="fas fa-envelope"></i>
-                    taxi17900@gmail.com <br /> (För företagsärenden)
-                  </li>
-                  <li>
-                    <i className="fas fa-phone"></i>
-                    0243-179 00 <br /> Öppet Dygnet Runt
-                  </li>
-                </ul>
+                {/* تفاصيل الاتصال (تصميم حديث للأيقونات) */}
+                <div className="modern-contact-info mb-5">
+                  <div className="contact-item d-flex align-items-center mb-4">
+                    <div className="icon-wrapper me-4" style={{width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(255, 123, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                      <i className="las la-map-marker" style={{fontSize: '30px', color: '#ff7b00'}}></i>
+                    </div>
+                    <div>
+                      <h4 className="mb-1" style={{fontSize: '18px', fontWeight: '700'}}>Besöksadress</h4>
+                      <p className="mb-0" style={{color: '#555'}}>Ovanbrogatan 2, 784 33 Borlänge</p>
+                    </div>
+                  </div>
+
+                  <div className="contact-item d-flex align-items-center mb-4">
+                    <div className="icon-wrapper me-4" style={{width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(255, 123, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                      <i className="las la-envelope" style={{fontSize: '30px', color: '#ff7b00'}}></i>
+                    </div>
+                    <div>
+                      <h4 className="mb-1" style={{fontSize: '18px', fontWeight: '700'}}>E-postadress</h4>
+                      <p className="mb-0"><a href="mailto:taxi17900@gmail.com" style={{color: '#555'}}>taxi17900@gmail.com</a></p>
+                    </div>
+                  </div>
+                </div>
 
                 {/* روابط مفيدة */}
-                <div className="contact-links mt-5">
-                    <h3 style={{fontSize: '20px', marginBottom: '15px'}}>Vanliga Frågor & Länkar</h3>
-                    <ul style={{listStyle: 'none', padding: 0}}>
-                        <li style={{marginBottom: '10px'}}>
-                            <i className="las la-arrow-right" style={{color: '#ffc107', marginRight: '5px'}}></i>
-                            <Link href="/priser" className="hover-link">Prisinformation</Link>
-                        </li>
-                        <li style={{marginBottom: '10px'}}>
-                            <i className="las la-arrow-right" style={{color: '#ffc107', marginRight: '5px'}}></i>
-                            <Link href="/taxi-med-barnstol" className="hover-link">Resa med barnstol</Link>
-                        </li>
-                        <li style={{marginBottom: '10px'}}>
-                            <i className="las la-arrow-right" style={{color: '#ffc107', marginRight: '5px'}}></i>
-                            <Link href="/vara-tjanster" className="hover-link">Våra tjänster i översikt</Link>
-                        </li>
-                        <li>
-                            <i className="las la-arrow-right" style={{color: '#ffc107', marginRight: '5px'}}></i>
-                            <Link href="/bli-foretagskund" className="hover-link">Bli Företagskund</Link>
-                        </li>
-                    </ul>
+                <div className="modern-links-box p-4" style={{background: '#fff', borderRadius: '20px', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)'}}>
+                    <h3 style={{fontSize: '20px', fontWeight: '700', marginBottom: '20px'}}>Snabblänkar</h3>
+                    <div className="d-flex flex-wrap gap-3">
+                        <Link href="/priser" className="boka-link" style={{background: 'rgba(255,123,0,0.05)', padding: '8px 20px', borderRadius: '30px', color: '#444', fontWeight: '600', fontSize: '14px', transition: 'all 0.3s ease'}}>Prisinformation</Link>
+                        <Link href="/taxi-med-barnstol" className="boka-link" style={{background: 'rgba(255,123,0,0.05)', padding: '8px 20px', borderRadius: '30px', color: '#444', fontWeight: '600', fontSize: '14px', transition: 'all 0.3s ease'}}>Resa med barnstol</Link>
+                        <Link href="/bli-foretagskund" className="boka-link" style={{background: 'rgba(255,123,0,0.05)', padding: '8px 20px', borderRadius: '30px', color: '#444', fontWeight: '600', fontSize: '14px', transition: 'all 0.3s ease'}}>Bli Företagskund</Link>
+                    </div>
                 </div>
 
               </div>
             </div>
 
-            {/* اليمين: نموذج الحجز (الخاص بـ Elfsight كما طلبته) */}
-            <div className="col-md-6 mt-4 mt-md-0">
-               <BookingForm />
+            {/* اليمين: نموذج الحجز */}
+            <div className="col-lg-6">
+               {/* وضعنا الفورم داخل حاوية للتحكم بشكله في هذه الصفحة بالتحديد */}
+               <div className="contact-form-wrapper shadow-lg" style={{borderRadius: '24px', overflow: 'hidden'}}>
+                 <BookingForm />
+               </div>
             </div>
 
           </div>
         </div>
       </section>
       
-      {/* Map Section - خريطة مدمجة محدثة بالعنوان الصحيح */}
-      <div className="google-map" style={{ width: '100%', height: '450px', borderBottom: '1px solid #ddd' }}>
+      {/* Map Section */}
+      <div className="google-map" style={{ width: '100%', height: '500px', display: 'block' }}>
         <iframe 
           src="https://www.google.com/maps?q=Dala+Taxi+Borlänge,Ovanbrogatan+2,Borlänge&output=embed" 
           width="100%" 

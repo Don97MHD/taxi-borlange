@@ -1,9 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
+import SectionHeading from '@/components/SectionHeading';
 import Link from 'next/link';
 import Image from 'next/image';
-import Script from 'next/script'; // استيراد Script من أجل Elfsight
+import Script from 'next/script'; 
 
 export const metadata = {
   title: 'Bud & Paket med Taxi i Borlänge | Snabb & Säker Leverans',
@@ -21,12 +22,12 @@ export default function PackageDelivery() {
         subtitle="Snabb & Säker Leverans" 
       />
 
-      {/* Intro Section */}
+      {/* Intro Section - استعادة الشكل القديم مع الشارة الدائرية المتحركة والتأثيرات الحديثة */}
       <section className="about-section padding">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="section-heading mb-40">
+            <div className="col-lg-6 mb-5 mb-lg-0">
+               <div className="section-heading mb-40 text-left">
                 <div className="section-subtitle"><span></span>Taxibud</div>
                 <h2>Taxibud i Borlänge – Snabbaste Vägen för Dina Paket</h2>
                 <p>När traditionella fraktalternativ inte räcker till och tiden är kritisk, är Dala taxi Borlänge bud- och paketservice den optimala lösningen. Vi erbjuder en snabb, säker och personlig leveranstjänst för företag och privatpersoner i Borlänge med omnejd.</p>
@@ -35,67 +36,73 @@ export default function PackageDelivery() {
             </div>
             <div className="col-lg-6">
               <div className="about-img">
-                <Image className="about-img1 wow fade-in-right" src="/assets/img/service-4.webp" alt="Bud och Paket" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
-                <figure className="round-text"><Image src="/assets/img/experience-text-round.webp" alt="experience" width={300} height={300} sizes="(max-width: 768px) 100vw, 200px" /></figure>
+                <div className="modern-image-wrapper">
+                  <div className="image-glow"></div>
+                  <Image className="about-img1 rounded-custom" src="/assets/img/service-4.webp" alt="Bud och Paket" width={600} height={400} sizes="(max-width: 768px) 100vw, 388px" style={{objectFit: 'cover', width: '100%', height: 'auto', position: 'relative', zIndex: 2}} />
+                </div>
+                {/* الشارة الدائرية التي طلب إعادتها */}
+                <figure className="round-text" style={{zIndex: 3}}>
+                  <Image src="/assets/img/experience-text-round.webp" alt="experience" width={300} height={300} sizes="(max-width: 768px) 100vw, 200px" />
+                </figure>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Benefits Section - استخدام البطاقات العصرية */}
       <section className="service-section bg-grey padding">
         <div className="container">
-          <div className="section-heading text-center mb-40">
+          <div className="section-heading text-center mb-50">
             <div className="section-subtitle"><span></span>Fördelar</div>
             <h2>Varför Välja Dala Taxi Borlänge för Dina Leveranser?</h2>
             <p>Att använda en taxi i Borlänge som taxibud erbjuder flera unika fördelar som säkerställer att din <br />försändelse hanteras med högsta prioritet samt med billiga fasta priser.</p>
           </div>
 
-          <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 padding-15">
-              <div className="service-item">
-                <div className="service-content">
-                  <div className="feature-icon"><i className="las la-shipping-fast"></i></div>
+          <div className="row justify-content-center g-4">
+            <div className="col-lg-4 col-md-6">
+              <div className="modern-feature-card h-100 text-center">
+                  <div className="icon-wrapper mb-3 mx-auto">
+                     <i className="las la-shipping-fast"></i>
+                  </div>
                   <h3>Oslagbar Snabbhet</h3>
                   <p>Glöm långa ledtider. När du bokar ett taxibud hämtar vi ditt paket omgående och kör med taxi det direkt till mottagaren. För lokala leveranser inom Borlänge innebär det oftast en leveranstid på under en timme.</p>
-                </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 padding-15">
-              <div className="service-item">
-                <div className="service-content">
-                  <div className="feature-icon"><i className="las la-shield-alt"></i></div>
+            <div className="col-lg-4 col-md-6">
+              <div className="modern-feature-card h-100 text-center">
+                  <div className="icon-wrapper mb-3 mx-auto">
+                     <i className="las la-shield-alt"></i>
+                  </div>
                   <h3>Maximal Säkerhet</h3>
                   <p>Ditt paket är i trygga händer. Det transporteras av en av våra professionella förare och lämnar aldrig fordonet förrän det är framme hos mottagaren. Detta minimerar risken för skador och förlust.</p>
-                </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 padding-15">
-              <div className="service-item">
-                <div className="service-content">
-                  <div className="feature-icon"><i className="las la-clock"></i></div>
-                  <h3>Flexibilitet och Tillgänglighet 24/7</h3>
+            <div className="col-lg-4 col-md-6">
+              <div className="modern-feature-card h-100 text-center">
+                  <div className="icon-wrapper mb-3 mx-auto">
+                     <i className="las la-clock"></i>
+                  </div>
+                  <h3>Flexibilitet 24/7</h3>
                   <p>Behovet av en snabb leverans kan uppstå när som helst. Vår budservice är, precis som vår taxitjänst, tillgänglig dygnet runt, alla dagar i veckan. Oavsett om det är en sen kväll, en helg eller en helgdag.</p>
-                </div>
               </div>
             </div>
-             <div className="col-lg-6 col-md-6 padding-15">
-              <div className="service-item">
-                <div className="service-content">
-                  <div className="feature-icon"><i className="las la-door-open"></i></div>
+             <div className="col-lg-6 col-md-6">
+              <div className="modern-feature-card h-100 text-center">
+                  <div className="icon-wrapper mb-3 mx-auto">
+                     <i className="las la-door-open"></i>
+                  </div>
                   <h3>Personlig Service från Dörr till Dörr</h3>
                   <p>Vi hämtar paketet direkt från dig och ser till att det överlämnas personligen till rätt mottagare. Du får en bekräftelse när leveransen är utförd, vilket ger dig full sinnesro och kontroll över hela processen.</p>
-                </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 padding-15">
-              <div className="service-item">
-                <div className="service-content">
-                  <div className="feature-icon"><i className="las la-tags"></i></div>
+            <div className="col-lg-6 col-md-6">
+              <div className="modern-feature-card h-100 text-center">
+                  <div className="icon-wrapper mb-3 mx-auto">
+                     <i className="las la-tags"></i>
+                  </div>
                   <h3>Billiga fasta priser</h3>
                   <p>Vi på Dala Taxi Borlänge erbjuder alla våra kunder som vill skicka paket inom och från Borlänge fasta priser samt alla priser innehåller 25% moms på budkörningar.</p>
-                </div>
               </div>
             </div>
           </div>
@@ -103,22 +110,30 @@ export default function PackageDelivery() {
       </section>
 
       {/* --- قسم الفورم باستخدام Elfsight --- */}
-      <section className="elfsight-booking-form-section" style={{ backgroundColor: '#222327', padding: '80px 0' }}>
+      <section className="elfsight-booking-form-section" style={{ backgroundColor: '#1a1a1c', padding: '100px 0', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
               
-              <div className="form-header text-center mb-4">
-                <h4 style={{ color: '#ffcc00', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px' }}>BUD & PAKET</h4>
-                <h2 style={{ color: '#fff', fontSize: '36px', fontWeight: 'bold' }}>Bud Paket med Dala Taxi Borlänge</h2>
+              <div className="form-header text-center mb-5">
+                <span className="section-subtitle white mb-3"><span></span>BUD & PAKET</span>
+                <h2 style={{ color: '#fff', fontSize: '40px', fontWeight: '800' }}>Bud Paket med Dala Taxi Borlänge</h2>
               </div>
 
-              {/* 
-                 هام: استبدل YOUR_ELFSIGHT_WIDGET_ID 
-                 بالـ ID الخاص بفورم Bud & Paket من حسابك في Elfsight
-              */}
-              <div className="elfsight-app-8aa221ee-a21b-473d-ba02-254af40aa326"></div>
-              <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
+              {/* تأثير زجاجي يحيط بالفورم */}
+              <div style={{
+                  background: 'rgba(255,255,255,0.02)',
+                  backdropFilter: 'blur(10px)',
+                  WebkitBackdropFilter: 'blur(10px)',
+                  padding: '20px',
+                  borderRadius: '24px',
+                  border: '1px solid rgba(255,255,255,0.05)',
+                  boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
+              }}>
+                 {/* ID الفورم الخاص بالطرود */}
+                 <div className="elfsight-app-b34c4c6b-2f21-4602-9452-284a7d08d181" data-elfsight-app-lazy></div>
+                 <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
+              </div>
 
             </div>
           </div>
@@ -170,11 +185,11 @@ export default function PackageDelivery() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section (استعادة التصميم الأسود القديم كما طلبت) */}
       <section className="cta-section padding">
         <div className="container">
             <div className="cta-content text-center">
-                <h2>Boka Din Leverans Nu med <br /> Dala Taxi Borlänge</h2>
+                <h2>Boka Din Leverans Nu med <br /> <span>Dala Taxi Borlänge</span></h2>
                 <p>Är ditt paket redo att skickas? Kontakta oss direkt via telefon för snabbast möjliga service. <br />Vår personal ger dig ett fast pris och skickar en bil för omedelbar upphämtning.</p>
                 
                 <div className="cta-call mb-30" style={{justifyContent: 'center'}}>

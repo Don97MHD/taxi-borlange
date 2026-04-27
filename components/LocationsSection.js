@@ -16,35 +16,19 @@ export default function LocationsSection() {
         <div className="row justify-content-center">
           {taxiDalarnaData.map((city) => (
             <div key={city.id} className="col-lg-4 col-md-6 mb-4">
-              <div className="location-card" style={{
-                  border: '1px solid #eee', 
-                  borderRadius: '5px', 
-                  padding: '25px', 
-                  height: '100%',
-                  transition: 'all 0.3s ease',
-                  backgroundColor: '#f9f9f9'
-              }}>
-                <h3 style={{fontSize: '20px', fontWeight: '700', marginBottom: '10px'}}>
-                  <Link href={`/taxi-dalarna/${city.id}`} style={{color: '#222'}}>
-                    {/* نستخدم العنوان المختصر هنا ليكون أجمل في العرض */}
+              <div className="location-card">
+                <h3>
+                  <Link href={`/taxi-dalarna/${city.id}`}>
                     {city.title}
                   </Link>
                 </h3>
                 
-                {/* الوصف القصير الغني بالكلمات المفتاحية (نستخدم وصف السيو) */}
-                <p style={{fontSize: '15px', color: '#666', lineHeight: '1.6', marginBottom: '15px'}}>
+                <p>
                   {city.seoDescription}
                 </p>
 
-                <Link href={`/taxi-dalarna/${city.id}`} style={{
-                    color: '#ff9900', 
-                    fontWeight: '600', 
-                    fontSize: '14px', 
-                    textDecoration: 'none',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '5px'
-                }}>
+                {/* الرابط أصبح يحمل كلاس boka-link للتصميم */}
+                <Link href={`/taxi-dalarna/${city.id}`} className="boka-link">
                   Boka till {city.id.replace('taxi-', '').replace('-', ' ')} <i className="las la-arrow-right"></i>
                 </Link>
               </div>
@@ -52,9 +36,9 @@ export default function LocationsSection() {
           ))}
         </div>
         
-        {/* رابط للمزيد إذا أردت */}
+        {/* رابط للمزيد */}
         <div className="text-center mt-4">
-            <p>Hittar du inte din ort? <Link href="/kontakt" style={{textDecoration: 'underline', color: '#222'}}>Kontakta oss</Link> för pris.</p>
+            <p>Hittar du inte din ort? <Link href="/kontakt" style={{textDecoration: 'underline', color: '#222', fontWeight: 'bold'}}>Kontakta oss</Link> för pris.</p>
         </div>
 
       </div>

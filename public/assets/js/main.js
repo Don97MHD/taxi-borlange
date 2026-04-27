@@ -102,19 +102,7 @@
         });
 
         // Popup Sidebox
-        function sideBox() {
-            $("body").removeClass("open-sidebox");
-            $(document).on("click", ".dl-sidebox-icon", function (e) {
-                e.preventDefault();
-                $("body").toggleClass("open-sidebox");
-            });
-            $(document).on("click", "#sidebox-overlay", function (e) {
-                e.preventDefault();
-                $("body.open-sidebox").removeClass("open-sidebox");
-            });
-        }
-
-        sideBox();
+        
 
         function doAnimations(elements) {
             var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
