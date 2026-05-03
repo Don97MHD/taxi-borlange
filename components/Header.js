@@ -103,6 +103,9 @@ export default function Header() {
       <li className={pathname.startsWith('/priser') ? 'active' : ''}>
         <Link href="/priser">Priser</Link>
       </li>
+      <li className={pathname === '/bli-foretagskund' ? 'active' : ''}>
+        <Link href="/bli-foretagskund">Företagskund</Link>
+      </li>
 
         {/* 2. Om Oss */}
       <li className={pathname === '/om-oss' ? 'active' : ''}>
@@ -113,19 +116,6 @@ export default function Header() {
         <Link href="/kontakt">Kontakt</Link>
       </li>
       
-      {/* 6. Info (مع زر الموبايل) */}
-       <li className={`dropdown_menu ${pathname.startsWith('/information') || pathname === '/bli-foretagskund' ? 'active' : ''}`}>
-        <Link href="#">Info</Link>
-        <span 
-            className={`dropdown-plus ${openSubMenu === 'info' ? 'dropdown-open' : ''}`}
-            onClick={(e) => { e.preventDefault(); toggleSubMenu('info'); }}
-        ></span>
-        <ul style={{ display: openSubMenu === 'info' ? 'block' : undefined }}>
-            {/* تم تغيير النص هنا ليتطابق مع عنوان الصفحة */}
-            <li><Link href="/bli-foretagskund">Bli Företagskund</Link></li>
-            <li><Link href="/faqs">Vanliga Frågor</Link></li>
-        </ul>
-      </li>
     </ul>
   );
 

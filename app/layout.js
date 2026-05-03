@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/vendor/jquery.ajaxchimp.min.js" strategy="afterInteractive" />
         <Script src="/assets/js/vendor/bootstrap.min.js" strategy="lazyOnload"/>
         <Script src="/assets/js/vendor/popper.min.js" strategy="lazyOnload"/>
-        <Script src="/assets/js/vendor/swiper.min.js" strategy="lazyOnload"/>
+        <Script src="/assets/js/vendor/swiper.min.js" strategy="afterInteractive"/>
         <Script src="/assets/js/vendor/jquery.datetimepicker.full.js" strategy="lazyOnload"/>
         <Script src="/assets/js/vendor/jquery.nice-select.min.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/venobox.min.js" strategy="lazyOnload"/>
