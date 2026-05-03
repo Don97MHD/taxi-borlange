@@ -104,7 +104,7 @@ export default function Header() {
         <Link href="/priser">Priser</Link>
       </li>
       <li className={pathname === '/bli-foretagskund' ? 'active' : ''}>
-        <Link href="/bli-foretagskund">Företagskund</Link>
+        <Link href="/bli-foretagskund">Bli Företagskund</Link>
       </li>
 
         {/* 2. Om Oss */}
