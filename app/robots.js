@@ -3,8 +3,8 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/private/', '/admin/'], // Add any paths you want to disallow
+      disallow: ['/private/', '/admin/', '/api/'],
     },
-    sitemap: 'https://taxi-borlange.vercel.app/sitemap.xml',
+    sitemap: 'https://dalataxiborlange.se/sitemap.xml', 
   };
 }

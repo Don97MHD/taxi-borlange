@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Dala Taxi Borlänge Locations</name>
+    <author>
+      <name>Dala Taxi Borlänge</name>
+    </author>
+    <Placemark>
+      <name>Dala Taxi Borlänge</name>
+      <description><![CDATA[Dala Taxi Borlänge levererar pålitlig och säker taxiservice i Borlänge, Dalarna. Öppet dygnet runt.<br><br><strong>Telefon:</strong> +46 243-179 00<br><strong>Webbplats:</strong> https://dalataxiborlange.se]]></description>
+      <address>Ovanbrogatan 2, 784 33 Borlänge, Dalarna, Sverige</address>
+      <phoneNumber>+46 243-179 00</phoneNumber>
+      <Point>
+        <coordinates>15.437140,60.485800,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -15,41 +15,43 @@ export default async function sitemap() {
     '/priser',
     '/bli-foretagskund',
     '/bud-paket',
-    '/flygtaxi',       // صفحة الطيران الرئيسية
-    '/taxi-dalarna',   // صفحة المناطق الرئيسية
-    '/vara-tjanster',  // صفحة الخدمات الرئيسية
+    '/flygtaxi',       
+    '/taxi-dalarna',   
+    '/vara-tjanster',  
     '/taxi-med-barnstol',
     '/faqs',
     '/information/anvandarvillkor',
     '/information/integritetspolicy',
+    '/omdomen',
   ];
 
   const staticPages = staticRoutes.map((route) => ({
-    url: `${baseUrl}${route}`,
+    // إضافة السلاش في نهاية الرابط، مع تجنب تكراره في الصفحة الرئيسية
+    url: route === '' ? `${baseUrl}/` : `${baseUrl}${route}/`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: route === '' ? 1 : 0.8, // الصفحة الرئيسية لها أولوية أعلى
+    priority: route === '' ? 1 : 0.8,
   }));
 
-  // 3. تعريف صفحات الخدمات الديناميكية (/vara-tjanster/[id])
+  // 3. تعريف صفحات الخدمات الديناميكية
   const servicePages = servicesData.map((service) => ({
-    url: `${baseUrl}/vara-tjanster/${service.id}`,
+    url: `${baseUrl}/vara-tjanster/${service.id}/`, // إضافة السلاش
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,
   }));
 
-  // 4. تعريف صفحات المطارات الديناميكية (/flygtaxi/[airport])
+  // 4. تعريف صفحات المطارات الديناميكية
   const airportPages = flygtaxiData.map((airport) => ({
-    url: `${baseUrl}/flygtaxi/${airport.id}`,
+    url: `${baseUrl}/flygtaxi/${airport.id}/`, // إضافة السلاش
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,
   }));
 
-  // 5. تعريف صفحات مناطق دالارنا الديناميكية (/taxi-dalarna/[location])
+  // 5. تعريف صفحات مناطق دالارنا الديناميكية
   const locationPages = taxiDalarnaData.map((location) => ({
-    url: `${baseUrl}/taxi-dalarna/${location.id}`,
+    url: `${baseUrl}/taxi-dalarna/${location.id}/`, // إضافة السلاش
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,
