@@ -10,7 +10,7 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // تم إزالة /omdomen لكي تعمل الصفحة
+      
       {
         source: '/information',
         destination: '/', 
