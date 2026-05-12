@@ -1,7 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
-
+export const metadata = {
+  title: 'Boka Taxi Online i Borlänge | Dala Taxi',
+  description: 'Boka din taxi i Borlänge snabbt och enkelt online. Fyll i formuläret så ordnar vi resten för en trygg och säker resa.',
+  alternates: {
+    canonical: '/book-taxi/',
+  },
+};
 export default function BookTaxi() {
   return (
     <>

@@ -9,6 +9,10 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Flygtaxi Borlänge | Fasta Priser till Arlanda & Dala Airport',
   description: 'Planerar du en resa? Dala Taxi erbjuder pålitlig flygtaxi i Borlänge. Boka din transport till Arlanda eller Dala Airport tryggt och i tid. Fasta priser!',
+  alternates: {
+    canonical: '/flygtaxi/',
+  },
+
 }
 
 export default function Flygtaxi() {

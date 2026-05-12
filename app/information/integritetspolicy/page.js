@@ -5,6 +5,9 @@ import PageHeader from '@/components/PageHeader';
 export const metadata = {
   title: 'Integritetspolicy | Dala Taxi Borlänge',
   description: 'Integritetspolicy för Dala Taxi Borlänge. Läs om hur vi hanterar dina personuppgifter och din integritet.',
+  alternates: {
+    canonical: '/information/integritetspolicy/',
+  },
 }
 
 export default function Integritetspolicy() {

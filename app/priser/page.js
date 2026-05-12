@@ -8,6 +8,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Prislista Taxi Borlänge | Fasta Priser till Hela Dalarna',
   description: 'Se vår prislista för taxi i Borlänge. Vi erbjuder fasta priser till Romme Alpin (440 kr), Stockholm, Falun, Avesta, Leksand och många fler orter.',
+  alternates: {
+    canonical: '/priser/',
+  },
 }
 
 export default function Prices() {

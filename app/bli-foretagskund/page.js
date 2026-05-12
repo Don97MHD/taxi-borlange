@@ -5,6 +5,9 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Bli Företagskund | Dala Taxi Borlänge',
   description: 'Bli företagskund och ring eller boka taxi i Borlänge via formuläret och få alla resor på en faktura en gång i månaden.',
+  alternates: {
+    canonical: '/bli-foretagskund/',
+  },
 }
 
 export default function BusinessTaxi() {

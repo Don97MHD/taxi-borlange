@@ -6,6 +6,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Användarvillkor | Dala Taxi Borlänge',
   description: 'Användarvillkor för Dala Taxi Borlänge. Läs om villkoren för att använda vår webbplats.',
+  alternates: {
+    canonical: '/information/anvandarvillkor/',
+  },
 }
 
 export default function Anvandarvillkor() {

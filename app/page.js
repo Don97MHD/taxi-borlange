@@ -15,6 +15,9 @@ import LocalAreasSection from '@/components/LocalAreasSection';
 export const metadata = {
   title: 'Dala Taxi Borlänge | 0243 - 179 00',
   description: 'Behöver du taxi i Borlänge? Då bokar taxi med Dala Taxi Borlänge som erbjuder snabb och säker transport dygnet runt. Fasta priser från Borlänge till Falun, Arlanda & Dala Airport.Romme Alpin. Boka enkelt online eller ring oss på 0243-179 00!',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function Home() {
@@ -65,11 +68,11 @@ export default function Home() {
                       
                       {/* --- 2. إعادة هذا العنصر إلى div بدلاً من h1 --- */}
                       {/* سنحتفظ بنفس الكلاسات slider-caption big ليبقى الشكل كبيراً وجميلاً */}
-                      <div className="slider-caption big">
+                      <h1 className="slider-caption big">
                         <div className="inner-layer">
                           <div data-animation="fade-in-bottom" data-delay="0.5s">Dala Taxi Borlänge</div>
                         </div>
-                      </div>
+                      </h1>
                       {/* ----------------------------------------------- */}
 
                       <div className="slider-caption small"><div className="inner-layer"><div data-animation="fade-in-bottom" data-delay="0.7s" data-duration="1s">Alltid fasta priser till flyg, tåg och Falun <br />samt Romme Alpin!</div></div></div>

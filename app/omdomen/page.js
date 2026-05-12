@@ -6,6 +6,9 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Omdömen & Recensioner | Dala Taxi Borlänge',
   description: 'Alltid punktliga och pålitliga, vilket gör resorna stressfria. Många kunder rekommenderar dem starkt för taxi-tjänster i Borlänge och Falun.',
+  alternates: {
+    canonical: '/omdomen/',
+  },
 }
 
 export default function ReviewsPage() {

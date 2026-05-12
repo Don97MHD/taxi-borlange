@@ -18,6 +18,9 @@ export async function generateMetadata({ params }) {
   return {
     title: data.seoTitle,
     description: data.seoDescription,
+    alternates: {
+      canonical: `/taxi-dalarna/${location}/`,
+    },
   };
 }
 

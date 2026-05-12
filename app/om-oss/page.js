@@ -9,6 +9,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Om Dala Taxi Borlänge | Din Lokala Taxi i Borlänge och Dalarna',
   description: 'Lär känna Dala Taxi Borlänge. Med över 10 års erfarenhet erbjuder vi trygg och pålitlig taxi med fokus på service, punktlighet och lokalkännedom. Läs mer!',
+  alternates: {
+    canonical: '/om-oss/',
+  },
 }
 
 export default function AboutUs() {

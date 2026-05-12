@@ -9,6 +9,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Taxi med Barnstol i Borlänge | Boka Trygg Resa',
   description: 'Res tryggt med hela familjen. Dala Taxi Borlänge erbjuder taxi med barnstol och babyskydd. Informera oss vid bokning för en säker resa för ditt barn.',
+  alternates: {
+    canonical: '/taxi-med-barnstol/',
+  },
 }
 
 export default function ChildSeat() {

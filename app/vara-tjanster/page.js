@@ -7,6 +7,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Våra Taxitjänster i Borlänge | Flygtaxi, Företagstaxi & Mer',
   description: 'Dala Taxi Borlänge erbjuder ett komplett utbud av taxitjänster. Läs mer om vår flygtaxi, företagstaxi, tågtaxi, budservice och transport för större grupper.',
+  alternates: {
+    canonical: '/vara-tjanster/',
+  },
 }
 
 export default function Services() {

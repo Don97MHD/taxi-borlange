@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
   return {
     title: service.seoTitle || service.title,
     description: service.seoDescription || service.description,
+    alternates: {
+      canonical: `/vara-tjanster/${id}/`,
+    },
   };
 }
 

@@ -7,6 +7,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Kontakta & Boka Dala Taxi Borlänge | Ring Oss 24/7',
   description: 'Här hittar du kontaktuppgifter till Dala Taxi Borlänge. Ring oss dygnet runt för att boka din taxi eller om du har frågor. Vi finns på Ovanbrogatan 2 i Borlänge.',
+  alternates: {
+    canonical: '/kontakt/',
+  },
 }
 
 export default function Contact() {

@@ -7,6 +7,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Vanliga Frågor (FAQ) | Dala Taxi Borlänge',
   description: 'Här hittar du svar på de vanligaste frågorna om bokning, priser, barnstolar och betalning hos Dala Taxi Borlänge.',
+  alternates: {
+    canonical: '/faqs/',
+  },
 }
 
 export default function Faqs() {

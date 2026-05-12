@@ -9,6 +9,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Taxi Dalarna | Fasta Priser från Borlänge | Boka',
   description: 'Res från Borlänge till Falun, Leksand, Rättvik m.fl. Dala Taxi erbjuder bekväma resor till fasta priser. Boka din nästa resa i Dalarna med oss!',
+  alternates: {
+    canonical: '/taxi-dalarna/',
+  },
 }
 
 export default function TaxiDalarna() {

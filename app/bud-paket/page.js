@@ -9,6 +9,9 @@ import Script from 'next/script';
 export const metadata = {
   title: 'Bud & Paket med Taxi i Borlänge | Snabb & Säker Leverans',
   description: 'Behöver du skicka ett paket snabbt med taxi Borlänge? Dala Taxi Borlänge erbjuder expressleverans av bud och paket. Säker och direkt transport till mottagaren med ett fast pris. Ring för bokning!',
+  alternates: {
+    canonical: '/bud-paket/',
+  },
 }
 
 export default function PackageDelivery() {

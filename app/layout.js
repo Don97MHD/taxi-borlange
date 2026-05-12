@@ -23,9 +23,7 @@ export const metadata = {
   metadataBase: new URL('https://dalataxiborlange.se'),
   title: 'Dala Taxi Borlänge | Boka Taxi Online',
   description: 'Din pålitliga taxi i Borlänge och Dalarna. Boka enkelt online eller ring 0243-179 00.',
-  alternates: {
-    canonical: '/',
-  },
+  
 }
 
 export default function RootLayout({ children }) {
