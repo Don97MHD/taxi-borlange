@@ -43,7 +43,7 @@ export default function HomeFaq() {
         </h3>
         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq-accordion">
           <div className="accordion-body">
-            <p>Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föراren. Företagskunder kan även ansöka om att betala via faktura.</p>
+            <p> Du kan betala med Swish, de flesta bank- och kreditkort, eller kontant direkt till föraren. Företagskunder kan även ansöka om att betala via faktura.</p>
           </div>
         </div>
       </div>
